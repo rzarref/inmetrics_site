@@ -5,3 +5,7 @@ tmp/*
 *.suo
 *.user
 *.sln.docstates
+
+# Ignore WordPress core files
+public/*
+!public/web.config

@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D86CA88B-C689-4E63-BDA7-CA2746D79675}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		public\web.config = public\web.config
 	EndProjectSection
 EndProject
 Global
