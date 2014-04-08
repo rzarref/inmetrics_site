@@ -21,6 +21,7 @@
     <Compile Include="includes\localization.php" />
     <Compile Include="includes\navigation.php" />
     <Compile Include="includes\helpers.php" />
+    <Compile Include="includes\api.php" />
     <Compile Include="index.php" />
     <Compile Include="functions.php" />
     <Compile Include="header.php" />
