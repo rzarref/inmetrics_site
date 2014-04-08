@@ -18,10 +18,16 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="includes\localization.php" />
+    <Compile Include="includes\navigation.php" />
     <Compile Include="index.php" />
+    <Compile Include="functions.php" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="screenshot.png" />
     <Content Include="style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="includes\" />
   </ItemGroup>
 </Project>
