@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: InMetrics\n"
-"POT-Creation-Date: 2014-04-08 02:23-0300\n"
-"PO-Revision-Date: 2014-04-08 02:23-0300\n"
+"POT-Creation-Date: 2014-04-08 02:40-0300\n"
+"PO-Revision-Date: 2014-04-08 02:40-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -16,6 +16,15 @@ msgstr ""
 "X-Poedit-SearchPath-0: D:\\Pixadelica\\InMetrics\\public\\wp-content\\themes"
 "\\inmetrics\n"
 
+#: D:\Pixadelica\InMetrics\public\wp-content\themes\inmetrics/footer.php:9
+msgid "In/metrics 2014 &copy; All rights reserved"
+msgstr "In/metrics 2014 &copy; Todos os direitos reservados"
+
 #: D:\Pixadelica\InMetrics\public\wp-content\themes\inmetrics/includes/navigation.php:4
 msgid "Top Menu"
 msgstr "Menu do Topo"
+
+#: D:\Pixadelica\InMetrics\public\wp-content\themes\inmetrics/includes/navigation.php:31
+#, php-format
+msgid "Page %s"
+msgstr "Página %s"

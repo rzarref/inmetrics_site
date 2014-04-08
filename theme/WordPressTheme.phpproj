@@ -20,14 +20,68 @@
   <ItemGroup>
     <Compile Include="includes\localization.php" />
     <Compile Include="includes\navigation.php" />
+    <Compile Include="includes\helpers.php" />
     <Compile Include="index.php" />
     <Compile Include="functions.php" />
+    <Compile Include="header.php" />
+    <Compile Include="footer.php" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\inmetrics.css.bundle" />
+    <Content Include="css\inmetrics.css">
+      <DependentUpon>css\inmetrics.css.bundle</DependentUpon>
+    </Content>
+    <Content Include="css\inmetrics.min.css">
+      <DependentUpon>css\inmetrics.css.bundle</DependentUpon>
+    </Content>
+    <Content Include="images\logo.png" />
+    <Content Include="images\mobile-menu.png" />
+    <Content Include="js\inmetrics.js.bundle" />
+    <Content Include="js\inmetrics.js">
+      <DependentUpon>js\inmetrics.js.bundle</DependentUpon>
+    </Content>
+    <Content Include="js\inmetrics.min.js">
+      <DependentUpon>js\inmetrics.js.bundle</DependentUpon>
+    </Content>
+    <Content Include="js\inmetrics.min.js.map">
+      <DependentUpon>js\inmetrics.js.bundle</DependentUpon>
+    </Content>
+    <Content Include="js\inmetrics\slide-toggle.js" />
+    <Content Include="lang\es_ES.mo" />
+    <Content Include="lang\es_ES.po" />
+    <Content Include="lang\pt_BR.mo" />
+    <Content Include="lang\pt_BR.po" />
+    <Content Include="less\header.less" />
+    <Content Include="less\header.css">
+      <DependentUpon>less\header.less</DependentUpon>
+    </Content>
+    <Content Include="less\header.css.map">
+      <DependentUpon>less\header.less</DependentUpon>
+    </Content>
+    <Content Include="less\layout.less" />
+    <Content Include="less\layout.css">
+      <DependentUpon>less\layout.less</DependentUpon>
+    </Content>
+    <Content Include="less\layout.css.map">
+      <DependentUpon>less\layout.less</DependentUpon>
+    </Content>
+    <Content Include="less\footer.less" />
+    <Content Include="less\footer.css">
+      <DependentUpon>less\footer.less</DependentUpon>
+    </Content>
+    <Content Include="less\footer.css.map">
+      <DependentUpon>less\footer.less</DependentUpon>
+    </Content>
     <Content Include="screenshot.png" />
     <Content Include="style.css" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="includes\" />
+    <Folder Include="js\inmetrics\" />
+    <Folder Include="lang\" />
+    <Folder Include="images\" />
+    <Folder Include="less\" />
+    <Folder Include="css\" />
+    <Folder Include="js\" />
   </ItemGroup>
 </Project>

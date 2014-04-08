@@ -4,4 +4,5 @@ function inmetrics_include($file) {
 }
 inmetrics_include("localization");
 inmetrics_include("navigation");
+inmetrics_include("helpers");
 ?>

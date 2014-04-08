@@ -1,0 +1,43 @@
+﻿.footer {
+  background-color: #4d4d4d;
+  color: white;
+  font-size: 13px;
+}
+.footer .wrapper {
+  overflow: hidden;
+}
+.footer .lang {
+  display: inline-block;
+  float: left;
+  height: 30px;
+}
+.footer .lang a {
+  display: inline-block;
+  float: left;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #b3b3b3;
+  padding-right: 15px;
+}
+.footer .lang a.active {
+  color: white;
+}
+.footer .lang a:hover {
+  color: white;
+  -moz-transition: color 500ms ease-in-out;
+  -o-transition: color 500ms ease-in-out;
+  -webkit-transition: color 500ms ease-in-out;
+  transition: color 500ms ease-in-out;
+}
+.footer .lang a + a {
+  border-left: 1px solid #808080;
+  padding-left: 15px;
+}
+.footer .copyright {
+  display: inline-block;
+  float: right;
+  line-height: 30px;
+  font-size: 12px;
+}
+/*# sourceMappingURL=footer.css.map */

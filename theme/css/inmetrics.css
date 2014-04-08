@@ -1,0 +1,215 @@
+﻿html,
+body {
+  margin: 0;
+}
+body {
+  font-family: 'Droid Sans', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+*,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  margin: 0;
+}
+.main {
+  min-height: 400px;
+  max-width: 980px;
+  margin: 0 auto;
+  margin-top: 110px;
+}
+@media screen and (max-width: 768px) {
+  .desktop {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 769px) {
+  .mobile {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=layout.css.map */
+header {
+  background: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 9000;
+}
+header .wrapper {
+  width: 920px;
+  overflow: auto;
+}
+header .mobile-menu {
+  display: none;
+}
+header .menu {
+  float: left;
+  height: 80px;
+  line-height: 80px;
+}
+header .menu a {
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+header .menu a + a {
+  margin-left: 30px;
+}
+header .menu a:hover {
+  color: #adadad;
+  -moz-transition: color 500ms ease-in-out;
+  -o-transition: color 500ms ease-in-out;
+  -webkit-transition: color 500ms ease-in-out;
+  transition: color 500ms ease-in-out;
+}
+header .logo {
+  display: inline-block;
+  float: right;
+  background: black;
+  margin-top: 10px;
+}
+header .logo img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+header .lang {
+  position: absolute;
+  width: 35px;
+  left: 15px;
+  top: 0;
+  text-align: center;
+  background-color: #4d4d4d;
+}
+header .lang a {
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+  color: #b3b3b3;
+  -webkit-transition: color 500ms ease-in-out;
+  -moz-transition: color 500ms ease-in-out;
+  -o-transition: color 500ms ease-in-out;
+  transition: color 500ms ease-in-out;
+}
+header .lang a.active {
+  color: white;
+}
+header .lang a:hover {
+  -webkit-transition: color 180ms ease-in-out;
+  -moz-transition: color 180ms ease-in-out;
+  -o-transition: color 180ms ease-in-out;
+  transition: color 180ms ease-in-out;
+  color: white;
+}
+header .lang a + a {
+  border-top: 1px solid #808080;
+}
+@media screen and (max-width: 768px) {
+  .main {
+    margin-top: 60px;
+  }
+  header {
+    height: 60px;
+  }
+  header .lang {
+    top: 15px;
+    left: 65px;
+  }
+  header .lang a {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  header .mobile-menu {
+    display: inline-block;
+  }
+  header .mobile-menu img {
+    display: block;
+  }
+  header .wrapper {
+    width: 100%;
+  }
+  header .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+  header .menu a {
+    display: block;
+    background: black;
+    float: none;
+    height: 44px;
+    line-height: 24px;
+    padding: 10px 25px;
+    margin: 2px 0 0 0;
+  }
+  header .menu a + a {
+    margin: 2px 0 0 0;
+  }
+  header .logo {
+    margin: 10px 10px 0 0;
+  }
+  header .logo img {
+    height: 40px;
+    width: auto;
+  }
+}
+/*# sourceMappingURL=header.css.map */
+.footer {
+  background-color: #4d4d4d;
+  color: white;
+  font-size: 13px;
+}
+.footer .wrapper {
+  overflow: hidden;
+}
+.footer .lang {
+  display: inline-block;
+  float: left;
+  height: 30px;
+}
+.footer .lang a {
+  display: inline-block;
+  float: left;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #b3b3b3;
+  padding-right: 15px;
+}
+.footer .lang a.active {
+  color: white;
+}
+.footer .lang a:hover {
+  color: white;
+  -moz-transition: color 500ms ease-in-out;
+  -o-transition: color 500ms ease-in-out;
+  -webkit-transition: color 500ms ease-in-out;
+  transition: color 500ms ease-in-out;
+}
+.footer .lang a + a {
+  border-left: 1px solid #808080;
+  padding-left: 15px;
+}
+.footer .copyright {
+  display: inline-block;
+  float: right;
+  line-height: 30px;
+  font-size: 12px;
+}
+/*# sourceMappingURL=footer.css.map */
