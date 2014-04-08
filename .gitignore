@@ -1,0 +1,7 @@
+# Temporary files
+tmp/*
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
