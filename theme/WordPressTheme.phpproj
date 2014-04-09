@@ -18,6 +18,8 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="content-home.php" />
+    <Compile Include="content-page.php" />
     <Compile Include="includes\custom_fields.php" />
     <Compile Include="includes\localization.php" />
     <Compile Include="includes\navigation.php" />
@@ -27,6 +29,7 @@
     <Compile Include="functions.php" />
     <Compile Include="header.php" />
     <Compile Include="footer.php" />
+    <Compile Include="lang-footer.php" />
     <Compile Include="vendor\advanced-custom-fields\acf.php" />
     <Compile Include="vendor\advanced-custom-fields\core\actions\export.php" />
     <Compile Include="vendor\advanced-custom-fields\core\api.php" />
