@@ -81,8 +81,12 @@
     <Content Include="css\inmetrics.min.css">
       <DependentUpon>css\inmetrics.css.bundle</DependentUpon>
     </Content>
+    <Content Include="images\efficiencies.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\mobile-menu.png" />
+    <Content Include="images\projects.png" />
+    <Content Include="images\project_types.png" />
+    <Content Include="images\services.png" />
     <Content Include="js\inmetrics.js.bundle" />
     <Content Include="js\inmetrics.js">
       <DependentUpon>js\inmetrics.js.bundle</DependentUpon>
