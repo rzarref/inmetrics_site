@@ -339,7 +339,7 @@ var inmetrics = function () {
   }
 
   var removeCurtain = function () {
-    $.get('/wp-content/themes/inmetrics/images/animados/olho_aladoanima.png', function () {
+    $.get(window.config.base + 'images/animados/olho_aladoanima.png', function () {
       setTimeout(function () {
         $('body').removeClass('loading-on');
       }, 1200);
