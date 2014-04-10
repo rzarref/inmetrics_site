@@ -513,4 +513,71 @@ function inmetrics_acf_service() {
 }
 add_action("init", "inmetrics_acf_service");
 
+function inmetrics_acf_social_network() {
+  register_post_type('social_network', array(
+    'labels' => array('name' => __('Social Links', 'inmetrics'),
+                      'singular_name' => __('Social Link', 'inmetrics'),
+                      'all_items' => __('All Social Links', 'inmetrics'),
+                      'add_new' => __('Add New', 'inmetrics'),
+                      'add_new_item' => __('Add New Social Link', 'inmetrics'),
+                      'edit_item' => __('Edit Social Link', 'inmetrics'),
+                      'new_item' => __('New Social Link', 'inmetrics'),
+                      'view_item' => __('View Social Link', 'inmetrics'),
+                      'search_items' => __('Search Social Links', 'inmetrics'),
+                      'not_found' => __('Social Link Not Found', 'inmetrics'),
+                      'not_found_in_trash' => __('Social Link Not Found in Trash', 'inmetrics')),
+    'public' => false,
+    'exclude_from_search' => true,
+    'publicly_queryable' => false,
+    'show_ui' => true,
+    'show_in_admin_bar' => false,
+    'menu_position' => 81,
+    'menu_icon' => get_template_directory_uri() . '/images/social_links.png',
+    'capability_type' => 'inmetrics_custom_post',
+    'map_meta_cap' => true,
+    'supports' => array('title', 'custom-fields'),
+    'rewrite' => false,
+    'query_var' => false
+  ));
+  $rules = array(array(array(
+    'param' => 'post_type',
+    'operator' => '==',
+    'value' => 'social_network',
+    'order_no' => 0,
+    'group_no' => 0)));    
+  register_field_group(array (
+    'id' => 'acf_social-link-information',
+    'title' => __('Social Link Information', 'inmetrics'),
+    'fields' => array (
+      array (
+        'key' => 'field_5337893ece3d7',
+        'label' => 'URL',
+        'name' => 'url',
+        'type' => 'text',
+        'required' => 1,
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'none',
+        'maxlength' => 255,
+      ),
+      array (
+        'key' => 'field_5337898fce3d8',
+        'label' => __('Icon', 'inmetrics'),
+        'name' => 'icon',
+        'type' => 'image',
+        'required' => 1,
+        'save_format' => 'url',
+        'preview_size' => 'full',
+        'library' => 'uploadedTo',
+      ),
+    ),
+    'location' => $rules,
+    'options' => inmetrics_acf_options_hide_all(),
+    'menu_order' => 0,
+  ));
+}
+add_action('init' , 'inmetrics_acf_social_network');
+
 ?>

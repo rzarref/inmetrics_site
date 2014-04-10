@@ -20,6 +20,7 @@
   <ItemGroup>
     <Compile Include="content-home.php" />
     <Compile Include="content-page.php" />
+    <Compile Include="includes\dynamic_js.php" />
     <Compile Include="includes\custom_fields.php" />
     <Compile Include="includes\dynamic_css.php" />
     <Compile Include="includes\localization.php" />
@@ -120,6 +121,7 @@
     <Content Include="images\projects.png" />
     <Content Include="images\project_types.png" />
     <Content Include="images\services.png" />
+    <Content Include="images\social_links.png" />
     <Content Include="images\table-title-bg.png" />
     <Content Include="images\table-title.jpg" />
     <Content Include="js\inmetrics.js.bundle" />
@@ -190,7 +192,7 @@
     <Content Include="less\mobile.css.map">
       <DependentUpon>less\mobile.less</DependentUpon>
     </Content>
-    <Content Include="less\reset.css" />    
+    <Content Include="less\reset.css" />
     <Content Include="less\tables.less" />
     <Content Include="less\tables.css">
       <DependentUpon>less\tables.less</DependentUpon>

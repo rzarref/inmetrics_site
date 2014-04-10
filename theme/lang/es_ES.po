@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: InMetrics\n"
-"POT-Creation-Date: 2014-04-10 16:58-0300\n"
-"PO-Revision-Date: 2014-04-10 16:59-0300\n"
+"POT-Creation-Date: 2014-04-10 17:42-0300\n"
+"PO-Revision-Date: 2014-04-10 17:45-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -142,6 +142,7 @@ msgstr "Todos los Tipos de Proyectos"
 #: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:258
 #: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:312
 #: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:396
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:521
 msgid "Add New"
 msgstr "Añadir nuevo"
 
@@ -279,7 +280,7 @@ msgstr "Descripción del Servicio"
 
 #: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:470
 #: d:\Pixadelica\InMetrics\theme/includes/tables.php:25
-#: d:\Pixadelica\InMetrics\theme/includes/tables.php:158
+#: d:\Pixadelica\InMetrics\theme/includes/tables.php:162
 msgid "What is it?"
 msgstr "¿Qué es?"
 
@@ -297,6 +298,54 @@ msgstr "Resultados"
 #: d:\Pixadelica\InMetrics\theme/includes/tables.php:38
 msgid "Term"
 msgstr "Plazo"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:518
+msgid "Social Links"
+msgstr "Redes Sociales"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:519
+msgid "Social Link"
+msgstr "Red Social"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:520
+msgid "All Social Links"
+msgstr "Todas las Redes Sociales"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:522
+msgid "Add New Social Link"
+msgstr "Añadir Nueva Red Social"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:523
+msgid "Edit Social Link"
+msgstr "Editar Red Social"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:524
+msgid "New Social Link"
+msgstr "Nueva Red Social"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:525
+msgid "View Social Link"
+msgstr "Ver Red Social"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:526
+msgid "Search Social Links"
+msgstr "Buscar Redes Sociales"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:527
+msgid "Social Link Not Found"
+msgstr "No se encontraron redes sociales"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:528
+msgid "Social Link Not Found in Trash"
+msgstr "Ninguna red social encontrado en la papelera."
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:550
+msgid "Social Link Information"
+msgstr "Información acerca de las Redes Sociales"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:567
+msgid "Icon"
+msgstr "Icono"
 
 #: d:\Pixadelica\InMetrics\theme/includes/metaboxes.php:12
 #: d:\Pixadelica\InMetrics\theme/includes/metaboxes.php:45
@@ -316,20 +365,20 @@ msgstr "Menú Superior"
 msgid "Page %s"
 msgstr "Página %s"
 
-#: d:\Pixadelica\InMetrics\theme/includes/tables.php:161
+#: d:\Pixadelica\InMetrics\theme/includes/tables.php:165
 msgid "It's purpose is:"
 msgstr "Sirve para:"
 
-#: d:\Pixadelica\InMetrics\theme/includes/tables.php:165
+#: d:\Pixadelica\InMetrics\theme/includes/tables.php:169
 msgid "What results should I expect?"
 msgstr "¿Qué resultados puedo esperar?"
 
-#: d:\Pixadelica\InMetrics\theme/includes/tables.php:169
+#: d:\Pixadelica\InMetrics\theme/includes/tables.php:173
 msgid "How long do I have to wait in average to obtain results?"
 msgstr ""
 "¿Cuál es el promedio de tiempo para la finalización y el logro de resultados?"
 
-#: d:\Pixadelica\InMetrics\theme/includes/tables.php:174
+#: d:\Pixadelica\InMetrics\theme/includes/tables.php:178
 msgid "Close"
 msgstr "Cerrar"
 
