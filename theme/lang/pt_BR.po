@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: InMetrics\n"
-"POT-Creation-Date: 2014-04-09 19:39-0300\n"
-"PO-Revision-Date: 2014-04-09 19:39-0300\n"
+"POT-Creation-Date: 2014-04-10 10:13-0300\n"
+"PO-Revision-Date: 2014-04-10 10:14-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -230,20 +230,34 @@ msgid "Service Description"
 msgstr "Descrição do Serviço"
 
 #: D:\Pixadelica\InMetrics\theme/includes/custom_fields.php:415
+#: D:\Pixadelica\InMetrics\theme/includes/tables.php:25
+#: D:\Pixadelica\InMetrics\theme/includes/tables.php:153
 msgid "What is it?"
 msgstr "O que é?"
 
 #: D:\Pixadelica\InMetrics\theme/includes/custom_fields.php:425
+#: D:\Pixadelica\InMetrics\theme/includes/tables.php:30
 msgid "Purpose"
 msgstr "Serve para"
 
 #: D:\Pixadelica\InMetrics\theme/includes/custom_fields.php:435
+#: D:\Pixadelica\InMetrics\theme/includes/tables.php:34
 msgid "Results"
 msgstr "Resultados"
 
 #: D:\Pixadelica\InMetrics\theme/includes/custom_fields.php:445
+#: D:\Pixadelica\InMetrics\theme/includes/tables.php:38
 msgid "Term"
 msgstr "Prazo"
+
+#: D:\Pixadelica\InMetrics\theme/includes/metaboxes.php:12
+#: D:\Pixadelica\InMetrics\theme/includes/metaboxes.php:45
+msgid "Efficiency Slug"
+msgstr "Código da Eficiência"
+
+#: D:\Pixadelica\InMetrics\theme/includes/metaboxes.php:14
+msgid "Used to reference a efficiency in php code"
+msgstr "Usado para se referir à Eficiência no código PHP"
 
 #: D:\Pixadelica\InMetrics\theme/includes/navigation.php:4
 msgid "Top Menu"
@@ -253,6 +267,22 @@ msgstr "Menu do Topo"
 #, php-format
 msgid "Page %s"
 msgstr "Página %s"
+
+#: D:\Pixadelica\InMetrics\theme/includes/tables.php:156
+msgid "It's purpose is:"
+msgstr "Serve para:"
+
+#: D:\Pixadelica\InMetrics\theme/includes/tables.php:160
+msgid "What results should I expect?"
+msgstr "Que resultados posso esperar?"
+
+#: D:\Pixadelica\InMetrics\theme/includes/tables.php:164
+msgid "How long do I have to wait in average to obtain results?"
+msgstr "Qual o tempo médio para conclusão e obtenção de resultados?"
+
+#: D:\Pixadelica\InMetrics\theme/includes/tables.php:169
+msgid "Close"
+msgstr "Fechar"
 
 #: D:\Pixadelica\InMetrics\theme/lang-footer.php:8
 msgid "In/metrics 2014 &copy; All rights reserved"

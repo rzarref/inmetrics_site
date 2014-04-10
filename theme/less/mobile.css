@@ -1,0 +1,194 @@
+﻿.mobile-efficiencies .mobile-header {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+}
+.mobile-efficiencies .mobile-divider {
+  background: #6f2c78 url(../images/mobile-divider.png);
+  height: 68px;
+  border: 0;
+  margin: 0;
+}
+.mobile-efficiencies .service-list h2 {
+  text-indent: -9999px;
+  margin: 0;
+}
+.mobile-efficiencies .service-list > ul {
+  padding: 0;
+  margin: 0;
+}
+.mobile-efficiencies .service-list > ul > li {
+  list-style: none;
+  text-align: center;
+}
+.mobile-efficiencies .service-list > ul > li a {
+  display: inline-block;
+  text-align: left;
+  height: 45px;
+  line-height: 45px;
+  width: 280px;
+}
+.mobile-efficiencies .service-list > ul > li .service-popup {
+  display: none;
+}
+.mobile-efficiencies .service-list > ul > li .service-popup .wrapper {
+  display: inline-block;
+  width: 280px;
+  text-align: left;
+}
+.mobile-efficiencies .service-list > ul > li .service-popup h3 {
+  margin: 25px 0 15px 0;
+  text-transform: uppercase;
+}
+.mobile-efficiencies .service-list > ul > li .service-popup h4 {
+  margin: 0 0 5px 0;
+}
+.mobile-efficiencies .service-list > ul > li .service-popup .service-purpose,
+.mobile-efficiencies .service-list > ul > li .service-popup .service-results,
+.mobile-efficiencies .service-list > ul > li .service-popup .service-term {
+  padding-top: 72px;
+  background-repeat: no-repeat;
+  background-position: top 30px center;
+}
+.mobile-efficiencies .service-list > ul > li .back-button {
+  display: block;
+  text-align: center;
+  padding: 35px 0;
+}
+.mobile-efficiencies .service-list > ul > li .back {
+  padding: 0 35px;
+  height: 45px;
+  line-height: 45px;
+  width: auto;
+  border: 0;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.mobile-efficiencies .service-list.efficiency-strategic h2 {
+  background-color: #6f2c78;
+  background-repeat: no-repeat;
+  background-position: bottom 15px center;
+}
+.mobile-efficiencies .service-list.efficiency-strategic .service-popup {
+  background-color: #6f2c78;
+}
+.mobile-efficiencies .service-list.efficiency-strategic > ul {
+  color: white;
+}
+.mobile-efficiencies .service-list.efficiency-strategic > ul > li:nth-child(4n+1) {
+  background-color: #4d1f54;
+}
+.mobile-efficiencies .service-list.efficiency-strategic > ul > li:nth-child(4n+2) {
+  background-color: #5f3565;
+}
+.mobile-efficiencies .service-list.efficiency-strategic > ul > li:nth-child(4n+3) {
+  background-color: #714c76;
+}
+.mobile-efficiencies .service-list.efficiency-strategic > ul > li:nth-child(4n+4) {
+  background-color: #826287;
+}
+.mobile-efficiencies .service-list.efficiency-management h2 {
+  background-color: #5a8232;
+  background-repeat: no-repeat;
+  background-position: bottom 15px center;
+}
+.mobile-efficiencies .service-list.efficiency-management > ul {
+  color: white;
+}
+.mobile-efficiencies .service-list.efficiency-management > ul > li:nth-child(8n+1) {
+  background-color: #234501;
+}
+.mobile-efficiencies .service-list.efficiency-management > ul > li:nth-child(8n+2) {
+  background-color: #2e4e0d;
+}
+.mobile-efficiencies .service-list.efficiency-management > ul > li:nth-child(8n+3) {
+  background-color: #446127;
+}
+.mobile-efficiencies .service-list.efficiency-management > ul > li:nth-child(8n+4) {
+  background-color: #4f6a34;
+}
+.mobile-efficiencies .service-list.efficiency-management > ul > li:nth-child(8n+5) {
+  background-color: #5a7340;
+}
+.mobile-efficiencies .service-list.efficiency-management > ul > li:nth-child(8n+6) {
+  background-color: #657d4d;
+}
+.mobile-efficiencies .service-list.efficiency-management > ul > li:nth-child(8n+7) {
+  background-color: #70865a;
+}
+.mobile-efficiencies .service-list.efficiency-management > ul > li:nth-child(8n+8) {
+  background-color: #7b8f66;
+}
+.mobile-efficiencies .service-list.efficiency-operational h2 {
+  background-color: #7eb01a;
+  background-repeat: no-repeat;
+  background-position: bottom 15px center;
+}
+.mobile-efficiencies .service-list.efficiency-operational > ul {
+  color: white;
+}
+.mobile-efficiencies .service-list.efficiency-operational > ul > li:nth-child(6n+1) {
+  background-color: #425c0d;
+}
+.mobile-efficiencies .service-list.efficiency-operational > ul > li:nth-child(6n+2) {
+  background-color: #49660f;
+}
+.mobile-efficiencies .service-list.efficiency-operational > ul > li:nth-child(6n+3) {
+  background-color: #587b12;
+}
+.mobile-efficiencies .service-list.efficiency-operational > ul > li:nth-child(6n+4) {
+  background-color: #69882a;
+}
+.mobile-efficiencies .service-list.efficiency-operational > ul > li:nth-child(6n+5) {
+  background-color: #799541;
+}
+.mobile-efficiencies .service-list.efficiency-operational > ul > li:nth-child(6n+6) {
+  background-color: #8aa359;
+}
+.mobile-efficiencies .service-list.efficiency-functional h2 {
+  background-color: #d7a500;
+  background-repeat: no-repeat;
+  background-position: bottom 15px center;
+}
+.mobile-efficiencies .service-list.efficiency-functional > ul {
+  color: white;
+}
+.mobile-efficiencies .service-list.efficiency-functional > ul > li:nth-child(5n+1) {
+  background-color: #967300;
+}
+.mobile-efficiencies .service-list.efficiency-functional > ul > li:nth-child(5n+2) {
+  background-color: #9b7a0d;
+}
+.mobile-efficiencies .service-list.efficiency-functional > ul > li:nth-child(5n+3) {
+  background-color: #a0811a;
+}
+.mobile-efficiencies .service-list.efficiency-functional > ul > li:nth-child(5n+4) {
+  background-color: #a68826;
+}
+.mobile-efficiencies .service-list.efficiency-functional > ul > li:nth-child(5n+5) {
+  background-color: #ab8f33;
+}
+.mobile-efficiencies .service-list.efficiency-quality h2 {
+  background-color: #af8728;
+  background-repeat: no-repeat;
+  background-position: bottom 15px center;
+}
+.mobile-efficiencies .service-list.efficiency-quality > ul {
+  color: white;
+}
+.mobile-efficiencies .service-list.efficiency-quality > ul > li:nth-child(3n+1) {
+  background-color: #7a5e1c;
+}
+.mobile-efficiencies .service-list.efficiency-quality > ul > li:nth-child(3n+2) {
+  background-color: #816627;
+}
+.mobile-efficiencies .service-list.efficiency-quality > ul > li:nth-child(3n+3) {
+  background-color: #876e33;
+}
+/*# sourceMappingURL=mobile.css.map */

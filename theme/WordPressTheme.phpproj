@@ -21,10 +21,13 @@
     <Compile Include="content-home.php" />
     <Compile Include="content-page.php" />
     <Compile Include="includes\custom_fields.php" />
+    <Compile Include="includes\dynamic_css.php" />
     <Compile Include="includes\localization.php" />
+    <Compile Include="includes\metaboxes.php" />
     <Compile Include="includes\navigation.php" />
     <Compile Include="includes\helpers.php" />
     <Compile Include="includes\api.php" />
+    <Compile Include="includes\tables.php" />
     <Compile Include="index.php" />
     <Compile Include="functions.php" />
     <Compile Include="header.php" />
@@ -83,6 +86,7 @@
     </Content>
     <Content Include="images\efficiencies.png" />
     <Content Include="images\logo.png" />
+    <Content Include="images\mobile-divider.png" />
     <Content Include="images\mobile-menu.png" />
     <Content Include="images\projects.png" />
     <Content Include="images\project_types.png" />
@@ -97,7 +101,8 @@
     <Content Include="js\inmetrics.min.js.map">
       <DependentUpon>js\inmetrics.js.bundle</DependentUpon>
     </Content>
-    <Content Include="js\inmetrics\slide-toggle.js" />
+    <Content Include="js\inmetrics\init.js" />
+    <Content Include="js\vendor\jquery.magnific-popup.js" />
     <Content Include="lang\es_ES.mo" />
     <Content Include="lang\es_ES.po" />
     <Content Include="lang\pt_BR.mo" />
@@ -123,6 +128,21 @@
     <Content Include="less\footer.css.map">
       <DependentUpon>less\footer.less</DependentUpon>
     </Content>
+    <Content Include="less\mobile.less" />
+    <Content Include="less\mobile.css">
+      <DependentUpon>less\mobile.less</DependentUpon>
+    </Content>
+    <Content Include="less\mobile.css.map">
+      <DependentUpon>less\mobile.less</DependentUpon>
+    </Content>
+    <Content Include="less\tables.less" />
+    <Content Include="less\tables.css">
+      <DependentUpon>less\tables.less</DependentUpon>
+    </Content>
+    <Content Include="less\tables.css.map">
+      <DependentUpon>less\tables.less</DependentUpon>
+    </Content>
+    <Content Include="less\vendor\magnific-popup.css" />
     <Content Include="screenshot.png" />
     <Content Include="style.css" />
     <Content Include="vendor\advanced-custom-fields\core\fields\date_picker\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -204,11 +224,13 @@
   <ItemGroup>
     <Folder Include="includes\" />
     <Folder Include="js\inmetrics\" />
+    <Folder Include="js\vendor\" />
     <Folder Include="lang\" />
     <Folder Include="images\" />
     <Folder Include="less\" />
     <Folder Include="css\" />
     <Folder Include="js\" />
+    <Folder Include="less\vendor\" />
     <Folder Include="vendor\" />
     <Folder Include="vendor\advanced-custom-fields\" />
     <Folder Include="vendor\advanced-custom-fields\core\" />

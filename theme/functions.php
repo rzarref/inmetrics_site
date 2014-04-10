@@ -8,5 +8,8 @@ inmetrics_include("localization");
 inmetrics_include("navigation");
 inmetrics_include("helpers");
 inmetrics_include("custom_fields");
+inmetrics_include("metaboxes");
+inmetrics_include("tables");
+inmetrics_include("dynamic_css");
 
 ?>

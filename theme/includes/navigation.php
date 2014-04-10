@@ -34,4 +34,14 @@ function inmetrics_wp_title( $title, $sep ) {
 }
 add_filter('wp_title', 'inmetrics_wp_title', 10, 2);
 
+function inmetrics_add_body_classes($classes) {
+  if(is_front_page()) {
+    // Add loading effect on home page
+    // $classes[] = 'loading-on';
+    // $classes[] = 'animated';
+  }
+  return $classes;
+}
+add_filter('body_class', 'inmetrics_add_body_classes');
+
 ?>

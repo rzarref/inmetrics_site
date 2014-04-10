@@ -4,4 +4,7 @@
   <file>../less/layout.css</file>
   <file>../less/header.css</file>
   <file>../less/footer.css</file>
+  <file>../less/mobile.css</file>
+  <file>../less/tables.css</file>
+  <file>../less/vendor/magnific-popup.css</file>
 </bundle>
