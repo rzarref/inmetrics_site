@@ -3,12 +3,18 @@
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width">
-    <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <title><?php wp_title( '|', true, 'right' ); ?></title>    
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href="<?php t_url("css/inmetrics.min.css"); ?>" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="<?php t_url("js/vendor/html5.js"); ?>"></script>
+    <![endif]-->
+    <!--[if (gte IE 6)&(lte IE 8)]>
+      <script type="text/javascript" src="<?php t_url("js/vendor/selectivizr.js"); ?>"></script>      
+    <![endif]-->
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>

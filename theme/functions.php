@@ -12,5 +12,6 @@ inmetrics_include("metaboxes");
 inmetrics_include("tables");
 inmetrics_include("dynamic_css");
 inmetrics_include("dynamic_js");
+inmetrics_include("email");
 
 ?>

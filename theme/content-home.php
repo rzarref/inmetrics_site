@@ -83,13 +83,16 @@
                   value="<?php esc_attr_e($_POST['plan_request']['name']); ?>" />
               </li>
               <li>
-                <input type="email" name="plan_request[email]" placeholder="<?php esc_attr_e('your e-mail', 'inmetrics'); ?>" autocomplete="off" maxlength="255" />
+                <input type="text" id="email_input" name="plan_request[email]" placeholder="<?php esc_attr_e('your e-mail', 'inmetrics'); ?>" autocomplete="off" maxlength="255" />
+              </li>
+              <li>
+                <input type="text" name="plan_request[email_confirmation]" placeholder="<?php esc_attr_e('confirm your e-mail', 'inmetrics'); ?>" autocomplete="off" maxlength="255" />
+              </li>
+              <li>
+                <textarea name="plan_request[message]" placeholder="<?php esc_attr_e('your message', 'inmetrics'); ?>" rows="7"></textarea>
+              </li>
+              <li>
                 <input type="hidden" id="selections-input" name="plan_request[selections]" />
-              </li>
-              <li>
-                <textarea name="plan_request[message]" placeholder="<?php esc_attr_e('your message', 'inmetrics'); ?>" rows="10"></textarea>
-              </li>
-              <li>
                 <input type="submit" value="<?php esc_attr_e('Submit', 'inmetrics'); ?>" />
               </li>
             </ul>

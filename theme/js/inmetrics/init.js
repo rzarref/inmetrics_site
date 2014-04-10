@@ -13,7 +13,10 @@
       mouseleave: selectionsHoverOut,
       click: selectionsClick
     });
-    contactFormValidations();
+    $('.contact-form form').on({ 
+      submit: contactFormSubmit
+    })
+    .validate(contactFormValidations());
   };
 
   var slideToggle = function () {
@@ -51,7 +54,7 @@
       $("[data-selection-row=" + selection + "]").addClass("selected");
     else
       $("[data-selection-row=" + selection + "]").removeClass("selected");
-    var selectionIds = $(this).data("selection-ids");    
+    var selectionIds = $(this).data("selection-ids");
     var selections = $(".contact-form form").data("selections") || [];
     if (isSelected) {
       selections.push(selectionIds);
@@ -65,27 +68,46 @@
     return false;
   };
 
+  var contactFormSubmit = function () {    
+    var form = $(this);
+    $.ajax({
+      url: form.attr("action"),
+      type: "POST",
+      data: form.serialize(),
+      success: function (data, textStatus, request) {
+        if (request.getResponseHeader('inmetrics_plan_request') == 'success')
+          form[0].reset();
+        $(".result-message").html(data).fadeIn();
+      },
+      error: function (r, status, error) {
+        console.info("Ajax Error, status = " + status);
+        console.info(error);
+      }
+    });
+    return false;
+  };
+
   var contactFormValidations = function () {
-    $('.contact-form form').validate({
+    return {
       rules: {
         'plan_request[name]': "required",
         'plan_request[email]': { required: true, email: true },
-        'plan_request[email_confirmation]': { equalTo: '#email' },
+        'plan_request[email_confirmation]': { equalTo: '#email_input' },
         'plan_request[message]': "required"
       },
       messages: {
-        'plan_request[name]': "<?php esc_attr_e('* Field is required', 'inmetrics'); ?>",
+        'plan_request[name]': window.config.errors.required,
         'plan_request[email]': {
-          required: "<?php esc_attr_e('* Field is required', 'inmetrics'); ?>",
-          email: "<?php esc_attr_e('* E-mail is invalid', 'inmetrics'); ?>"
+          required: window.config.errors.required,
+          email: window.config.errors.invalid_email,
         },
         'plan_request[email_confirmation]': {
-          equalTo: "<?php esc_attr_e('* E-mail doesn\'t match', 'inmetrics'); ?>",
+          equalTo: window.config.errors.email_nomatch,
         },
-        'plan_request[message]': "<?php esc_attr_e('* Field is required', 'inmetrics'); ?>"
+        'plan_request[message]': window.config.errors.required,
       }
-    });
-  }
+    };
+  };
 
   var removeCurtain = function () {
     $.get(window.config.base + 'images/animados/olho_aladoanima.png', function () {

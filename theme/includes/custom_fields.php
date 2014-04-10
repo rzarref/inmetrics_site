@@ -580,4 +580,34 @@ function inmetrics_acf_social_network() {
 }
 add_action('init' , 'inmetrics_acf_social_network');
 
+function inmetrics_acf_plan_request() {
+  register_post_type('plan_request', array(
+    'labels' => array('name' => __('Plan Requests', 'inmetrics'),
+                      'singular_name' => __('Plan Request', 'inmetrics'),
+                      'all_items' => __('All Plan Requests', 'inmetrics'),
+                      'add_new' => __('Add New', 'inmetrics'),
+                      'add_new_item' => __('Add New Plan Request', 'inmetrics'),
+                      'edit_item' => __('Edit Plan Request', 'inmetrics'),
+                      'new_item' => __('New Plan Request', 'inmetrics'),
+                      'view_item' => __('View Plan Request', 'inmetrics'),
+                      'search_items' => __('Search Plan Requests', 'inmetrics'),
+                      'not_found' => __('Plan Request Not Found', 'inmetrics'),
+                      'not_found_in_trash' => __('Plan Request Not Found in Trash', 'inmetrics')),
+    'public' => false,
+    'exclude_from_search' => true,
+    'publicly_queryable' => false,
+    'show_ui' => true,
+    'show_in_admin_bar' => false,
+    'menu_position' => 24,
+    'menu_icon' => 'dashicons-groups',
+    'capability_type' => 'inmetrics_custom_post',
+    'capabilities' => array('create_posts' => false),
+    'map_meta_cap' => true,
+    'supports' => array('title', 'custom-fields'),
+    'rewrite' => false,
+    'query_var' => false
+  ));
+}
+add_action('init', 'inmetrics_acf_plan_request');
+
 ?>

@@ -28,12 +28,14 @@
     <Compile Include="includes\navigation.php" />
     <Compile Include="includes\helpers.php" />
     <Compile Include="includes\api.php" />
+    <Compile Include="includes\email.php" />
     <Compile Include="includes\tables.php" />
     <Compile Include="index.php" />
     <Compile Include="functions.php" />
     <Compile Include="header.php" />
     <Compile Include="footer.php" />
     <Compile Include="lang-footer.php" />
+    <Compile Include="plan_request.php" />
     <Compile Include="vendor\advanced-custom-fields\acf.php" />
     <Compile Include="vendor\advanced-custom-fields\core\actions\export.php" />
     <Compile Include="vendor\advanced-custom-fields\core\api.php" />
@@ -202,7 +204,6 @@
     <Content Include="less\tables.css.map">
       <DependentUpon>less\tables.less</DependentUpon>
     </Content>
-    <Content Include="js\inmetrics\jquery.validate.js" />
     <Content Include="less\vendor\magnific-popup.css" />
     <Content Include="screenshot.png" />
     <Content Include="style.css" />

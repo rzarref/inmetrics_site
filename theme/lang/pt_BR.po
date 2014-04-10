@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: InMetrics\n"
-"POT-Creation-Date: 2014-04-10 17:41-0300\n"
-"PO-Revision-Date: 2014-04-10 17:42-0300\n"
+"POT-Creation-Date: 2014-04-10 18:16-0300\n"
+"PO-Revision-Date: 2014-04-10 18:17-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -23,11 +23,15 @@ msgstr "seu nome"
 msgid "your e-mail"
 msgstr "seu e-mail"
 
-#: D:\Pixadelica\InMetrics\theme/content-home.php:90
+#: D:\Pixadelica\InMetrics\theme/content-home.php:89
+msgid "confirm your e-mail"
+msgstr "confirme seu e-mail"
+
+#: D:\Pixadelica\InMetrics\theme/content-home.php:92
 msgid "your message"
 msgstr "sua mensagem"
 
-#: D:\Pixadelica\InMetrics\theme/content-home.php:93
+#: D:\Pixadelica\InMetrics\theme/content-home.php:96
 msgid "Submit"
 msgstr "Enviar"
 
@@ -346,6 +350,18 @@ msgstr "Informações de Redes Sociais"
 #: D:\Pixadelica\InMetrics\theme/includes/custom_fields.php:567
 msgid "Icon"
 msgstr "Ícone"
+
+#: D:\Pixadelica\InMetrics\theme/includes/dynamic_js.php:6
+msgid "* Field is required"
+msgstr "* Campo é requerido"
+
+#: D:\Pixadelica\InMetrics\theme/includes/dynamic_js.php:7
+msgid "* E-mail is invalid"
+msgstr "* E-mail é inválido"
+
+#: D:\Pixadelica\InMetrics\theme/includes/dynamic_js.php:8
+msgid "* E-mail doesn't match"
+msgstr "* E-mail não confere"
 
 #: D:\Pixadelica\InMetrics\theme/includes/metaboxes.php:12
 #: D:\Pixadelica\InMetrics\theme/includes/metaboxes.php:45
