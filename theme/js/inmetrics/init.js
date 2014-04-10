@@ -70,6 +70,7 @@
       rules: {
         'plan_request[name]': "required",
         'plan_request[email]': { required: true, email: true },
+        'plan_request[email_confirmation]': { equalTo: '#email' },
         'plan_request[message]': "required"
       },
       messages: {
@@ -77,6 +78,9 @@
         'plan_request[email]': {
           required: "<?php esc_attr_e('* Field is required', 'inmetrics'); ?>",
           email: "<?php esc_attr_e('* E-mail is invalid', 'inmetrics'); ?>"
+        },
+        'plan_request[email_confirmation]': {
+          equalTo: "<?php esc_attr_e('* E-mail doesn\'t match', 'inmetrics'); ?>",
         },
         'plan_request[message]': "<?php esc_attr_e('* Field is required', 'inmetrics'); ?>"
       }

@@ -136,8 +136,10 @@
     </Content>
     <Content Include="js\inmetrics\animations.js" />
     <Content Include="js\inmetrics\init.js" />
+    <Content Include="js\vendor\html5.js" />
     <Content Include="js\vendor\jquery.magnific-popup.js" />
     <Content Include="js\vendor\jquery.validate.js" />
+    <Content Include="js\vendor\selectivizr.js" />
     <Content Include="js\vendor\skrollr.min.js" />
     <Content Include="lang\es_ES.mo" />
     <Content Include="lang\es_ES.po" />
