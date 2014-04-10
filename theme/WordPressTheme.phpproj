@@ -91,6 +91,8 @@
     <Content Include="images\projects.png" />
     <Content Include="images\project_types.png" />
     <Content Include="images\services.png" />
+    <Content Include="images\table-title-bg.png" />
+    <Content Include="images\table-title.jpg" />
     <Content Include="js\inmetrics.js.bundle" />
     <Content Include="js\inmetrics.js">
       <DependentUpon>js\inmetrics.js.bundle</DependentUpon>

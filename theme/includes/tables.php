@@ -58,7 +58,7 @@ function inmetrics_project_list($project_type_id)
 }
 
 function inmetrics_efficiency_table($shortcode_slug)
-{  
+{
   $efficiency = inmetrics_get_efficiency_by_shortcode_slug($shortcode_slug);
   if($efficiency) {
     $services = inmetrics_get_services($efficiency->ID);
@@ -66,14 +66,18 @@ function inmetrics_efficiency_table($shortcode_slug)
     $projects = inmetrics_get_projects();
     $table_title_image_url = get_field('table_title_image', $efficiency->ID, TRUE);
     $table_header_image_url = get_field('table_header_image', $efficiency->ID, TRUE);
-    inmetrics_services_descriptions($efficiency);    
+    inmetrics_services_descriptions($efficiency);
   ?>
-<table class="selector-table efficiency-table efficiency-<?php echo $shortcode_slug ?>">
+<table class="selector-table efficiency-table efficiency-<?php echo $shortcode_slug ?>" border="0" cellpadding="0">
   <tr>
-    <td rowspan="3" class="td-main selector-title"><img src="<?php echo $table_title_image_url ?>" /></td>
-    <td class="td-main fill table-header">
-      <img src="<?php echo $table_header_image_url ?>" />
+    <td rowspan="4" class="td-main selector-title"><img src="<?php echo $table_title_image_url ?>" /></td>
+    <td></td>
+    <td class="table-header" colspan="<?php echo count($project_types); ?>">
+      <img src="<?php t_url("images/table-title.jpg"); ?>" />
     </td>
+  </tr>
+  <tr>
+    <td></td>
     <?php foreach($project_types as $project_type): ?>
       <?php $tagline_image = get_field('tagline_image', $project_type->ID, TRUE); ?>
       <td class="columns project-type_<?php echo $project_type->post_name ?>">
@@ -81,10 +85,10 @@ function inmetrics_efficiency_table($shortcode_slug)
       </td>
     <?php endforeach; ?>
   </tr>
-  <tr>    
+  <tr>
     <td></td>
-    <?php foreach($project_types as $project_type): ?>      
-      <td class="columns project-type_<?php echo $project_type->post_name ?>">        
+    <?php foreach($project_types as $project_type): ?>
+      <td class="columns project-type_<?php echo $project_type->post_name ?>">
         <h3><?php echo $project_type->post_title; ?></h3>
       </td>
     <?php endforeach; ?>
@@ -140,8 +144,8 @@ function inmetrics_mobile_efficiencies() {
   <div class="service-list efficiency-<?php the_field("shortcode_slug", $efficiency->ID); ?>">
     <h2><?php echo $efficiency->post_title; ?></h2>
     <ul>
-      <?php 
-      foreach($services as $service): 
+      <?php
+      foreach($services as $service):
         $slug = $service->post_name;
         $id = "service-popup-$slug";
       ?>

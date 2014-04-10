@@ -414,6 +414,7 @@ header .lang a + a {
 }
 .selector-table td.table-header {
   text-align: center;
+  background: url(../images/table-title-bg.png) repeat-x center;
 }
 .selector-table td.table-header img {
   display: inline-block;
