@@ -9,3 +9,6 @@ tmp/*
 # Ignore WordPress core files
 public/*
 !public/web.config
+
+# Ignore Sublime sftp configuration
+sftp-config.json
