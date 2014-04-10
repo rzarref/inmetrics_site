@@ -59,21 +59,22 @@ function inmetrics_project_list($project_type_id)
 
 function inmetrics_efficiency_table($shortcode_slug)
 {
+  global $post;
   $efficiency = inmetrics_get_efficiency_by_shortcode_slug($shortcode_slug);
   if($efficiency) {
     $services = inmetrics_get_services($efficiency->ID);
     $project_types = inmetrics_get_project_types();
     $projects = inmetrics_get_projects();
     $table_title_image_url = get_field('table_title_image', $efficiency->ID, TRUE);
-    $table_header_image_url = get_field('table_header_image', $efficiency->ID, TRUE);
+    $table_header_image_url = get_field('table_header_image', $post->ID, TRUE);
     inmetrics_services_descriptions($efficiency);
   ?>
-<table class="selector-table efficiency-table efficiency-<?php echo $shortcode_slug ?>" border="0" cellpadding="0">
+<table class="table selector-table efficiency-table efficiency-<?php echo $shortcode_slug ?>" border="0" cellpadding="0">
   <tr>
     <td rowspan="4" class="td-main selector-title"><img src="<?php echo $table_title_image_url ?>" /></td>
     <td></td>
     <td class="table-header" colspan="<?php echo count($project_types); ?>">
-      <img src="<?php t_url("images/table-title.jpg"); ?>" />
+      <img src="<?php echo $table_header_image_url['url'] ?>" />
     </td>
   </tr>
   <tr>

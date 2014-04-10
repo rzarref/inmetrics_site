@@ -6,7 +6,6 @@
         setDataSkrollr();
       removeCurtain();
     }
-
     $("[data-toggle=slide]").on({ click: slideToggle });
     $(".descriptions a").magnificPopup({ type: 'inline' });
     $(".selections a").on({
@@ -14,6 +13,7 @@
       mouseleave: selectionsHoverOut,
       click: selectionsClick
     });
+    contactFormValidations();
   };
 
   var slideToggle = function () {
@@ -64,6 +64,24 @@
     $("#selections-input").val(selections.join(";"));
     return false;
   };
+
+  var contactFormValidations = function () {
+    $('.contact-form form').validate({
+      rules: {
+        'plan_request[name]': "required",
+        'plan_request[email]': { required: true, email: true },
+        'plan_request[message]': "required"
+      },
+      messages: {
+        'plan_request[name]': "<?php esc_attr_e('* Field is required', 'inmetrics'); ?>",
+        'plan_request[email]': {
+          required: "<?php esc_attr_e('* Field is required', 'inmetrics'); ?>",
+          email: "<?php esc_attr_e('* E-mail is invalid', 'inmetrics'); ?>"
+        },
+        'plan_request[message]': "<?php esc_attr_e('* Field is required', 'inmetrics'); ?>"
+      }
+    });
+  }
 
   var removeCurtain = function () {
     $.get('/wp-content/themes/inmetrics/images/animados/olho_aladoanima.png', function () {

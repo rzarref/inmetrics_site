@@ -11,8 +11,11 @@
     <link href="<?php t_url("css/inmetrics.min.css"); ?>" rel="stylesheet">
     <?php wp_head(); ?>
   </head>
-  <body>
+  <body <?php body_class(); ?>>
     <header>
+      <div class="mid pR">
+        <span class="in-inspire"></span>
+      </div>
       <nav class="lang" role="navigation">
         <?php inmetrics_language_switcher('language_code'); ?>
       </nav>
@@ -24,4 +27,3 @@
         <a href="<?php echo inmetrics_home_url(); ?>" title="InMetrics" class="logo"><img alt="Logo" src="<?php t_url("images/logo.png"); ?>" /></a>
       </div>
     </header>
-    <div class="main">

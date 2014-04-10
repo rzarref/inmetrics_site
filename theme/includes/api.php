@@ -13,6 +13,22 @@ function get_the_page_name_in_english()
   }
 }
 
+function inmetrics_social_links_nav()
+{
+  $args = array(
+    'posts_per_page' => -1,
+    'post_type' => 'social_network',
+    'post_status' => 'publish');
+  $posts = get_posts($args);
+  foreach($posts as $post) {
+    $title = $post->post_title;    
+    $url = get_field('url', $post);
+    $icon = get_field('icon', $post);    
+    echo("<li><a href='". esc_attr($url) . "' target='_blank' title='". esc_attr($title) . "'>");
+    echo("<img src='" . esc_attr($icon) . "' /></a></li>");
+  }
+}
+
 define("INMETRICS_TABLE_COLUMN_WIDTH", 35);
 define("INMETRICS_TABLE_COLUMN_SPACING", 5);
 

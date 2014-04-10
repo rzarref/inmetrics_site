@@ -1,0 +1,190 @@
+﻿.contact-form {
+  background-color: black;
+  color: white;
+  padding-top: 61px;
+
+  h2 a {
+    text-decoration: underline;
+  }
+
+  form {
+    max-width: 520px;
+
+    h2 {
+      margin: 0 0 35px 0;
+      font: 30px Amatic SC;
+      line-height: 40px;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      width: 485px;
+    }
+
+    li {
+      list-style: none;
+      position: relative;
+      overflow: auto;
+
+      & + li {
+        margin-top: 10px;
+      }
+    }
+
+    input[type=text], input[type=email], textarea {
+      display: block;
+      width: 100%;
+    }
+
+    input[type=submit] {
+      float: right;
+      border: 0;
+      width: 109px;
+      padding: 12px 0;
+      margin-top: 10px;
+      cursor: pointer;
+      background-color: #f0b310;
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: #e0b135;
+        -webkit-text-shadow: 0 0 4px #bc8900;
+        text-shadow: 0 0 4px #bc8900;
+      }
+    }
+
+    label.error {
+      position: absolute;
+      right: 9px;
+      top: 10px;
+      color: #de7f7f;
+      font-size: 10px;
+    }
+
+  }
+
+  address {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+
+    & + address {
+      margin-top: 20px;
+    }
+  }
+}
+
+ul.social {
+  padding: 25px 0;
+  margin: 0;
+  overflow: auto;
+
+  li {
+    list-style: none;
+    display: inline-block;
+    float: left;
+
+    & + li {
+      margin-left: 30px;
+    }
+  }
+
+  a {
+    display: inline-block;
+    -webkit-transition: opacity 500ms ease-in-out;
+    -moz-transition: opacity 500ms ease-in-out;
+    -o-transition: opacity 500ms ease-in-out;
+    transition: opacity 500ms ease-in-out;
+  }
+
+  &:hover {
+    a {
+      opacity: 0.3;
+
+      &:hover {
+        opacity: 1;
+        -webkit-transition: opacity 180ms ease-in-out;
+        -moz-transition: opacity 180ms ease-in-out;
+        -o-transition: opacity 180ms ease-in-out;
+        transition: opacity 180ms ease-in-out;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form {
+    h2 {
+      background: url(../../images/olho.png) no-repeat center 50px;
+      margin: 0;
+      padding: 187px 15px 25px 15px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .wrapper {
+      width: 100%;
+      text-align: center;
+    }
+
+    ul.social {
+      display: inline-block;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .contact-form {
+    padding-top: 61px;
+
+    .wrapper {
+      width: 920px;
+      overflow: auto;
+
+      .section {
+        overflow: auto;
+      }
+
+      form {
+        display: inline-block;
+        float: left;
+      }
+
+      .addresses {
+        display: inline-block;
+        float: left;
+        padding: 110px 0 0 60px;
+      }
+
+      ul.social {
+        clear: both;
+        display: inline-block;
+        float: left;
+        width: 520px;
+        padding: 65px 0 0 0;
+      }
+
+      .logo {
+        display: inline-block;
+        padding: 25px 0 25px 60px;
+      }
+    }
+  }
+}
+
+.result-message {
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form {
+    height: 624px;
+  }
+}

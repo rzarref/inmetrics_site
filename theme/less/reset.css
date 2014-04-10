@@ -1,0 +1,98 @@
+﻿html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0; padding:0; border:0; outline:0; background:transparent;
+  font-weight: normal; font-style: normal;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display:block; }
+audio, canvas, video { display:inline-block; }
+[hidden] { display: none; }
+
+html { 
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;    
+  overflow-x: hidden;
+}
+
+body:after, html:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+ol, ul { list-style:none; }
+blockquote, q { quotes:none; }
+hr { display:none; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse:collapse; border-spacing:0; }
+
+/* classe para replace */
+.rpc, .rpci { display:block; overflow:hidden; text-indent:-9999px; }
+.rpci { border:none; word-spacing:999px; cursor:pointer; }
+
+/* configuraÃ§Ãµes gerais de a */
+a, a:hover { text-decoration: none; }
+.a1:hover { text-decoration: underline; }
+
+/* floats */
+.fL, .fR { display: block; position: relative; float: left; }
+.fR { float: right!important; }
+.fN { float: none!important; }
+
+.dMa { display:block!important; margin-left:auto!important; margin-right:auto!important; float:none!important; }
+.bB { border:none!important; }
+.dN { display:none!important; } .dB { display:block; } .dBi { display:block!important; } .dI { display:inline; } .dT { display:table; }
+.bgN { background:none!important; }
+.w100 {width:100%!important;}
+.cR {clear:right;} .cL {clear:left;} .cB {clear:both; display:block;} .cN {clear:none;}
+.hA {height:auto!important;}
+.wA {width:auto!important;}
+.oH { overflow:hidden!important; } .oV { overflow:visible!important; } .oA { overflow:auto;!important; }
+.m0 { margin:0px!important; }
+.mL { margin-left:0px!important; } .mB { margin-bottom:0px!important; } .mT { margin-top:0px!important; } .mR { margin-right:0px!important; }
+.p0 { padding:0px!important; }
+.pL { padding-left:0px!important; } .pB { padding-bottom:0px!important; } .pT { padding-top:0px!important; } .pR { padding-right:0px!important; }
+.vH { visibility:hidden; }
+.l1, .l1 li, .l2, .l2 li { width:100%; float:left; display:block; position:relative; }
+.l2,.l2 li { width:auto; }
+.pR { position:relative; }
+.tR { text-align:right; } .tC { text-align:center; } .tJ { text-align:justify; }
+.l50 { left:50%!important; }
+
+.z1 { z-index:1; position:relative; } .z2 { z-index:2; position:relative; }
+.z3 { z-index:3; position:relative; } .z4 { z-index:4; position:relative; }
+.z5 { z-index:5; position:relative; } .z6 { z-index:6; position:relative; } .z7 { z-index:7; position:relative; }
+
+.mid {
+  display: block;
+  max-width: 980px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.mid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    min-width: 980px;
+  }
+}

@@ -84,8 +84,37 @@
     <Content Include="css\inmetrics.min.css">
       <DependentUpon>css\inmetrics.css.bundle</DependentUpon>
     </Content>
+    <Content Include="images\animados\3fileira.png" />
+    <Content Include="images\animados\olho_aladoanima.png" />
+    <Content Include="images\bordas\borda_down_p.png" />
+    <Content Include="images\bordas\borda_top_g.png" />
     <Content Include="images\efficiencies.png" />
+    <Content Include="images\ilustracoes\0-apresenta.png" />
+    <Content Include="images\ilustracoes\0-grupo.png" />
+    <Content Include="images\ilustracoes\1cena.gif" />
+    <Content Include="images\ilustracoes\1frase.png" />
+    <Content Include="images\ilustracoes\1nuvens.png" />
+    <Content Include="images\ilustracoes\1olhos.png" />
+    <Content Include="images\ilustracoes\1projeto.png" />
+    <Content Include="images\ilustracoes\2cena.gif" />
+    <Content Include="images\ilustracoes\2frase.png" />
+    <Content Include="images\ilustracoes\3fileira2.png" />
+    <Content Include="images\ilustracoes\3fileira3.png" />
+    <Content Include="images\ilustracoes\3frase.png" />
+    <Content Include="images\ilustracoes\4cena.gif" />
+    <Content Include="images\ilustracoes\4frase.png" />
+    <Content Include="images\ilustracoes\4nuvens.png" />
+    <Content Include="images\ilustracoes\4peao_base.png" />
+    <Content Include="images\ilustracoes\4peao_cabeca.png" />
+    <Content Include="images\ilustracoes\4peao_corpo.png" />
+    <Content Include="images\ilustracoes\5cena.gif" />
+    <Content Include="images\ilustracoes\5coroa.png" />
+    <Content Include="images\ilustracoes\5frase.png" />
+    <Content Include="images\ilustracoes\5nuvens.png" />
+    <Content Include="images\ilustracoes\5projeto.png" />
+    <Content Include="images\ilustracoes\5raios.png" />
     <Content Include="images\logo.png" />
+    <Content Include="images\logo\inmetrics_rodape.png" />
     <Content Include="images\mobile-divider.png" />
     <Content Include="images\mobile-menu.png" />
     <Content Include="images\projects.png" />
@@ -103,12 +132,36 @@
     <Content Include="js\inmetrics.min.js.map">
       <DependentUpon>js\inmetrics.js.bundle</DependentUpon>
     </Content>
+    <Content Include="js\inmetrics\animations.js" />
     <Content Include="js\inmetrics\init.js" />
     <Content Include="js\vendor\jquery.magnific-popup.js" />
+    <Content Include="js\vendor\jquery.validate.js" />
+    <Content Include="js\vendor\skrollr.min.js" />
     <Content Include="lang\es_ES.mo" />
     <Content Include="lang\es_ES.po" />
     <Content Include="lang\pt_BR.mo" />
     <Content Include="lang\pt_BR.po" />
+    <Content Include="less\animations.less" />
+    <Content Include="less\animations.css">
+      <DependentUpon>less\animations.less</DependentUpon>
+    </Content>
+    <Content Include="less\animations.css.map">
+      <DependentUpon>less\animations.less</DependentUpon>
+    </Content>
+    <Content Include="less\contact-form.less" />
+    <Content Include="less\contact-form.css">
+      <DependentUpon>less\contact-form.less</DependentUpon>
+    </Content>
+    <Content Include="less\contact-form.css.map">
+      <DependentUpon>less\contact-form.less</DependentUpon>
+    </Content>
+    <Content Include="less\forms.less" />
+    <Content Include="less\forms.css">
+      <DependentUpon>less\forms.less</DependentUpon>
+    </Content>
+    <Content Include="less\forms.css.map">
+      <DependentUpon>less\forms.less</DependentUpon>
+    </Content>
     <Content Include="less\header.less" />
     <Content Include="less\header.css">
       <DependentUpon>less\header.less</DependentUpon>
@@ -137,6 +190,7 @@
     <Content Include="less\mobile.css.map">
       <DependentUpon>less\mobile.less</DependentUpon>
     </Content>
+    <Content Include="less\reset.css" />    
     <Content Include="less\tables.less" />
     <Content Include="less\tables.css">
       <DependentUpon>less\tables.less</DependentUpon>
@@ -144,6 +198,7 @@
     <Content Include="less\tables.css.map">
       <DependentUpon>less\tables.less</DependentUpon>
     </Content>
+    <Content Include="js\inmetrics\jquery.validate.js" />
     <Content Include="less\vendor\magnific-popup.css" />
     <Content Include="screenshot.png" />
     <Content Include="style.css" />
@@ -224,6 +279,10 @@
     <Content Include="vendor\advanced-custom-fields\screenshot-4.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="images\animados\" />
+    <Folder Include="images\bordas\" />
+    <Folder Include="images\ilustracoes\" />
+    <Folder Include="images\logo\" />
     <Folder Include="includes\" />
     <Folder Include="js\inmetrics\" />
     <Folder Include="js\vendor\" />

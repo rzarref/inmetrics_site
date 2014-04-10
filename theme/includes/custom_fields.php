@@ -78,7 +78,7 @@ function inmetrics_acf_home_page() {
   }
   register_field_group(array(
     'id' => 'acf_home_page_images',
-    'title' => 'Home Page Images',
+    'title' => __('Home Page Images', 'inmetrics'),
     'fields' => array(
       array(
         'key' => 'field_header_image',
@@ -109,7 +109,7 @@ function inmetrics_acf_home_page() {
         'library' => 'uploadedTo',
       ),array(
         'key' => 'field_table_header_image',
-        'label' => 'Table Header',
+        'label' => __('Table Header', 'inmetrics'),
         'name' => 'table_header_image',
         'type' => 'image',
         'required' => 0,
@@ -122,6 +122,50 @@ function inmetrics_acf_home_page() {
     'options' => inmetrics_acf_options_hide_all(),
     'menu_order' => 0,
   ));
+  register_field_group(array (
+    'id' => 'acf_contact-form',
+    'title' => __('Contact Form', 'inmetrics'),
+    'fields' => array (
+      array (
+        'key' => 'field_533b45d88e7d1',
+        'label' => __('Title', 'inmetrics'),
+        'name' => 'contact_form_title',
+        'type' => 'text',
+        'required' => 1,
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_533b4fca3fdba',
+        'label' => __('Title for Mobile', 'inmetrics'),
+        'name' => 'contact_form_mobile_title',
+        'type' => 'text',
+        'required' => 1,
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_533b45f78e7d2',
+        'label' => __('Addresses', 'inmetrics'),
+        'name' => 'contact_form_addresses',
+        'type' => 'wysiwyg',
+        'default_value' => '',
+        'toolbar' => 'full',
+        'media_upload' => 'no',
+      ),
+    ),
+    'location' => $rules,
+    'options' => inmetrics_acf_options_default(),
+    'menu_order' => 1,
+  ));  
 }
 add_action('init', 'inmetrics_acf_home_page');
 

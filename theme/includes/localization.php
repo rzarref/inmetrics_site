@@ -36,4 +36,11 @@ function inmetrics_language_switcher($display_field = 'native_name')
   }
 }
 
+// Remove Multilingual Content Setup box
+function disable_icl_metabox() {
+  global $post;  
+  remove_meta_box('icl_div_config', $post->post_type, 'normal');
+}
+add_action('admin_head', 'disable_icl_metabox', 99);
+
 ?>
