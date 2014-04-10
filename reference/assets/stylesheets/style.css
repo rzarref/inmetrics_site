@@ -9,7 +9,7 @@ b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
 	margin:0; padding:0; border:0; outline:0; background:transparent;
@@ -61,7 +61,7 @@ input.error, textarea.error {
 }
 
 input[type=checkbox],
-input[type=radio] {	
+input[type=radio] {
 	display: none;
 }
 
@@ -97,7 +97,7 @@ input[type=radio]+label:before {
 
 input[type=checkbox]:checked+label:after {
 	text-align: center;
-	font-size: 14px; 
+	font-size: 14px;
 	background-color: none;
 	color: #4e4e4e;
 }
@@ -115,7 +115,7 @@ input[type=radio]:checked+label:after {
 	top: 4px;
 	border: none;
 	background-color: #4e4e4e;
-}	
+}
 
 ol, ul { list-style:none; }
 blockquote, q { quotes:none; }
@@ -169,7 +169,7 @@ a, a:hover { text-decoration: none; }
 .z3 { z-index:3; position:relative; } .z4 { z-index:4; position:relative; }
 .z5 { z-index:5; position:relative; } .z6 { z-index:6; position:relative; } .z7 { z-index:7; position:relative; }
 
-html { 
+html {
 	height: 100%;
 }
 
@@ -495,7 +495,7 @@ section.borders:before {
 
 #funcional .table {
 	/*height: 356px;*/
-	margin: 40px 0 29px 52px; 
+	margin: 40px 0 29px 52px;
 	/*background-position: 0 -3236px;*/
 }
 
@@ -735,7 +735,7 @@ body:after {
   background-color: #000;
   z-index: 50;
   opacity: 0;
-  visibility: hidden; 
+  visibility: hidden;
   -webkit-transition: all 1500ms ease-in-out;
   -moz-transition: all 1500ms ease-in-out;
   -ms-transition: all 1500ms ease-in-out;
@@ -925,14 +925,14 @@ body:after {
   display: inline-block;
 }
 
-.columns.project-type_produtividade, 
+.columns.project-type_produtividade,
 .columns.project-type_produtividade ul { width: 155px; }
-.columns.project-type_projetos-de-crescimento, 
+.columns.project-type_projetos-de-crescimento,
 .columns.project-type_projetos-de-crescimento ul { width: 195px; }
-.columns.project-type_sustentacao-e-evolucao, 
+.columns.project-type_sustentacao-e-evolucao,
 .columns.project-type_sustentacao-e-evolucao ul { width: 195px; }
 .columns-wrapper, .selection-rows { width: 555px; }
-.columns ul li, 
+.columns ul li,
 .selections a { width: 35px; }
 .selections a + a { margin-left: 5px; }
 .efficiency-functional .columns ul,

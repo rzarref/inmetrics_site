@@ -57,7 +57,7 @@ function inmetrics_project_list($project_type_id)
   }
 }
 
-function inmetrics_efficiency_table($shortcode_slug)
+function inmetrics_efficiency_table($shortcode_slug, $dark_background)
 {
   global $post;
   $efficiency = inmetrics_get_efficiency_by_shortcode_slug($shortcode_slug);
@@ -66,10 +66,14 @@ function inmetrics_efficiency_table($shortcode_slug)
     $project_types = inmetrics_get_project_types();
     $projects = inmetrics_get_projects();
     $table_title_image_url = get_field('table_title_image', $efficiency->ID, TRUE);
-    $table_header_image_url = get_field('table_header_image', $post->ID, TRUE);
     inmetrics_services_descriptions($efficiency);
+    $bgclass = $dark_background ? ' dark-bg' : 'light-bg';
+    if($dark_background)
+      $table_header_image_url = get_field('table_header_image', $post->ID, TRUE);
+    else
+      $table_header_image_url = get_field('table_header_dark_image', $post->ID, TRUE);    
   ?>
-<table class="table selector-table efficiency-table efficiency-<?php echo $shortcode_slug ?>" border="0" cellpadding="0">
+<table class="table selector-table efficiency-table efficiency-<?php echo $shortcode_slug ?> <?php echo $bgclass; ?>" border="0" cellpadding="0">
   <tr>
     <td rowspan="4" class="td-main selector-title"><img src="<?php echo $table_title_image_url ?>" /></td>
     <td></td>

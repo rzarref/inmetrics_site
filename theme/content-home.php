@@ -15,7 +15,7 @@
     <img src="<?php t_url("images/ilustracoes/1cena.gif") ?>" class="img-cena fR" />
     <img src="<?php t_url("images/ilustracoes/1projeto.png") ?>" class="img-projeto fL" />
     <img src="<?php t_url("images/ilustracoes/1nuvens.png") ?>" class="img-nuvens fR" />
-    <?php inmetrics_efficiency_table('strategic'); ?>
+    <?php inmetrics_efficiency_table('strategic', true); ?>
   </div>
 </section>
 
@@ -24,7 +24,7 @@
   <div class="mid oH">
     <h2 class="rpc fL z1"><?php t_img("animation_title_image", $management->ID); ?></h2>
     <img src="<?php t_url("images/ilustracoes/2cena.gif") ?>" class="img-cena fR" />
-    <?php inmetrics_efficiency_table('management'); ?>
+    <?php inmetrics_efficiency_table('management', false); ?>
   </div>
 </section>
 
@@ -35,7 +35,7 @@
     <img src="<?php t_url("images/ilustracoes/3fileira3.png"); ?>" class="fil-3 fR" />
     <img src="<?php t_url("images/ilustracoes/3fileira2.png"); ?>" class="fil-2 fR" />
     <span class="fil-1 fR"></span>
-    <?php inmetrics_efficiency_table('operational'); ?>
+    <?php inmetrics_efficiency_table('operational', true); ?>
   </div>
 </section>
 
@@ -50,7 +50,7 @@
       <img src="<?php t_url("images/ilustracoes/4peao_corpo.png") ?>" class="img-peao-corpo" />
       <img src="<?php t_url("images/ilustracoes/4peao_base.png") ?>" class="img-peao-base" />
     </span>
-    <?php inmetrics_efficiency_table('functional'); ?>
+    <?php inmetrics_efficiency_table('functional', false); ?>
   </div>
 </section>
 
@@ -63,7 +63,7 @@
     <img src="<?php t_url("images/ilustracoes/5coroa.png") ?>" class="img-coroa" />
     <img src="<?php t_url("images/ilustracoes/5projeto.png") ?>" class="img-projeto" />
     <img src="<?php t_url("images/ilustracoes/5raios.png") ?>" class="img-raios" />
-    <?php inmetrics_efficiency_table('quality'); ?>
+    <?php inmetrics_efficiency_table('quality', true); ?>
   </div>
 </section>
 

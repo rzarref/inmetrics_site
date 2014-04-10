@@ -184,7 +184,7 @@ function inmetrics_dynamic_home_images() {
   echo("  height: {$sub_header['height']}px;\n");
   echo("  background: url({$sub_header['url']}) no-repeat;\n");
   echo("}\n");    
-  $efficiencies = inmetrics_get_efficiencies();
+  $efficiencies = inmetrics_get_efficiencies();  
   foreach($efficiencies as $efficiency) {
     $slug = get_field('shortcode_slug', $efficiency->ID);
     $img = get_field('animation_title_image', $efficiency->ID);

@@ -172,7 +172,7 @@ p {
   min-height: 400px;
   max-width: 980px;
   margin: 0 auto;
-  margin-top: 110px;
+  margin-top: 80px;
 }
 @media screen and (max-width: 768px) {
   .desktop {
@@ -191,7 +191,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 110px;
+  height: 80px;
   z-index: 9000;
 }
 header .wrapper {
@@ -203,8 +203,8 @@ header .mobile-menu {
 }
 header .menu {
   float: left;
-  height: 110px;
-  line-height: 110px;
+  height: 80px;
+  line-height: 80px;
 }
 header .menu a {
   text-transform: uppercase;
@@ -224,7 +224,7 @@ header .logo {
   display: inline-block;
   float: right;
   background: black;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 header .logo img {
   height: 60px;

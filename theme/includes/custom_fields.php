@@ -100,7 +100,7 @@ function inmetrics_acf_home_page() {
         'library' => 'uploadedTo',
       ),array(
         'key' => 'field_mobile_header_image',
-        'label' => 'Mobile Header',
+        'label' => __('Mobile Header', 'inmetrics'),
         'name' => 'mobile_header_image',
         'type' => 'image',
         'required' => 0,
@@ -109,8 +109,17 @@ function inmetrics_acf_home_page() {
         'library' => 'uploadedTo',
       ),array(
         'key' => 'field_table_header_image',
-        'label' => __('Table Header', 'inmetrics'),
+        'label' => __('Table Header (Light Background)', 'inmetrics'),
         'name' => 'table_header_image',
+        'type' => 'image',
+        'required' => 0,
+        'save_format' => 'object',
+        'preview_size' => 'full',
+        'library' => 'uploadedTo',
+      ),array(
+        'key' => 'field_table_header_dark_image',
+        'label' => __('Table Header (Dark Background)', 'inmetrics'),
+        'name' => 'table_header_dark_image',
         'type' => 'image',
         'required' => 0,
         'save_format' => 'object',
@@ -165,7 +174,7 @@ function inmetrics_acf_home_page() {
     'location' => $rules,
     'options' => inmetrics_acf_options_default(),
     'menu_order' => 1,
-  ));  
+  ));
 }
 add_action('init', 'inmetrics_acf_home_page');
 
