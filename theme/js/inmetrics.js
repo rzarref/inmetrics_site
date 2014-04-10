@@ -1336,15 +1336,15 @@ var animations = function () {
       "data-3250": setPrefixCSS("transform: translate(0px, -" + w_height + "px);"),
       "data-5300": setPrefixCSS("transform: translate(0px, -" + (w_height + 1100) + "px);")
     });
-    $("#gestao h2").attr({
+    $("#management h2").attr({
       "data-2700": setPrefixCSS("transform: translate(0px, 200px);"),
       "data-4500": setPrefixCSS("transform: translate(0px, -100px);")
     });
-    $('#gestao .img-cena').attr({
+    $('#management .img-cena').attr({
       "data-2800": setPrefixCSS("transform: translate(0px, 150px);"),
       "data-4500": setPrefixCSS("transform: translate(0px, -200px);")
     });
-    $('#gestao .table').attr({
+    $('#management .table').attr({
       "data-3200": setPrefixCSS("transform: translate(0px, 120px);"),
       "data-4800": setPrefixCSS("transform: translate(0px, -100px);")
     });
