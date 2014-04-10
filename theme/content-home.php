@@ -1,7 +1,7 @@
 <section id="apresenta" class="borders desktop">
   <div class="mid pR">
     <h2 class="fL rpc"><?php t_img('header_image'); ?></h2>
-    <p class="fR rpc"><?php get_field('sub_header_image'); ?></p>
+    <p class="fR rpc"><?php t_img('sub_header_image'); ?></p>
     <span class="olho"></span>
     <span class="olho-2"></span>
     <span class="olho-3"></span>
@@ -9,7 +9,7 @@
 </section>
 
 <?php $strategic = inmetrics_get_efficiency_by_shortcode_slug('strategic'); ?>
-<section id="estrategica" class="pR desktop">
+<section id="strategic" class="pR desktop">
   <div class="mid pR">
     <h2 class="rpc fL z1"><?php t_img("animation_title_image", $strategic->ID); ?></h2>
     <img src="<?php t_url("images/ilustracoes/1cena.gif") ?>" class="img-cena fR" />
@@ -20,7 +20,7 @@
 </section>
 
 <?php $management = inmetrics_get_efficiency_by_shortcode_slug('management'); ?>
-<section id="gestao" class="borders desktop">
+<section id="management" class="borders desktop">
   <div class="mid oH">
     <h2 class="rpc fL z1"><?php t_img("animation_title_image", $management->ID); ?></h2>
     <img src="<?php t_url("images/ilustracoes/2cena.gif") ?>" class="img-cena fR" />
@@ -29,7 +29,7 @@
 </section>
 
 <?php $operational = inmetrics_get_efficiency_by_shortcode_slug('operational'); ?>
-<section id="operacional" class="desktop">
+<section id="operational" class="desktop">
   <div class="mid oH">
     <h2 class="rpc fL z1"><?php t_img("animation_title_image", $operational->ID); ?></h2>
     <img src="<?php t_url("images/ilustracoes/3fileira3.png"); ?>" class="fil-3 fR" />
@@ -40,7 +40,7 @@
 </section>
 
 <?php $functional = inmetrics_get_efficiency_by_shortcode_slug('functional'); ?>
-<section id="funcional" class="borders desktop">
+<section id="functional" class="borders desktop">
   <div class="mid pR oH">
     <h2 class="rpc fL z1"><?php t_img("animation_title_image", $functional->ID); ?></h2>
     <img src="<?php t_url("images/ilustracoes/4cena.gif") ?>" class="img-cena fR" />
@@ -55,7 +55,7 @@
 </section>
 
 <?php $quality = inmetrics_get_efficiency_by_shortcode_slug('quality'); ?>
-<section id="qualidade" class="desktop">
+<section id="quality" class="desktop">
   <div class="mid pR oH">
     <h2 class="rpc z1"><?php t_img("animation_title_image", $quality->ID); ?></h2>
     <img src="<?php t_url("images/ilustracoes/5cena.gif") ?>" class="img-cena fL" />
@@ -77,8 +77,8 @@
             <div class="result-message"></div>
             <ul>
               <li>
-                <input type="text" id="name" name="plan_request[name]" 
-                  placeholder="<?php esc_attr_e('your name', 'inmetrics'); ?>" 
+                <input type="text" id="name" name="plan_request[name]"
+                  placeholder="<?php esc_attr_e('your name', 'inmetrics'); ?>"
                   autocomplete="off" maxlength="255"
                   value="<?php esc_attr_e($_POST['plan_request']['name']); ?>" />
               </li>

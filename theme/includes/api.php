@@ -137,6 +137,7 @@ function inmetrics_get_total_projects_per_efficiency($lang = null)
     where shortcode_meta.meta_key = 'shortcode_slug'
       and t.language_code = '$lang'
       and service_meta.meta_key = 'efficiency'
+      and services.post_status = 'publish'
     group by shortcode_meta.meta_value";
   return $wpdb->get_results($sql);
 }
