@@ -170,6 +170,14 @@ function inmetrics_acf_home_page() {
         'toolbar' => 'full',
         'media_upload' => 'no',
       ),
+      array (
+        'key' => 'field_contact_form_success_message',
+        'label' => __('Success Message', 'inmetrics'),
+        'name' => 'contact_form_success_message',
+        'type' => 'text',
+        'required' => 0,
+        'formatting' => 'html'
+      ),
     ),
     'location' => $rules,
     'options' => inmetrics_acf_options_default(),
