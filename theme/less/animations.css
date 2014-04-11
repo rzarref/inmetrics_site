@@ -232,7 +232,6 @@
     margin: 4px 15px 0 -30px;
   }
   #management .table {
-    height: 454px;
     margin: 6px 0 27px 52px;
     background-position: 0 -924px;
   }
@@ -254,7 +253,6 @@
     background-image: url(../images/animados/3fileira.png);
   }
   #operational .table {
-    /*height: 389px;*/
     margin: 40px 0 109px 52px;
     /*background-position: 0 -2101px;*/
   }
@@ -279,7 +277,6 @@
     margin: 63px 0;
   }
   #functional .table {
-    /*height: 356px;*/
     margin: 40px 0 29px 52px;
     /*background-position: 0 -3236px;*/
   }
@@ -313,7 +310,6 @@
     left: 525px;
   }
   #quality .table {
-    /*height: 299px;*/
     margin-top: 5px;
     /*background-position: 0 bottom;*/
   }
