@@ -1,4 +1,21 @@
 ﻿var animations = function () {
+  var init = function(isMobile) {
+    if (isMobile && $(window).width() > 768)
+      PortableVersion();
+    else {
+      DesktopVersion(true);
+      $(window).on({resize: windowResize});
+    }
+  };
+
+  var timeoutResize = null;
+  var windowResize = function(){
+    clearTimeout(timeoutResize);
+    timeoutResize = setTimeout(function(){
+      DesktopVersion(false)
+    }, 300);
+  };
+
   var PortableVersion = function () {
     $('header .in-inspire').attr({ "style": setPrefixCSS("transform: translate(108px, 541px);") });
 
@@ -14,7 +31,8 @@
     });
   };
 
-  var DesktopVersion = function () {
+  var mySkroll = null;
+  var DesktopVersion = function (isInit) {
     var w_height = $(window).height();
 
     //olhos
@@ -67,10 +85,10 @@
       "data-1500": setPrefixCSS("transform: translate(0px, -470px);"),
       "data-4200": setPrefixCSS("transform: translate(0px, -1402px);")
     });
-    $('#strategic h2').attr({
-      "data-850": setPrefixCSS("transform: translate(0px, 0px);"),
-      "data-3000": setPrefixCSS("transform: translate(0px, -700px);")
-    });
+    // $('#strategic h2').attr({
+    //  "data-850": setPrefixCSS("transform: translate(0px, 0px);"),
+    //  "data-3000": setPrefixCSS("transform: translate(0px, -700px);")
+    // });
     $('#strategic .img-cena').attr({
       "data-750": setPrefixCSS("transform: translate(0px, 0px);"),
       "data-2300": setPrefixCSS("transform: translate(0px, -150px);")
@@ -91,12 +109,12 @@
     //iniciando gestao
     $('#management').attr({
       "data-2100": setPrefixCSS("transform: translate(0px, 0px);"),
-      "data-3250": setPrefixCSS("transform: translate(0px, -" + w_height + "px);"),
-      "data-5300": setPrefixCSS("transform: translate(0px, -" + (w_height + 1100) + "px);")
+      "data-3250": setPrefixCSS("transform: translate(0px, -"+ w_height +"px);"),
+      "data-5300": setPrefixCSS("transform: translate(0px, -"+ (w_height + 1130) +"px);")
     });
     $("#management h2").attr({
-      "data-2700": setPrefixCSS("transform: translate(0px, 200px);"),
-      "data-4500": setPrefixCSS("transform: translate(0px, -100px);")
+      "data-2700": setPrefixCSS("transform: translate(0px, 0px);"),
+      "data-4400": setPrefixCSS("transform: translate(0px, -170px);")
     });
     $('#management .img-cena').attr({
       "data-2800": setPrefixCSS("transform: translate(0px, 150px);"),
@@ -110,9 +128,9 @@
     //inicianado operacional
     $('#operational').attr({
       "data-3000": setPrefixCSS("transform: translate(0px, 0px);"),
-      "data-3200": setPrefixCSS("transform: translate(0px, -" + (w_height - 50) + "px);"),
-      "data-6000": setPrefixCSS("transform: translate(0px, -" + (w_height - 50) + "px);"),
-      "data-8900": setPrefixCSS("transform: translate(0px, -" + (w_height + 1204) + "px);")
+      "data-3200": setPrefixCSS("transform: translate(0px, -"+ (w_height - 50) +"px);"),
+      "data-6000": setPrefixCSS("transform: translate(0px, -"+ (w_height - 50) +"px);"),
+      "data-8900": setPrefixCSS("transform: translate(0px, -"+ (w_height + 1204) +"px);")
     });
     $('#operational h2').attr({
       "data-4500": setPrefixCSS("transform: translate(0px, -200px);"),
@@ -144,8 +162,8 @@
     //iniciando funcional
     $('#functional').attr({
       "data-7100": setPrefixCSS("transform: translate(0px, 0px);"),
-      "data-8100": setPrefixCSS("transform: translate(0px, -" + (w_height - 20) + "px);"),
-      "data-12400": setPrefixCSS("transform: translate(0px, -" + (w_height + 1180) + "px);")
+      "data-8100": setPrefixCSS("transform: translate(0px, -"+ (w_height - 20) +"px);"),
+      "data-12400": setPrefixCSS("transform: translate(0px, -"+ (w_height + 1210) +"px);")
     });
     $('#functional h2').attr({
       "data-7500": setPrefixCSS("transform: translate(0px, 100px);"),
@@ -163,8 +181,8 @@
       "data-8150": setPrefixCSS("transform: translate(0px, 67px);")
     });
     $('#functional .img-peao-base').attr({
-      "data-7500": setPrefixCSS("transform: translate(2px, 35px);"),
-      "data-8150": setPrefixCSS("transform: translate(2px, -76px);")
+      "data-7500": setPrefixCSS("transform: translate(2px, 72px);"),
+      "data-8150": setPrefixCSS("transform: translate(2px, -41px);")
     });
     $('#functional .img-nuvens').attr({
       "data-8000": setPrefixCSS("transform: translate(0px, 80px);") + " opacity: 0;",
@@ -180,13 +198,13 @@
     $('#quality').attr({
       "data-7500": setPrefixCSS("transform: translate(0px, 0px);"),
       "data-10500": setPrefixCSS("transform: translate(0px, -490px);"),
-      "data-12300": setPrefixCSS("transform: translate(0px, -" + (w_height - 100) + "px);"),
-      "data-14500": setPrefixCSS("transform: translate(0px, -" + (w_height + 1040) + "px);")
+      "data-12300": setPrefixCSS("transform: translate(0px, -"+ (w_height - 100) +"px);"),
+      "data-14500": setPrefixCSS("transform: translate(0px, -"+ (w_height + 1040) +"px);")
     });
     $('#quality h2').attr({
       "data-10500": setPrefixCSS("transform: translate(0px, -300px);"),
       "data-12300": setPrefixCSS("transform: translate(0px, 50px);"),
-      "data-13000": setPrefixCSS("transform: translate(0px, -200px);")
+      "data-13400": setPrefixCSS("transform: translate(0px, -70px);")
     });
     $('#quality .img-coroa').attr({
       "data-11300": setPrefixCSS("transform: translate(0px, -300px);"),
@@ -202,8 +220,8 @@
     });
     $('#quality .img-nuvens').attr({
       "data-12150": setPrefixCSS("transform: translate(0px, 50px);" + " opacity: 0;"),
-      "data-12200": setPrefixCSS("transform: translate(0px, 50px);" + " opacity: 1;"),
-      "data-13000": setPrefixCSS("transform: translate(0px, -200px);" + " opacity: 1;")
+      "data-12200": setPrefixCSS("transform: translate(0px, 60px);" + " opacity: 1;"),
+      "data-13400": setPrefixCSS("transform: translate(0px, -80px);" + " opacity: 1;")
     });
 
     $('#quality .table').attr({
@@ -215,13 +233,24 @@
     $('#contato').attr({
       "data-2600-end": setPrefixCSS("transform: translate(0px, 0px);"),
       "data-750-end": setPrefixCSS("transform: translate(0px, -651px);"),
-      "data-0-end": setPrefixCSS("transform: translate(0px, -751px);")
+      "data-0-end": setPrefixCSS("transform: translate(0px, -740px);")
     });
 
     //iniciando o parallax
-    var s = skrollr.init({
-      scale: 2.2
-    });
+    if ($(window).width() > 768) {
+      if(isInit || mySkroll == null) {
+        mySkroll = skrollr.init({
+          scale: 2.2
+        });
+      } else {
+        mySkroll.refresh();
+      }
+    } else {
+      if (mySkroll != null) {
+        mySkroll.destroy();
+        mySkroll = skrollr.get();
+      }
+    }
   };
 
   var setPrefixCSS = function (values) {
@@ -233,8 +262,5 @@
     return data;
   };
 
-  return {
-    PortableVersion: PortableVersion,
-    DesktopVersion: DesktopVersion
-  };
+  return { init: init };
 }();
