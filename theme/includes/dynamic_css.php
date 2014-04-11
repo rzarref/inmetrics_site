@@ -24,7 +24,7 @@ function inmetrics_dynamic_table_colors() {
     "lines_foreground" => "#000000",
     "selections_background" => "rgba(206,206,206,0.5)",
     "unselected" => "#6f2c78",
-    "selected" => "#000000",
+    "selected" => "#ffffff",
   ));
 
   // Management Efficiency:
@@ -52,7 +52,7 @@ function inmetrics_dynamic_table_colors() {
     "lines_foreground" => "#000000",
     "selections_background" => "rgba(206,206,206,0.5)",
     "unselected" => "#7eb01a",
-    "selected" => "#000000",
+    "selected" => "#ffffff",
   ));
 
   // Functional Efficiency:
@@ -80,7 +80,7 @@ function inmetrics_dynamic_table_colors() {
     "lines_foreground" => "#000000",
     "selections_background" => "rgba(206,206,206,0.5)",
     "unselected" => "#af8728",
-    "selected" => "#000000",
+    "selected" => "#ffffff",
   ));
 }
 
@@ -149,7 +149,7 @@ function inmetrics_dynamic_table_sizes() {
     $height = $max_height + $eff->total_projects * 29 + ($eff->total_projects - 1) * 4 + 20;
     echo(".efficiency-{$eff->shortcode_slug} .columns ul,\n");
     echo(".efficiency-{$eff->shortcode_slug} .columns ul li { height: {$height}px; }\n");
-  }   
+  }
 }
 
 function inmetrics_dynamic_mobile_images() {
@@ -178,13 +178,13 @@ function inmetrics_dynamic_home_images() {
   echo("  width: {$header['width']}px;\n");
   echo("  height: {$header['height']}px;\n");
   echo("  background: url({$header['url']}) no-repeat;\n");
-  echo("}\n");  
+  echo("}\n");
   echo("#apresenta p {\n");
   echo("  width: {$sub_header['width']}px;\n");
   echo("  height: {$sub_header['height']}px;\n");
   echo("  background: url({$sub_header['url']}) no-repeat;\n");
-  echo("}\n");    
-  $efficiencies = inmetrics_get_efficiencies();  
+  echo("}\n");
+  $efficiencies = inmetrics_get_efficiencies();
   foreach($efficiencies as $efficiency) {
     $slug = get_field('shortcode_slug', $efficiency->ID);
     $img = get_field('animation_title_image', $efficiency->ID);
@@ -193,9 +193,9 @@ function inmetrics_dynamic_home_images() {
       echo("  width: {$img['width']}px;\n");
       echo("  height: {$img['height']}px;\n");
       echo("  background: url({$img['url']}) no-repeat;\n");
-      echo("}\n");        
+      echo("}\n");
     }
-  }    
+  }
 }
 
 ?>
