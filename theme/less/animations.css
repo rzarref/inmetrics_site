@@ -39,6 +39,46 @@
       background-position: -640px 0px;
     }
   }
+  @-webkit-keyframes waves {
+    0% {
+      margin-top: -10px;
+    }
+    100% {
+      margin-top: 10px;
+    }
+  }
+  @-moz-keyframes waves {
+    0% {
+      margin-top: -10px;
+    }
+    100% {
+      margin-top: 10px;
+    }
+  }
+  @-ms-keyframes waves {
+    0% {
+      margin-top: -10px;
+    }
+    100% {
+      margin-top: 10px;
+    }
+  }
+  @-o-keyframes waves {
+    0% {
+      margin-top: -10px;
+    }
+    100% {
+      margin-top: 10px;
+    }
+  }
+  @keyframes waves {
+    0% {
+      margin-top: -10px;
+    }
+    100% {
+      margin-top: 10px;
+    }
+  }
   @-webkit-keyframes smoking {
     0% {
       background-position: 0 0;
@@ -169,6 +209,9 @@
   #apresenta {
     margin-top: 106px;
   }
+  #apresenta:before {
+    background-color: #000;
+  }
   #apresenta .mid {
     min-height: 273px;
   }
@@ -249,6 +292,10 @@
     height: 336px;
     margin: -137px 16px 11px 0;
     background-image: url(../images/animados/3fileira.png);
+    -webkit-animation: smoking 0.23s infinite steps(2);
+    -moz-animation: smoking 0.23s infinite steps(2);
+    -o-animation: smoking 0.23s infinite steps(2);
+    animation: smoking 0.23s infinite steps(2);
   }
   #operational .table {
     margin: 0 auto 83px;
@@ -287,7 +334,7 @@
   }
   #quality .img-cena {
     position: relative;
-    margin: 12px 0 0 13px;
+    margin: 31px 0 15px 13px;
   }
   #quality .img-nuvens {
     top: 168px;
