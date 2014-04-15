@@ -2,10 +2,11 @@
 
   var init = function () {
     if ($("body").hasClass("animated")) {
-      if ($(window).width() > 768)
-        setDataSkrollr();
+      //Adicionei a validação dentro da função, estou controlando o resize quando menor que 768px removo o parallax.
+      animations.init(isMobile());
       removeCurtain();
     }
+    
     $("[data-toggle=slide]").on({ click: slideToggle });
     $(".descriptions a").magnificPopup({ type: 'inline' });
     $(".selections a").on({
@@ -119,14 +120,6 @@
 
   isMobile = function () {
     return (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera);
-  };
-
-  var setDataSkrollr = function () {
-    if (isMobile()) {
-      animations.PortableVersion();
-    } else {
-      animations.DesktopVersion();
-    }
   };
 
   return { init: init }

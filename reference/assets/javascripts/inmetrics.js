@@ -1,6 +1,6 @@
 var inmetrics = function(){
 	var init = function() {
-		setDataSkrollr();
+		animations.init(isMobile());
 		removeCurtain();
 
 		$('#contato form').validate({
@@ -83,14 +83,6 @@ var inmetrics = function(){
 
 	isMobile = function() {
 		return (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera);
-	};
-
-	var setDataSkrollr = function(){
-		if (isMobile()) {
-			animations.PortableVersion();
-		} else {
-			animations.DesktopVersion();
-		}
 	};
 
 	return { init: init }

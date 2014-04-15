@@ -1,27 +1,27 @@
 /*flying*/
 @-webkit-keyframes flying {
   0% { background-position: 0px 0px; }
-  100% { background-position: -800px 0px; }
+  100% { background-position: -640px 0px; }
 }
 
 @-moz-keyframes flying {
   0% { background-position: 0px 0px; }
-  100% { background-position: -800px 0px; }
+  100% { background-position: -640px 0px; }
 }
 
 @-ms-keyframes flying {
   0% { background-position: 0px 0px; }
-  100% { background-position: -800px 0px; }
+  100% { background-position: -640px 0px; }
 }
 
 @-o-keyframes flying {
   0% { background-position: 0px 0px; }
-  100% { background-position: -800px 0px; }
+  100% { background-position: -640px 0px; }
 }
 
 @keyframes flying {
   0% { background-position: 0px 0px; }
-  100% { background-position: -800px 0px; }
+  100% { background-position: -640px 0px; }
 }
 
 @-webkit-keyframes waves {
@@ -50,11 +50,11 @@
 }
 
 .in-inspire, body:before {
-	-webkit-animation: flying 0.4s infinite steps(4), waves 1.4s infinite alternate;
-	-moz-animation: flying 0.4s infinite steps(4), waves 1.4s infinite alternate;
-	-ms-animation: flying 0.4s infinite steps(4), waves 1.4s infinite alternate;
-	-o-animation: flying 0.4s infinite steps(4), waves 1.4s infinite alternate;
-	animation: flying 0.4s infinite steps(4), waves 1.4s infinite alternate;
+  -webkit-animation: flying 0.4s infinite steps(4), waves 1.4s infinite alternate;
+  -moz-animation: flying 0.4s infinite steps(4), waves 1.4s infinite alternate;
+  -ms-animation: flying 0.4s infinite steps(4), waves 1.4s infinite alternate;
+  -o-animation: flying 0.4s infinite steps(4), waves 1.4s infinite alternate;
+  animation: flying 0.4s infinite steps(4), waves 1.4s infinite alternate;
 }
 
 /*smoking*/
@@ -83,10 +83,10 @@
   100% { background-position: -1574px 0; }
 }
 
-#operacional span.fil-1 {
-	-webkit-animation: smoking 0.23s infinite steps(2);
-	-moz-animation: smoking 0.23s infinite steps(2);
-	-ms-animation: smoking 0.23s infinite steps(2);
-	-o-animation: smoking 0.23s infinite steps(2);
-	animation: smoking 0.23s infinite steps(2);
+#operational span.fil-1 {
+  -webkit-animation: smoking 0.23s infinite steps(2);
+  -moz-animation: smoking 0.23s infinite steps(2);
+  -ms-animation: smoking 0.23s infinite steps(2);
+  -o-animation: smoking 0.23s infinite steps(2);
+  animation: smoking 0.23s infinite steps(2);
 }
