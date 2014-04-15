@@ -4,7 +4,7 @@
       background-position: 0px 0px;
     }
     100% {
-      background-position: -800px 0px;
+      background-position: -640px 0px;
     }
   }
   @-moz-keyframes flying {
@@ -12,7 +12,7 @@
       background-position: 0px 0px;
     }
     100% {
-      background-position: -800px 0px;
+      background-position: -640px 0px;
     }
   }
   @-ms-keyframes flying {
@@ -20,7 +20,7 @@
       background-position: 0px 0px;
     }
     100% {
-      background-position: -800px 0px;
+      background-position: -640px 0px;
     }
   }
   @-o-keyframes flying {
@@ -28,7 +28,7 @@
       background-position: 0px 0px;
     }
     100% {
-      background-position: -800px 0px;
+      background-position: -640px 0px;
     }
   }
   @keyframes flying {
@@ -36,54 +36,54 @@
       background-position: 0px 0px;
     }
     100% {
-      background-position: -800px 0px;
+      background-position: -640px 0px;
     }
   }
-  @-webkit-keyframes waves {
+  @-webkit-keyframes smoking {
     0% {
-      margin-top: -10px;
+      background-position: 0 0;
     }
     100% {
-      margin-top: 10px;
+      background-position: -1574px 0;
     }
   }
-  @-moz-keyframes waves {
+  @-moz-keyframes smoking {
     0% {
-      margin-top: -10px;
+      background-position: 0 0;
     }
     100% {
-      margin-top: 10px;
+      background-position: -1574px 0;
     }
   }
-  @-ms-keyframes waves {
+  @-ms-keyframes smoking {
     0% {
-      margin-top: -10px;
+      background-position: 0 0;
     }
     100% {
-      margin-top: 10px;
+      background-position: -1574px 0;
     }
   }
-  @-o-keyframes waves {
+  @-o-keyframes smoking {
     0% {
-      margin-top: -10px;
+      background-position: 0 0;
     }
     100% {
-      margin-top: 10px;
+      background-position: -1574px 0;
     }
   }
-  @keyframes waves {
+  @keyframes smoking {
     0% {
-      margin-top: -10px;
+      background-position: 0 0;
     }
     100% {
-      margin-top: 10px;
+      background-position: -1574px 0;
     }
   }
   body.animated:before {
     content: "";
     display: block;
-    width: 200px;
-    height: 130px;
+    width: 160px;
+    height: 104px;
     background-image: url(../images/animados/olho_aladoanima.png);
     position: fixed;
     top: 49%;
@@ -125,8 +125,8 @@
   }
   .in-inspire {
     display: block;
-    width: 200px;
-    height: 130px;
+    width: 160px;
+    height: 104px;
     margin-top: -10px;
     position: absolute;
     left: 0;
@@ -167,16 +167,16 @@
   }
   /*apresenta*/
   #apresenta {
-    margin-top: 80px;
+    margin-top: 106px;
   }
   #apresenta .mid {
     min-height: 273px;
   }
   #apresenta h2 {
-    margin: 0 0 0 77px;
+    margin: 6px 0 0 83px;
   }
   #apresenta p {
-    margin: 10px 73px 0 0;
+    margin: 32px 52px 0 0;
   }
   #apresenta span {
     display: block;
@@ -205,42 +205,40 @@
   }
   /*estrategia*/
   #strategic h2 {
-    margin: 264px -100px 0 59px;
+    margin: 351px -100px 0 65px;
   }
   #strategic .img-projeto {
     position: absolute;
-    top: 121px;
-    left: 305px;
+    top: 133px;
+    left: 304px;
   }
   #strategic .img-cena {
-    margin: 45px -4px 0 0;
+    margin: 54px -8px 0 0;
   }
   #strategic .img-nuvens {
-    margin: -80px 7px 0 0;
+    margin: -75px 7px 32px 0;
   }
   .table {
+    position: relative;
     width: 880px;
-    /*height: 326px;*/
-    margin: 25px auto 88px;
-    /*background: url(../images/ilustracoes/img-tables.png) no-repeat 0 0;*/
+    margin: 0 auto 86px;
   }
   /*gestão*/
   #management h2 {
-    margin: 104px 0 0 52px;
+    margin: 301px 0 0 58px;
   }
   #management .img-cena {
-    margin: 4px 15px 0 -30px;
+    margin: 6px 15px 22px -30px;
   }
   #management .table {
-    margin: 6px 0 27px 52px;
-    background-position: 0 -924px;
+    margin-bottom: 28px;
   }
   /*operacional*/
   #operational h2 {
-    margin: 230px -100px 0 19px;
+    margin: 412px -100px 0 25px;
   }
   #operational img.fil-3 {
-    margin: 83px 22px 0 0;
+    margin: 73px 22px 0 0;
   }
   #operational img.fil-2 {
     margin: -72px 9px 0 0;
@@ -249,22 +247,21 @@
     display: block;
     width: 787px;
     height: 336px;
-    margin: -137px 16px 0 0;
+    margin: -137px 16px 11px 0;
     background-image: url(../images/animados/3fileira.png);
   }
   #operational .table {
-    margin: 40px 0 109px 52px;
-    /*background-position: 0 -2101px;*/
+    margin: 0 auto 83px;
   }
   /*funcional*/
   #functional h2 {
-    margin: 70px -200px 0 47px;
+    margin: 169px -200px 0 53px;
   }
   #functional .img-cena {
-    margin: 8px -6px 0 0;
+    margin: 9px -6px 18px 0;
   }
   #functional .img-nuvens {
-    margin: -260px 34px 0 0;
+    margin: -276px 34px 0 0;
   }
   #functional .peao {
     display: block;
@@ -274,17 +271,16 @@
     top: 33px;
   }
   #functional .img-peao-corpo {
-    margin: 63px 0;
+    margin: 63px 0 26px;
   }
   #functional .table {
-    margin: 40px 0 29px 52px;
-    /*background-position: 0 -3236px;*/
+    margin-bottom: 24px;
   }
   /*qualidade*/
   #quality h2 {
     position: absolute;
-    left: 25px;
-    top: 241px;
+    left: 31px;
+    top: 260px;
   }
   #quality img {
     position: absolute;
@@ -294,24 +290,23 @@
     margin: 12px 0 0 13px;
   }
   #quality .img-nuvens {
-    top: 149px;
+    top: 168px;
     left: 13px;
   }
   #quality .img-coroa {
-    top: 159px;
-    left: 430px;
+    top: 178px;
+    left: 421px;
   }
   #quality .img-projeto {
-    top: 105px;
+    top: 124px;
     right: 22px;
   }
   #quality .img-raios {
-    top: 219px;
+    top: 238px;
     left: 525px;
   }
   #quality .table {
-    margin-top: 5px;
-    /*background-position: 0 bottom;*/
+    margin-bottom: 142px;
   }
   #quality .table img {
     position: relative;
@@ -326,7 +321,7 @@
     margin-top: 68px;
   }
   .skrollr section#apresenta {
-    top: 12px;
+    top: 42px;
     margin-top: 68px;
   }
   .skrollr section#strategic {
