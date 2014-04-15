@@ -4,6 +4,4 @@
   <file>vendor/skrollr.min.js</file>
   <file>vendor/jquery.validate.js</file>
   <file>vendor/jquery.magnific-popup.js</file>
-  <file>inmetrics/animations.js</file>
-  <file>inmetrics/init.js</file>
 </bundle>
