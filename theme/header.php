@@ -7,8 +7,10 @@
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">    
     <link href="<?php t_url("css/inmetrics.min.css"); ?>" rel="stylesheet">
+    <link href="<?php t_url("less/animations.css"); ?>" rel="stylesheet">
+    <link href="<?php t_url("less/contact-form.css"); ?>" rel="stylesheet">    
     <!--[if lt IE 9]>
       <script src="<?php t_url("js/vendor/html5.js"); ?>"></script>
     <![endif]-->
