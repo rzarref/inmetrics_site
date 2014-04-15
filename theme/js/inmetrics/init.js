@@ -6,7 +6,7 @@
       animations.init(isMobile());
       removeCurtain();
     }
-    
+
     $("[data-toggle=slide]").on({ click: slideToggle });
     $(".descriptions a").magnificPopup({ type: 'inline' });
     $(".selections a").on({
@@ -14,7 +14,7 @@
       mouseleave: selectionsHoverOut,
       click: selectionsClick
     });
-    $('.contact-form form').on({ 
+    $('.contact-form form').on({
       submit: contactFormSubmit
     })
     .validate(contactFormValidations());
@@ -69,8 +69,10 @@
     return false;
   };
 
-  var contactFormSubmit = function () {    
+  var contactFormSubmit = function () {
     var form = $(this);
+    var button = form.find("input[type=submit]");
+    button.hide();
     $.ajax({
       url: form.attr("action"),
       type: "POST",
@@ -79,6 +81,7 @@
         if (request.getResponseHeader('inmetrics_plan_request') == 'success')
           form[0].reset();
         $(".result-message").html(data).fadeIn();
+        button.show();
       },
       error: function (r, status, error) {
         console.info("Ajax Error, status = " + status);
