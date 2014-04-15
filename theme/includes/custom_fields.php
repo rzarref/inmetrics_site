@@ -721,7 +721,7 @@ function inmetrics_acf_plan_request() {
         echo '<a href="mailto:' . $email . '">' . $email . '</a>';
         break;
       case 'request_date':
-        $value = human_time_diff(get_the_time('U', $post), current_time('timestamp')) . __('  ago');
+        $value = human_time_diff(get_the_time('U', $post), current_time('timestamp')) . ' ' . __('ago', 'inmetrics');
         echo '<a class="row-title" href="' . get_edit_post_link($post_id) . '">' . $value . '</a>';
         break;
       default:
