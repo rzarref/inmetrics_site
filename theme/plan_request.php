@@ -27,10 +27,20 @@ $post_id = wp_insert_post(array(
   'post_status' => 'publish',
   'post_type'   => 'plan_request',
 ));
+$email_table = inmetrics_plan_request_email_table($name, $selections);
+$email_descriptions = inmetrics_plan_request_email_descriptions($selections);
 add_post_meta($post_id, 'email', $email);
 add_post_meta($post_id, 'message', $message);
 add_post_meta($post_id, 'selections', $selections);
-add_post_meta($post_id, 'email_body', inmetrics_generate_email($name, $email, $selections));
+add_post_meta($post_id, 'email_table', $email_table);
+add_post_meta($post_id, 'email_descriptions', $email_descriptions);
+
+$body = inmetrics_plan_request_email_body($email_table, $email_descriptions);
+$to = "$name <$email>";
+$subject = __("Your efficiency plan", "inmetrics");
+$headers = "Content-type: text/html\r\n";
+           // "Bcc: Potiguar Faga <potiguar@potiguar.net>\r\n";
+wp_mail($to, $subject, $body, $headers);
 
 header('inmetrics_plan_request: success');
 $message = get_field('contact_form_success_message', $front_page_id);

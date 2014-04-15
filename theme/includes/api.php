@@ -21,9 +21,9 @@ function inmetrics_social_links_nav()
     'post_status' => 'publish');
   $posts = get_posts($args);
   foreach($posts as $post) {
-    $title = $post->post_title;    
+    $title = $post->post_title;
     $url = get_field('url', $post);
-    $icon = get_field('icon', $post);    
+    $icon = get_field('icon', $post);
     echo("<li><a href='". esc_attr($url) . "' target='_blank' title='". esc_attr($title) . "'>");
     echo("<img src='" . esc_attr($icon) . "' /></a></li>");
   }
@@ -36,7 +36,7 @@ function inmetrics_get_efficiencies()
 {
   $args = array(
     'posts_per_page' => -1,
-    'post_type' => 'efficiency',    
+    'post_type' => 'efficiency',
     'post_status' => 'publish'
   );
   return get_posts($args);
@@ -102,14 +102,28 @@ function inmetrics_get_project_types_with_counts($lang = null)
     $lang = $sitepress->get_current_language();
   }
   $sql = "
-    select project_types.post_name, count(*) as total
+    select project_types.ID, project_types.post_name, count(*) as total
     from wp_postmeta
     inner join wp_icl_translations t on wp_postmeta.post_id  = t.element_id
     inner join wp_posts project_types on project_types.ID = wp_postmeta.meta_value
     where wp_postmeta.meta_key = 'service_type' and t.language_code = '$lang'
-    group by project_types.post_name";
+    group by project_types.ID, project_types.post_name";
   global $wpdb;
   return $wpdb->get_results($sql);
+}
+
+function inmetrics_get_selected_project_ids($selections)
+{
+  $sel = explode(';', $selections);
+  $ids = array();
+  foreach($sel as $selection) {
+    $data = explode(',', $selection, 2);
+    if(isset($data) && count($data) == 2) {
+      $id = intval($data[1]);
+      if($id != 0) array_push($ids, $id);
+    }
+  }
+  return array_unique($ids);
 }
 
 function inmetrics_get_project_types_group_width($total_projects)

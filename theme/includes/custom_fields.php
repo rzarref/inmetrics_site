@@ -255,6 +255,25 @@ function inmetrics_acf_efficiency() {
     'options' =>  inmetrics_acf_options_hide_all(),
     'menu_order' => 0,
   ));
+  register_field_group(array(
+    'id' => 'acf_efficiency-email-images',
+    'title' => __('E-mail Images', 'inmetrics'),
+    'fields' => array (
+       array (
+        'key' => 'field_efficiency_email_title_image',
+        'label' => __('Title Image', 'inmetrics'),
+        'name' => 'email_title_image',
+        'type' => 'image',
+        'required' => 0,
+        'save_format' => 'object',
+        'preview_size' => 'full',
+        'library' => 'uploadedTo',
+      ),
+    ),
+    'location' => $rules,
+    'options' => inmetrics_acf_options_default(),
+    'menu_order' => 1,
+  ));
 }
 add_action("init", "inmetrics_acf_efficiency");
 
@@ -308,6 +327,25 @@ function inmetrics_acf_project_type() {
     'location' => $rules,
     'options' => inmetrics_acf_options_hide_all(),
     'menu_order' => 0,
+  ));
+  register_field_group(array(
+    'id' => 'acf_project-type-email-images',
+    'title' => __('E-mail Images', 'inmetrics'),
+    'fields' => array (
+       array (
+        'key' => 'field_email_header_image',
+        'label' => __('Header Image', 'inmetrics'),
+        'name' => 'email_header_image',
+        'type' => 'image',
+        'required' => 0,
+        'save_format' => 'object',
+        'preview_size' => 'full',
+        'library' => 'uploadedTo',
+      ),
+    ),
+    'location' => $rules,
+    'options' => inmetrics_acf_options_default(),
+    'menu_order' => 1,
   ));
 }
 add_action("init", "inmetrics_acf_project_type");
@@ -392,6 +430,35 @@ function inmetrics_acf_project() {
     'location' => $rules,
     'options' => inmetrics_acf_options_default(),
     'menu_order' => 2,
+  ));
+  register_field_group(array(
+    'id' => 'acf_project-email-images',
+    'title' => __('E-mail Images', 'inmetrics'),
+    'fields' => array (
+       array (
+        'key' => 'field_project_email_header_unselected_image',
+        'label' => __('Header Image (unselected)', 'inmetrics'),
+        'name' => 'email_header_unselected_image',
+        'type' => 'image',
+        'required' => 0,
+        'save_format' => 'object',
+        'preview_size' => 'full',
+        'library' => 'uploadedTo',
+      ),
+       array (
+        'key' => 'field_project_email_header_selected_image',
+        'label' => __('Header Image (selected)', 'inmetrics'),
+        'name' => 'email_header_selected_image',
+        'type' => 'image',
+        'required' => 0,
+        'save_format' => 'object',
+        'preview_size' => 'full',
+        'library' => 'uploadedTo',
+      ),
+    ),
+    'location' => $rules,
+    'options' => inmetrics_acf_options_default(),
+    'menu_order' => 3,
   ));
 }
 add_action("init", "inmetrics_acf_project");
@@ -518,6 +585,25 @@ function inmetrics_acf_service() {
     'options' => inmetrics_acf_options_default(),
     'menu_order' => 2,
   ));
+  register_field_group(array(
+    'id' => 'acf_service-email-images',
+    'title' => __('E-mail Images', 'inmetrics'),
+    'fields' => array (
+       array (
+        'key' => 'field_service_email_header_image',
+        'label' => __('Header Image', 'inmetrics'),
+        'name' => 'email_header_image',
+        'type' => 'image',
+        'required' => 0,
+        'save_format' => 'object',
+        'preview_size' => 'full',
+        'library' => 'uploadedTo',
+      ),
+    ),
+    'location' => $rules,
+    'options' => inmetrics_acf_options_default(),
+    'menu_order' => 3,
+  ));
 }
 add_action("init", "inmetrics_acf_service");
 
@@ -552,7 +638,7 @@ function inmetrics_acf_social_network() {
     'operator' => '==',
     'value' => 'social_network',
     'order_no' => 0,
-    'group_no' => 0)));    
+    'group_no' => 0)));
   register_field_group(array (
     'id' => 'acf_social-link-information',
     'title' => __('Social Link Information', 'inmetrics'),
@@ -609,12 +695,59 @@ function inmetrics_acf_plan_request() {
     'menu_position' => 24,
     'menu_icon' => 'dashicons-groups',
     'capability_type' => 'inmetrics_custom_post',
-    'capabilities' => array('create_posts' => false),
+    'capabilities' => array('create_posts' => false, 'publish_posts' => false),
     'map_meta_cap' => true,
-    'supports' => array('title', 'custom-fields'),
+    'supports' => array('custom-fields'),
     'rewrite' => false,
     'query_var' => false
   ));
+  add_filter('manage_plan_request_posts_columns', function($columns) {
+    return array(
+      'cb' => '<input type="checkbox" />',
+      'request_date' => __('Date', 'inmetrics'),
+      'name' => __('Name', 'inmetrics'),
+      'email' => __('E-mail', 'inmetrics'),
+    );
+  });
+  add_action('manage_plan_request_posts_custom_column', function($column, $post_id) {
+    global $post;
+    switch($column) {
+      case 'name':
+        echo '<a class="row-title" href="' . get_edit_post_link($post_id) . '">' . $post->post_title . '</a>';
+        break;
+      case 'email':
+        $values = get_post_meta($post_id, 'email');
+        $email = $values[0];
+        echo '<a href="mailto:' . $email . '">' . $email . '</a>';
+        break;
+      case 'request_date':
+        $value = human_time_diff(get_the_time('U', $post), current_time('timestamp')) . __('  ago');
+        echo '<a class="row-title" href="' . get_edit_post_link($post_id) . '">' . $value . '</a>';
+        break;
+      default:
+        break;
+    }
+  }, 10, 2);
+  add_filter('manage_edit-plan_request_sortable_columns', function($columns) {
+    return array(
+      'request_date' => 'plan_request_date',
+      'name' => 'plan_request_name',
+      'email' => 'plan_request_email'
+    );
+  });
+  add_filter('request', function($vars) {
+    if(isset($vars['orderby'])) {
+      switch($vars['orderby']) {
+        case 'plan_request_date':
+          $vars = array_merge($vars, array('orderby' => 'post_date'));
+        case 'plan_request_email':
+          $vars = array_merge($vars, array('meta_key' => 'email', 'orderby' => 'meta_value'));
+        case 'plan_request_name':
+          $vars = array_merge($vars, array('orderby' => 'post_title'));
+      }
+    }
+    return $vars;
+  });
 }
 add_action('init', 'inmetrics_acf_plan_request');
 
