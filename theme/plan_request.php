@@ -30,15 +30,17 @@ $post_id = wp_insert_post(array(
 ));
 $email_table = inmetrics_plan_request_email_table($name, $selections);
 $email_descriptions = inmetrics_plan_request_email_descriptions($selections);
+$email_footer = inmetrics_plan_request_email_footer();
 add_post_meta($post_id, 'email', $email);
 add_post_meta($post_id, 'message', $message);
 add_post_meta($post_id, 'selections', $selections);
 add_post_meta($post_id, 'email_table', $email_table);
 add_post_meta($post_id, 'email_descriptions', $email_descriptions);
+add_post_meta($post_id, 'email_footer', $email_footer);
 
 $body = inmetrics_plan_request_email_body($email_table, $email_descriptions);
 $to = "$name <$email>";
-$subject = __("Your efficiency plan", "inmetrics");
+$subject = __("Prepared for the efficiency that transforms?", "inmetrics");
 $headers = "Content-type: text/html\r\n";
            // "Bcc: Potiguar Faga <potiguar@potiguar.net>\r\n";
 wp_mail($to, $subject, $body, $headers);

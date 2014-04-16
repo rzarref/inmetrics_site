@@ -1,4 +1,4 @@
-<?php
+hello<?php
 require_once('helpers.php');
 
 function inmetrics_plan_request_email_table($name, $selections) {
@@ -7,7 +7,7 @@ function inmetrics_plan_request_email_table($name, $selections) {
   $lang = $sitepress->get_current_language();
 
   $hello = sprintf(__("Hello, %s", "inmetrics"), $name);
-  $title = __("Here's your efficiency plan for all IT's layers", "inmetrics");
+  $title = __("Follow the trail of solutions that you have chosen for Total Efficiency and start the transformation today!", "inmetrics");
   $logo_url = rel_url("images/email/logo.gif");
   $header_url = rel_url("images/email/header-$lang.gif");
   $inspire_img_url = rel_url("images/email/inspire.gif");

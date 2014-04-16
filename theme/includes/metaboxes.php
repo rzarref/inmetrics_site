@@ -45,10 +45,12 @@ function inmetrics_plan_request_email_preview_metabox($post, $metabox)
 {
   $table = get_post_meta($post->ID, 'email_table', TRUE);
   $descriptions = get_post_meta($post->ID, 'email_descriptions', TRUE);
+  $footer = get_post_meta($post->ID, 'email_footer', TRUE);
   ?>
   <div class="acf_postbox">
     <?php echo $table; ?>
     <?php echo $descriptions; ?>
+    <?php echo $footer; ?>
   </div>
   <?php
 }

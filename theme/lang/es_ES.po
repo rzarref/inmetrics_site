@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: InMetrics\n"
-"POT-Creation-Date: 2014-04-10 17:42-0300\n"
-"PO-Revision-Date: 2014-04-10 17:45-0300\n"
+"POT-Creation-Date: 2014-04-16 17:34-0300\n"
+"PO-Revision-Date: 2014-04-16 17:40-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -23,11 +23,15 @@ msgstr "su nombre"
 msgid "your e-mail"
 msgstr "su e-mail"
 
-#: d:\Pixadelica\InMetrics\theme/content-home.php:90
+#: d:\Pixadelica\InMetrics\theme/content-home.php:89
+msgid "confirm your e-mail"
+msgstr "confirma su e-mail"
+
+#: d:\Pixadelica\InMetrics\theme/content-home.php:92
 msgid "your message"
 msgstr "su mesaje"
 
-#: d:\Pixadelica\InMetrics\theme/content-home.php:93
+#: d:\Pixadelica\InMetrics\theme/content-home.php:96
 msgid "Submit"
 msgstr "Enviar"
 
@@ -63,298 +67,431 @@ msgstr "Título para Mobile"
 msgid "Addresses"
 msgstr "Direcciones"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:183
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:175
+msgid "Success Message"
+msgstr "Mensaje de éxito"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:191
 msgid "Efficiencies"
 msgstr "Eficiencias"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:184
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:425
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:429
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:192
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:514
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:518
 msgid "Efficiency"
 msgstr "Eficiencia"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:185
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:193
 msgid "All Efficiencies"
 msgstr "Todas las Eficiencias"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:186
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:194
 msgid "Add New "
 msgstr "Añadir nueva"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:187
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:195
 msgid "Add New Efficiency"
 msgstr "Añadir Nueva Eficiencia"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:188
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:196
 msgid "Edit Efficiency"
 msgstr "Editar Eficiencia"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:189
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:197
 msgid "New Efficiency"
 msgstr "Nueva Eficiencia"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:190
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:198
 msgid "View Efficiency"
 msgstr "Ver Eficiencia"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:191
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:199
 msgid "Search Efficiencies"
 msgstr "Buscar Eficiencias"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:192
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:200
 msgid "Efficiency Not Found"
 msgstr "No se encontraron eficiencias"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:193
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:201
 msgid "Efficiency Not Found in Trash"
 msgstr "Ninguna eficiencia encontrada en la papelera."
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:215
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:223
 msgid "Home Page"
 msgstr "Home Page"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:219
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:227
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:278
 msgid "Title Image"
 msgstr "Imagen de Título"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:229
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:237
 msgid "Animation Title Image"
 msgstr "Imagen de Título en la Animación"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:238
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:246
 msgid "Mobile Title Image"
 msgstr "Imagen de Título para Mobile"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:255
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:260
+msgid "Plan Request E-mail"
+msgstr "E-mail de solicitud de plan"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:264
+msgid "Items' color"
+msgstr "Color de los artículos"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:271
+msgid "Title color"
+msgstr "Color del Título"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:296
 msgid "Project Types"
 msgstr "Tipos de Proyectos"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:256
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:341
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:345
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:297
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:401
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:405
 msgid "Project Type"
 msgstr "Tipo de Proyecto"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:257
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:298
 msgid "All Project Types"
 msgstr "Todos los Tipos de Proyectos"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:258
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:312
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:396
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:521
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:299
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:372
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:485
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:629
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:696
 msgid "Add New"
 msgstr "Añadir nuevo"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:259
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:300
 msgid "Add New Project Type"
 msgstr "Añadir Nuevo Tipo de Proyecto"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:260
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:301
 msgid "Edit Project Type"
 msgstr "Editar Tipo de Proyecto"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:261
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:302
 msgid "New Project Type"
 msgstr "Nuevo Tipo de Proyecto"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:262
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:303
 msgid "View Project Type"
 msgstr "Ver Tipo de Proyecto"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:263
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:304
 msgid "Search Project Types"
 msgstr "Buscar Tipos de Proyectos"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:264
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:305
 msgid "Project Type Not Found"
 msgstr "No se encontraron tipos de proyectos"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:265
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:306
 msgid "Project Type Not Found in Trash"
 msgstr "Ningun tipo de proyecto encontrado en la papelera."
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:287
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:328
 msgid "Demand Tagline"
 msgstr "Lema de la demanda"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:309
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:347
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:450
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:604
+msgid "E-mail Images"
+msgstr "Imágenes de e-mail"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:351
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:608
+msgid "Header Image"
+msgstr "Imagen de encabezamiento"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:369
 msgid "Projects"
 msgstr "Proyectos"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:310
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:370
 msgid "Project"
 msgstr "Proyecto"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:311
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:371
 msgid "All Projects"
 msgstr "Todos los Proyectos"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:313
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:373
 msgid "Add New Project"
 msgstr "Añadir Nuevo Proyecto"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:314
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:374
 msgid "Edit Project"
 msgstr "Editar Proyecto"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:315
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:375
 msgid "New Project"
 msgstr "Nuevo Proyecto"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:316
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:376
 msgid "View Project"
 msgstr "Ver Proyecto"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:317
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:377
 msgid "Search Projects"
 msgstr "Buscar Proyectos"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:318
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:378
 msgid "Project Not Found"
 msgstr "No se encontraron proyectos"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:319
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:379
 msgid "Project Not Found in Trash"
 msgstr "Ningun proyecto encontrado en la papelera."
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:365
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:425
 msgid "Image for a Light Background"
 msgstr "Imagen para un Fondo Claro"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:375
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:435
 msgid "Image for a Dark Background"
 msgstr "Imagen para un Fondo Oscuro"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:393
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:454
+msgid "Header Image (unselected)"
+msgstr "Imagen de encabezamiento (no seleccionada)"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:464
+msgid "Header Image (selected)"
+msgstr "Imagen de encabezamiento (seleccionada)"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:482
 msgid "Services"
 msgstr "Servicios"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:394
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:483
 msgid "Service"
 msgstr "Servicio"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:395
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:484
 msgid "All Services"
 msgstr "Todos los Servicios"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:397
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:486
 msgid "Add New Service"
 msgstr "Añadir Nuevo Servicio"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:398
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:487
 msgid "Edit Service"
 msgstr "Editar Servicio"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:399
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:488
 msgid "New Service"
 msgstr "Nuevo Servicio"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:400
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:489
 msgid "View Service"
 msgstr "Ver Servicio"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:401
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:490
 msgid "Search Services"
 msgstr "Buscar Servicios"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:402
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:491
 msgid "Service Not Found"
 msgstr "No se encontraron servicios"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:403
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:492
 msgid "Service Not Found in Trash"
 msgstr "Ningun servicio encontrado en la papelera."
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:445
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:534
 msgid "Home Page Table"
 msgstr "Tabla en la Home"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:449
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:538
 msgid "Enabled Projects"
 msgstr "Proyectos Habilitados"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:466
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:555
 msgid "Service Description"
 msgstr "Descripción del Servicio"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:470
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:559
 #: d:\Pixadelica\InMetrics\theme/includes/tables.php:25
 #: d:\Pixadelica\InMetrics\theme/includes/tables.php:162
 msgid "What is it?"
 msgstr "¿Qué es?"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:480
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:569
 #: d:\Pixadelica\InMetrics\theme/includes/tables.php:30
 msgid "Purpose"
 msgstr "Propósito"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:490
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:579
 #: d:\Pixadelica\InMetrics\theme/includes/tables.php:34
 msgid "Results"
 msgstr "Resultados"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:500
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:589
 #: d:\Pixadelica\InMetrics\theme/includes/tables.php:38
 msgid "Term"
 msgstr "Plazo"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:518
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:626
 msgid "Social Links"
 msgstr "Redes Sociales"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:519
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:627
 msgid "Social Link"
 msgstr "Red Social"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:520
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:628
 msgid "All Social Links"
 msgstr "Todas las Redes Sociales"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:522
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:630
 msgid "Add New Social Link"
 msgstr "Añadir Nueva Red Social"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:523
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:631
 msgid "Edit Social Link"
 msgstr "Editar Red Social"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:524
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:632
 msgid "New Social Link"
 msgstr "Nueva Red Social"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:525
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:633
 msgid "View Social Link"
 msgstr "Ver Red Social"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:526
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:634
 msgid "Search Social Links"
 msgstr "Buscar Redes Sociales"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:527
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:635
 msgid "Social Link Not Found"
 msgstr "No se encontraron redes sociales"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:528
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:636
 msgid "Social Link Not Found in Trash"
 msgstr "Ninguna red social encontrado en la papelera."
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:550
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:658
 msgid "Social Link Information"
 msgstr "Información acerca de las Redes Sociales"
 
-#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:567
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:675
 msgid "Icon"
 msgstr "Icono"
 
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:693
+msgid "Plan Requests"
+msgstr "Solicitudenes de planes"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:694
+msgid "Plan Request"
+msgstr "Solicitud de Plan"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:695
+msgid "All Plan Requests"
+msgstr "Todas las solicitudes de planes"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:697
+msgid "Add New Plan Request"
+msgstr "Añadir Nueva Solicitud de Plan"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:698
+msgid "Edit Plan Request"
+msgstr "Editar Solicitude de Plan"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:699
+msgid "New Plan Request"
+msgstr "Nuevo Solicitud de Plan"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:700
+msgid "View Plan Request"
+msgstr "Ver Solicitud de Plan"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:701
+msgid "Search Plan Requests"
+msgstr "Buscar Solicitudenes de Planes"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:702
+msgid "Plan Request Not Found"
+msgstr "No se encontraron solicitudenes de planes"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:703
+msgid "Plan Request Not Found in Trash"
+msgstr "Ninguna solicitud de plan encontrada en la papelera."
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:721
+msgid "Date"
+msgstr "Fecha"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:722
+#: d:\Pixadelica\InMetrics\theme/includes/metaboxes.php:32
+msgid "Name"
+msgstr "Nombre"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:723
+#: d:\Pixadelica\InMetrics\theme/includes/metaboxes.php:36
+msgid "E-mail"
+msgstr "E-mail"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:739
+#, php-format
+msgid "%s ago"
+msgstr "Hace %s"
+
+#: d:\Pixadelica\InMetrics\theme/includes/dynamic_js.php:6
+msgid "* Field is required"
+msgstr "* Campo obligarotio"
+
+#: d:\Pixadelica\InMetrics\theme/includes/dynamic_js.php:7
+msgid "* E-mail is invalid"
+msgstr "* E-mail no es válido"
+
+#: d:\Pixadelica\InMetrics\theme/includes/dynamic_js.php:8
+msgid "* E-mail doesn't match"
+msgstr "* E-mail no coincide"
+
+#: d:\Pixadelica\InMetrics\theme/includes/email.php:9
+#, php-format
+msgid "Hello, %s"
+msgstr "Hola, %s"
+
+#: d:\Pixadelica\InMetrics\theme/includes/email.php:10
+msgid ""
+"Follow the trail of solutions that you have chosen for Total Efficiency and "
+"start the transformation today!"
+msgstr ""
+"¡Siga la senda de las soluciones que usted eligió para Eficiencia Total y "
+"comience hoy mismo la transformación!"
+
 #: d:\Pixadelica\InMetrics\theme/includes/metaboxes.php:12
-#: d:\Pixadelica\InMetrics\theme/includes/metaboxes.php:45
+#: d:\Pixadelica\InMetrics\theme/includes/metaboxes.php:88
 msgid "Efficiency Slug"
 msgstr "Código de la Eficiencia"
 
 #: d:\Pixadelica\InMetrics\theme/includes/metaboxes.php:14
 msgid "Used to reference a efficiency in php code"
 msgstr "Utilizado para referirse a la Eficiencia en el código PHP"
+
+#: d:\Pixadelica\InMetrics\theme/includes/metaboxes.php:93
+msgid "Contact Details"
+msgstr "Datos de Contacto"
+
+#: d:\Pixadelica\InMetrics\theme/includes/metaboxes.php:98
+msgid "Request Message"
+msgstr "Mensaje del usuario"
+
+#: d:\Pixadelica\InMetrics\theme/includes/metaboxes.php:103
+msgid "E-Mail Preview"
+msgstr "Previsualización de E-mail"
 
 #: d:\Pixadelica\InMetrics\theme/includes/navigation.php:4
 msgid "Top Menu"
@@ -386,8 +523,6 @@ msgstr "Cerrar"
 msgid "In/metrics 2014 &copy; All rights reserved"
 msgstr "In/metrics 2014 &copy; Todos los derechos reservados"
 
-#~ msgid "* Field is required"
-#~ msgstr "* Campo obligarotio"
-
-#~ msgid "* E-mail is invalid"
-#~ msgstr "* E-mail no es válido"
+#: d:\Pixadelica\InMetrics\theme/plan_request.php:43
+msgid "Prepared for the efficiency that transforms?"
+msgstr "¿Preparado para la eficiencia que transforma?"
