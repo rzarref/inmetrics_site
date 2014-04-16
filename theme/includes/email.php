@@ -1,4 +1,4 @@
-hello<?php
+<?php
 require_once('helpers.php');
 
 function inmetrics_plan_request_email_table($name, $selections) {
