@@ -2,10 +2,11 @@
 require_once('helpers.php');
 
 function inmetrics_plan_request_email_table($name, $selections) {
+  global $sitepress;
+  $lang = $sitepress->get_current_language();
+
   $hello = sprintf(__("Hello, %s", "inmetrics"), $name);
   $title = __("Here's your efficiency plan for all IT's layers", "inmetrics");
-  $logo = img_tag('email_logo_image', 'options');
-  $header = img_tag('email_header_image', 'options');
   $project_types = inmetrics_get_project_types_with_counts();
   $efficiencies = inmetrics_get_efficiencies();
   $projects = inmetrics_get_projects();
@@ -15,6 +16,9 @@ function inmetrics_plan_request_email_table($name, $selections) {
     $header = img_tag('email_header_image', $project_type->ID);
     return "<td colspan='$count' valign='bottom'>$header</td>";
   }, $project_types));
+
+  $logo_url = rel_url("images/email/logo.gif");
+  $header_url = rel_url("images/email/header-$lang.gif");
   $inspire_img_url = rel_url("images/email/inspire.gif");
 
   $selected_project_ids = inmetrics_get_selected_project_ids($selections);
@@ -39,10 +43,10 @@ function inmetrics_plan_request_email_table($name, $selections) {
             </tr>
           </table>
         </td>
-        <td width="143" bgcolor="#000000">$logo</td>
+        <td width="143" bgcolor="#000000"><img src="$logo_url" width="140" height="73"></td>
       </tr>
       <tr>
-        <td colspan="2">$header</td>
+        <td colspan="2"><img src="$header_url" width="600" height="254" /></td>
       </tr>
       <tr>
         <td colspan="2">
@@ -88,6 +92,7 @@ function inmetrics_plan_request_email_body($table, $descriptions) {
  </style>
 <body>
   $table
+  $descriptions
 </body>
 </html>
 HTML;
