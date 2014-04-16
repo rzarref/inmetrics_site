@@ -257,9 +257,23 @@ function inmetrics_acf_efficiency() {
   ));
   register_field_group(array(
     'id' => 'acf_efficiency-email-images',
-    'title' => __('E-mail Images', 'inmetrics'),
+    'title' => __('Plan Request E-mail', 'inmetrics'),
     'fields' => array (
-       array (
+      array (
+        'key' => 'field_efficiency_email_background_color',
+        'label' => __('Items\' color', 'inmetrics'),
+        'name' => 'table_background_color',
+        'type' => 'color_picker',
+        'default_value' => '',
+      ),
+      array (
+        'key' => 'field_efficiency_title_color',
+        'label' => __('Title color', 'inmetrics'),
+        'name' => 'table_title_color',
+        'type' => 'color_picker',
+        'default_value' => '',
+      ),
+      array (
         'key' => 'field_efficiency_email_title_image',
         'label' => __('Title Image', 'inmetrics'),
         'name' => 'email_title_image',

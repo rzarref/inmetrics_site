@@ -20,6 +20,7 @@
   <ItemGroup>
     <Compile Include="content-home.php" />
     <Compile Include="content-page.php" />
+    <Compile Include="email_test.php" />
     <Compile Include="includes\dynamic_js.php" />
     <Compile Include="includes\custom_fields.php" />
     <Compile Include="includes\dynamic_css.php" />

@@ -4,6 +4,7 @@ if(!isset($_POST['plan_request']))
   exit();
 
 require_once('../../../wp-load.php');
+// require_once('d:\Pixadelica\Inmetrics\public\wp-load.php');
 
 $plan_request = $_POST['plan_request'];
 $name = $plan_request['name'];

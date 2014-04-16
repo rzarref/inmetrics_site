@@ -70,6 +70,17 @@ function inmetrics_get_services($efficiency_id = null)
   return get_posts($args);
 }
 
+function inmetrics_get_services_by_ids($ids)
+{
+  $args = array(
+    'posts_per_page' => -1,
+    'post_type' => 'service',
+    'post_status' => 'publish',
+    'post__in' => $ids
+  );
+  return get_posts($args);
+}
+
 function inmetrics_get_project_types()
 {
   $args = array(
@@ -126,6 +137,40 @@ function inmetrics_get_selected_project_ids($selections)
   return array_unique($ids);
 }
 
+function inmetrics_get_selected_service_ids($selections)
+{
+  $sel = explode(';', $selections);
+  $ids = array();
+  foreach($sel as $selection) {
+    $data = explode(',', $selection, 2);
+    if(isset($data) && count($data) == 2) {
+      $id = intval($data[0]);
+      if($id != 0) array_push($ids, $id);
+    }
+  }
+  return array_unique($ids);
+}
+
+function inmetrics_get_selected_project_ids_by_service_ids($selections)
+{
+  $sel = explode(';', $selections);
+  $ids = array();
+  foreach($sel as $selection) {
+    $data = explode(',', $selection, 2);
+    if(isset($data) && count($data) == 2) {
+      $service_id = intval($data[0]);
+      $project_id = intval($data[1]);
+      if($project_id != 0 && $service_id != 0) {
+        if(!isset($ids[$service_id])) {
+          $ids[$service_id] = array();
+        }
+        $ids[$service_id][] = $project_id;
+      }
+    }
+  }
+  return $ids;
+}
+
 function inmetrics_get_project_types_group_width($total_projects)
 {
   return $total_projects * INMETRICS_TABLE_COLUMN_WIDTH +
@@ -140,7 +185,7 @@ function inmetrics_get_total_projects_per_efficiency($lang = null)
   }
   global $wpdb;
   $sql = "
-    select shortcode_meta.meta_value as shortcode_slug, count(*) as total_projects
+    select efficiencies.ID, shortcode_meta.meta_value as shortcode_slug, count(*) as total_projects
     from wp_postmeta shortcode_meta
       inner join wp_posts efficiencies on efficiencies.ID = shortcode_meta.post_id
       inner join wp_icl_translations t on efficiencies.ID = t.element_id
@@ -152,7 +197,7 @@ function inmetrics_get_total_projects_per_efficiency($lang = null)
       and t.language_code = '$lang'
       and service_meta.meta_key = 'efficiency'
       and services.post_status = 'publish'
-    group by shortcode_meta.meta_value";
+    group by efficiencies.ID, shortcode_meta.meta_value";
   return $wpdb->get_results($sql);
 }
 
