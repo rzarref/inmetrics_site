@@ -1545,10 +1545,7 @@ var inmetrics = function () {
       mouseleave: selectionsHoverOut,
       click: selectionsClick
     });
-    $('.contact-form form').on({
-      submit: contactFormSubmit
-    })
-    .validate(contactFormValidations());
+    $('.contact-form form').validate(contactFormValidations());
   };
 
   var slideToggle = function () {
@@ -1600,26 +1597,28 @@ var inmetrics = function () {
     return false;
   };
 
-  var contactFormSubmit = function () {
-    var form = $(this);
+  var contactFormSubmit = function (formElement) {
+    var form = $(formElement);
     var button = form.find("input[type=submit]");
+    var spinner = form.find(".spinner");
     button.hide();
+    spinner.show();
     $.ajax({
       url: form.attr("action"),
       type: "POST",
       data: form.serialize(),
       success: function (data, textStatus, request) {
-        if (request.getResponseHeader('inmetrics_plan_request') == 'success')
-          form[0].reset();
-        $(".result-message").html(data).fadeIn();
-        button.show();
+
+        if (request.getResponseHeader('inmetrics_plan_request') == 'success') {
+          form.find("ul").hide();
+          $(".result-message").html(data).fadeIn('slow');
+        }
       },
       error: function (r, status, error) {
         console.info("Ajax Error, status = " + status);
         console.info(error);
       }
     });
-    return false;
   };
 
   var contactFormValidations = function () {
@@ -1640,7 +1639,8 @@ var inmetrics = function () {
           equalTo: window.config.errors.email_nomatch,
         },
         'plan_request[message]': window.config.errors.required,
-      }
+      },
+      submitHandler: contactFormSubmit,
     };
   };
 
@@ -1660,3 +1660,4 @@ var inmetrics = function () {
 }();
 
 $(document).ready(inmetrics.init);
+

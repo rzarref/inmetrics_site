@@ -8,6 +8,7 @@
 }
 .contact-form form {
   max-width: 520px;
+  height: 436px;
 }
 .contact-form form h2 {
   margin: 0 0 35px 0;
@@ -58,6 +59,13 @@
   top: 10px;
   color: #de7f7f;
   font-size: 10px;
+}
+.contact-form form .spinner {
+  background: url(../images/ajax-loader.gif) no-repeat center;
+  display: none;
+  float: right;
+  width: 50px;
+  height: 50px;
 }
 .contact-form address {
   margin: 0;
@@ -151,7 +159,8 @@ ul.social:hover a:hover {
   }
 }
 .result-message {
-  margin-bottom: 25px;
+  margin-top: 20px;
+  font: 30px Amatic SC;
 }
 @media screen and (max-width: 768px) {
   .contact-form {

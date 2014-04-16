@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InMetrics\n"
 "POT-Creation-Date: 2014-04-16 17:34-0300\n"
-"PO-Revision-Date: 2014-04-16 17:40-0300\n"
+"PO-Revision-Date: 2014-04-16 19:15-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -471,6 +471,30 @@ msgid ""
 msgstr ""
 "¡Siga la senda de las soluciones que usted eligió para Eficiencia Total y "
 "comience hoy mismo la transformación!"
+
+#: D:\Pixadelica\InMetrics\theme/includes/email.php:150
+#: D:\Pixadelica\InMetrics\theme\includes/email.php:150
+msgid "São Paulo - Brazil"
+msgstr "São Paulo - Brasil"
+
+#: D:\Pixadelica\InMetrics\theme/includes/email.php:151
+#: D:\Pixadelica\InMetrics\theme\includes/email.php:151
+msgid "+55 11 3303.3200"
+msgstr "+55 11 3303.3200"
+
+#: D:\Pixadelica\InMetrics\theme/includes/email.php:152
+#: D:\Pixadelica\InMetrics\theme\includes/email.php:152
+msgid "contato@inmetrics.com.br"
+msgstr "contato@inmetrics.com.br"
+
+#: D:\Pixadelica\InMetrics\theme/includes/email.php:153
+#: D:\Pixadelica\InMetrics\theme\includes/email.php:153
+msgid ""
+"This information is confidential. All reproductions require explicit "
+"permission from In/Metrics."
+msgstr ""
+"Este material es confidencial. Cualquier reproducción, total o parcial, debe "
+"contar con el permiso explícito de In/Metrics"
 
 #: d:\Pixadelica\InMetrics\theme/includes/metaboxes.php:12
 #: d:\Pixadelica\InMetrics\theme/includes/metaboxes.php:88

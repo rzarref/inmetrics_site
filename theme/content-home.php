@@ -94,6 +94,7 @@
               <li>
                 <input type="hidden" id="selections-input" name="plan_request[selections]" />
                 <input type="submit" value="<?php esc_attr_e('Submit', 'inmetrics'); ?>" />
+                <div class="spinner"></div>
               </li>
             </ul>
           </form>

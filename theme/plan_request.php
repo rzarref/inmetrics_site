@@ -4,7 +4,7 @@ if(!isset($_POST['plan_request']))
   exit();
 
 require_once('../../../wp-load.php');
-// require_once('d:\Pixadelica\Inmetrics\public\wp-load.php');
+//require_once('d:\Pixadelica\Inmetrics\public\wp-load.php');
 
 $plan_request = $_POST['plan_request'];
 $name = $plan_request['name'];
@@ -38,7 +38,7 @@ add_post_meta($post_id, 'email_table', $email_table);
 add_post_meta($post_id, 'email_descriptions', $email_descriptions);
 add_post_meta($post_id, 'email_footer', $email_footer);
 
-$body = inmetrics_plan_request_email_body($email_table, $email_descriptions);
+$body = inmetrics_plan_request_email_body($email_table, $email_descriptions, $email_footer);
 $to = "$name <$email>";
 $subject = __("Prepared for the efficiency that transforms?", "inmetrics");
 $headers = "Content-type: text/html\r\n";

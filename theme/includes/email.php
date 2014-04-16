@@ -53,7 +53,7 @@ function inmetrics_plan_request_email_table($name, $selections) {
         $service_rows .= "<td valign='bottom' bgcolor='$title_color' rowspan='$rowspan'>$img</td>";
       }
       $img = img_tag('email_header_image', $service->ID);
-      $service_rows .= "<td width='100%' bgcolor='$color'>$img</td>";
+      $service_rows .= "<td width='100%' align='right' bgcolor='$color'>$img</td>";
       $selections = $selected_projects[$service->ID];
       if(!isset($selections)) $selections = array();
       foreach($projects as $project) {
@@ -64,7 +64,7 @@ function inmetrics_plan_request_email_table($name, $selections) {
            "<span style=\"font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; " .
            "font-size: 40px; color: $circle_color; line-height: 17px; text-align: center;\">&#8226</span></td>";
       }
-      $service_rows .= "</tr>";
+      $service_rows .= "</tr>\n";
     }
   }
 
@@ -107,6 +107,8 @@ HTML;
 
 function inmetrics_plan_request_email_descriptions($selections) {
   $selected = inmetrics_get_selected_service_ids($selections);
+
+  if(empty($selected)) return "";
   $services = inmetrics_get_services_by_ids($selected);
 
   $what_title = __('What is it?', 'inmetrics');
@@ -149,7 +151,6 @@ function inmetrics_plan_request_email_footer() {
   $contact_phone = __('+55 11 3303.3200', 'inmetrics');
   $contact_email = __('contato@inmetrics.com.br', 'inmetrics');
   $contact_notice = __('This information is confidential. All reproductions require explicit permission from In/Metrics.', 'inmetrics');
-  // Este material é conﬁdencial. Toda reprodução, total ou parcial, deve ter a permissão explicita da in/metrics.
 
   return <<<"HTML"
   <table class="email-footer" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
