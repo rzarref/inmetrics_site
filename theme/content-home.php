@@ -8,13 +8,14 @@
   </div>
 </section>
 
+<?php $langcode = inmetrics_get_current_language_code(); ?>
 <?php $strategic = inmetrics_get_efficiency_by_shortcode_slug('strategic'); ?>
 <section id="strategic" class="pR desktop">
   <div class="mid pR">
     <h2 class="rpc fL z1"><?php t_img("animation_title_image", $strategic->ID); ?></h2>
     <img src="<?php t_url("images/ilustracoes/1cena.gif") ?>" class="img-cena fR" />
     <img src="<?php t_url("images/ilustracoes/1projeto.png") ?>" class="img-projeto fL" />
-    <img src="<?php t_url("images/ilustracoes/1nuvens.png") ?>" class="img-nuvens fR" />
+    <img src="<?php t_url("images/ilustracoes/1nuvens-$langcode.png") ?>" class="img-nuvens fR" />
     <?php inmetrics_efficiency_table('strategic', true); ?>
   </div>
 </section>
@@ -118,7 +119,7 @@
 <div class="mobile mobile-efficiencies">
   <h1 class="mobile-header"></h1>
   <div class="mobile-divider"></div>
-  <?php inmetrics_mobile_efficiencies(); ?>  
+  <?php inmetrics_mobile_efficiencies(); ?>
 </div>
 
 <div class="mobile mobile-contact-form">
@@ -131,5 +132,5 @@
       <?php inmetrics_social_links_nav(); ?>
     </ul>
     <img alt="In/Metrics" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" class="logo desktop" />
-  </div> 
+  </div>
 </div>
