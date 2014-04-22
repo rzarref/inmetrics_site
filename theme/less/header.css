@@ -52,7 +52,7 @@ header .lang {
   text-align: center;
   background-color: #4d4d4d;
 }
-header .lang a {
+header .lang .items a {
   display: block;
   font-size: 12px;
   line-height: 20px;
@@ -62,17 +62,17 @@ header .lang a {
   -o-transition: color 500ms ease-in-out;
   transition: color 500ms ease-in-out;
 }
-header .lang a.active {
+header .lang .items a.active {
   color: white;
 }
-header .lang a:hover {
+header .lang .items a:hover {
   -webkit-transition: color 180ms ease-in-out;
   -moz-transition: color 180ms ease-in-out;
   -o-transition: color 180ms ease-in-out;
   transition: color 180ms ease-in-out;
   color: white;
 }
-header .lang a + a {
+header .lang .items a + a {
   border-top: 1px solid #808080;
 }
 @media screen and (max-width: 768px) {
@@ -83,13 +83,28 @@ header .lang a + a {
     height: 60px;
   }
   header .lang {
-    top: 15px;
-    left: 65px;
+    left: inherit;
+    right: 0;
+    width: 60px;
   }
-  header .lang a {
-    font-size: 14px;
-    line-height: 24px;
+  header .lang a.selector {
+    display: block;
+    font-size: 12px;
     font-weight: 700;
+    line-height: 60px;
+    color: white;
+    background-color: #333;
+  }
+  header .lang .items {
+    display: none;
+  }
+  header .lang .items a {
+    font-weight: 700;
+    line-height: 60px;
+    border-top: 1px solid #808080;
+  }
+  header .lang .items a.active {
+    display: none;
   }
   header .mobile-menu {
     display: inline-block;
@@ -119,9 +134,17 @@ header .lang a + a {
     margin: 2px 0 0 0;
   }
   header .logo {
-    margin: 10px 10px 0 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: -999;
+    margin-top: 10px;
+    margin-left: 25%;
+    width: 50%;
+    text-align: center;
   }
   header .logo img {
+    display: inline-block;
     height: 40px;
     width: auto;
   }

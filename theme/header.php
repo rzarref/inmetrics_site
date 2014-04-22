@@ -19,11 +19,15 @@
   </head>
   <body <?php body_class(); ?>>
     <header>
-      <div class="mid pR">
+      <div class="mid pR desktop">
         <span class="in-inspire"></span>
       </div>
       <nav class="lang" role="navigation">
-        <?php inmetrics_language_switcher('language_code'); ?>
+        <a class="selector mobile" data-toggle="slide"  
+           href="#lang-menu"><?php inmetrics_current_language_code(); ?>&nbsp;&#x25BC;</a>
+        <div id="lang-menu" class="items">
+          <?php inmetrics_language_switcher('language_code'); ?>
+        </div>
       </nav>
       <div class="wrapper">
         <a href="#menu" data-toggle="slide" class="mobile-menu"><img src="<?php t_url("images/mobile-menu.png"); ?>" /></a>

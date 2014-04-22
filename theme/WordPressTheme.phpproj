@@ -88,11 +88,21 @@
     <Content Include="css\inmetrics.min.css">
       <DependentUpon>css\inmetrics.css.bundle</DependentUpon>
     </Content>
+    <Content Include="images\ajax-loader.gif" />
     <Content Include="images\animados\3fileira.png" />
     <Content Include="images\animados\olho_aladoanima.png" />
     <Content Include="images\bordas\borda_down_p.png" />
     <Content Include="images\bordas\borda_top_g.png" />
     <Content Include="images\efficiencies.png" />
+    <Content Include="images\email\footer-left.gif" />
+    <Content Include="images\email\footer-main-pt-br.gif" />
+    <Content Include="images\email\footer-right.gif" />
+    <Content Include="images\email\footer-social.gif" />
+    <Content Include="images\email\header-en.gif" />
+    <Content Include="images\email\header-es-ES.gif" />
+    <Content Include="images\email\header-pt-BR.gif" />
+    <Content Include="images\email\inspire.gif" />
+    <Content Include="images\email\logo.gif" />
     <Content Include="images\ilustracoes\0-apresenta.png" />
     <Content Include="images\ilustracoes\0-grupo.png" />
     <Content Include="images\ilustracoes\1cena.gif" />
@@ -121,6 +131,7 @@
     <Content Include="images\logo\inmetrics_rodape.png" />
     <Content Include="images\mobile-divider.png" />
     <Content Include="images\mobile-menu.png" />
+    <Content Include="images\olho.png" />
     <Content Include="images\projects.png" />
     <Content Include="images\project_types.png" />
     <Content Include="images\services.png" />
@@ -287,6 +298,7 @@
   <ItemGroup>
     <Folder Include="images\animados\" />
     <Folder Include="images\bordas\" />
+    <Folder Include="images\email\" />
     <Folder Include="images\ilustracoes\" />
     <Folder Include="images\logo\" />
     <Folder Include="includes\" />

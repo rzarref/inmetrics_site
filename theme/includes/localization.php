@@ -16,6 +16,13 @@ function inmetrics_home_url() {
     return home_url();
 }
 
+function inmetrics_current_language_code()
+{
+  global $sitepress;
+  $lang = $sitepress->get_current_language();
+  echo mb_strtoupper(substr($lang, 0, 2));  
+}
+
 function inmetrics_language_switcher($display_field = 'native_name')
 {
   if(function_exists('icl_get_languages')) {
