@@ -253,3 +253,68 @@
     }
   }
 }
+
+.mobile-contact-form {  
+  background-color: black;
+  color: white;
+  text-align: center;
+
+  h2 {
+    background: url(../images/olho.png) no-repeat center 50px;
+    margin: 0;
+    padding: 187px 15px 25px 15px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  address {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+
+    & + address {
+      margin-top: 20px;
+    }
+  }
+
+  ul.social {
+    display: inline-block;
+    padding: 25px 0;
+    margin: 0;
+    overflow: auto;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      float: left;
+
+      & + li {
+        margin-left: 30px;
+      }
+    }
+
+    a {
+      display: inline-block;
+      -webkit-transition: opacity 500ms ease-in-out;
+      -moz-transition: opacity 500ms ease-in-out;
+      -o-transition: opacity 500ms ease-in-out;
+      transition: opacity 500ms ease-in-out;
+    }
+
+    &:hover {
+      a {
+        opacity: 0.3;
+
+        &:hover {
+          opacity: 1;
+          -webkit-transition: opacity 180ms ease-in-out;
+          -moz-transition: opacity 180ms ease-in-out;
+          -o-transition: opacity 180ms ease-in-out;
+          transition: opacity 180ms ease-in-out;
+        }
+      }
+    }
+  }
+}
