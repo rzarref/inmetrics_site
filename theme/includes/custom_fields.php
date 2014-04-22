@@ -766,4 +766,46 @@ function inmetrics_acf_plan_request() {
 }
 add_action('init', 'inmetrics_acf_plan_request');
 
+function inmetrics_acf_email_options()
+{
+  acf_add_options_sub_page(array(
+    'title' => __('E-mail Options', 'inmetrics'),
+    'menu' => __('E-mail Options', 'inmetrics'),
+    'slug' => 'acf-email_options_page',
+    'parent' => 'edit.php?post_type=plan_request',
+    'capability' => 'edit_posts'
+  ));
+  $rules = array(array(array(
+		'param' => 'options_page',
+		'operator' => '==',
+		'value' => 'acf-email_options_page',
+		'order_no' => 0,
+		'group_no' => 0,
+  )));
+	register_field_group(array(
+		'id' => 'acf_e-mail-forward',
+		'title' => __('Forward Addresses'),
+		'fields' => array (
+			array (
+				'key' => 'field_forward_messages_to',
+				'label' => __('Forward a copy of all the e-mails to the following addresses:'),
+				'name' => 'email_forward_addresses',
+	      'type' => 'text',
+        'required' => 0,
+        'default_value' => '',
+        'placeholder' => 'email1@inmetrics.com.br, email2@inmetrics.com.br',
+        'formatting' => 'none',
+        'maxlength' => '',
+			),
+		),
+		'location' => $rules,
+		'options' => inmetrics_acf_options_hide_all(),
+    'menu_order' => 0
+  ));
+}
+add_action('init', 'inmetrics_acf_email_options');
+add_action('admin_menu', function() {
+  remove_menu_page('acf-options');
+}, 999);
+
 ?>

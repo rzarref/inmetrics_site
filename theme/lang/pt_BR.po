@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: InMetrics\n"
-"POT-Creation-Date: 2014-04-16 19:09-0300\n"
-"PO-Revision-Date: 2014-04-16 19:14-0300\n"
+"POT-Creation-Date: 2014-04-22 19:54-0300\n"
+"PO-Revision-Date: 2014-04-22 20:10-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -16,23 +16,23 @@ msgstr ""
 "X-Poedit-SearchPath-0: D:\\Pixadelica\\InMetrics\\theme\n"
 "X-Poedit-SearchPath-1: D:\\Pixadelica\\InMetrics\\theme\\includes\n"
 
-#: D:\Pixadelica\InMetrics\theme/content-home.php:81
+#: D:\Pixadelica\InMetrics\theme/content-home.php:82
 msgid "your name"
 msgstr "seu nome"
 
-#: D:\Pixadelica\InMetrics\theme/content-home.php:86
+#: D:\Pixadelica\InMetrics\theme/content-home.php:87
 msgid "your e-mail"
 msgstr "seu e-mail"
 
-#: D:\Pixadelica\InMetrics\theme/content-home.php:89
+#: D:\Pixadelica\InMetrics\theme/content-home.php:90
 msgid "confirm your e-mail"
 msgstr "confirme seu e-mail"
 
-#: D:\Pixadelica\InMetrics\theme/content-home.php:92
+#: D:\Pixadelica\InMetrics\theme/content-home.php:93
 msgid "your message"
 msgstr "sua mensagem"
 
-#: D:\Pixadelica\InMetrics\theme/content-home.php:96
+#: D:\Pixadelica\InMetrics\theme/content-home.php:97
 msgid "Submit"
 msgstr "Enviar"
 
@@ -565,6 +565,25 @@ msgstr "E-mail"
 msgid "%s ago"
 msgstr "%s atrás"
 
+#: D:\Pixadelica\InMetrics\theme/includes/custom_fields.php:772
+#: D:\Pixadelica\InMetrics\theme/includes/custom_fields.php:773
+#: D:\Pixadelica\InMetrics\theme\includes/custom_fields.php:772
+#: D:\Pixadelica\InMetrics\theme\includes/custom_fields.php:773
+msgid "E-mail Options"
+msgstr "Opções de E-mail"
+
+#: D:\Pixadelica\InMetrics\theme/includes/custom_fields.php:787
+#: D:\Pixadelica\InMetrics\theme\includes/custom_fields.php:787
+msgid "Forward Addresses"
+msgstr "Encaminhar Cópias"
+
+#: D:\Pixadelica\InMetrics\theme/includes/custom_fields.php:791
+#: D:\Pixadelica\InMetrics\theme\includes/custom_fields.php:791
+msgid "Forward a copy of all the e-mails to the following addresses:"
+msgstr ""
+"Enaminhar uma cópia de todas as requisições de plano para os seguintes "
+"endereços de e-mail:"
+
 #: D:\Pixadelica\InMetrics\theme/includes/dynamic_js.php:6
 #: D:\Pixadelica\InMetrics\theme\includes/dynamic_js.php:6
 msgid "* Field is required"
@@ -594,6 +613,11 @@ msgid ""
 msgstr ""
 "Siga a trilha de soluções que você escolheu para Eficiência Total e comece a "
 "transformação hoje mesmo!"
+
+#: D:\Pixadelica\InMetrics\theme/plan_request.php:47
+#, php-format
+msgid "Efficiency plan sent to %s <%s>"
+msgstr "Plano de eficiência enviado para %s <%s>"
 
 #: D:\Pixadelica\InMetrics\theme/includes/email.php:150
 #: D:\Pixadelica\InMetrics\theme\includes/email.php:150
