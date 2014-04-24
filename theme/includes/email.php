@@ -1,61 +1,18 @@
 <?php
 require_once('helpers.php');
 
-
-
-function inmetrics_plan_request_email_footer() {
-  global $sitepress;
-  $lang = $sitepress->get_current_language();
-
-  $main_url = rel_url("images/email/footer-main-$lang.gif");
-  $left_url = rel_url("images/email/footer-left.gif");
-  $right_url = rel_url("images/email/footer-right.gif");
-  $social_url = rel_url("images/email/footer-social.gif");
-
+function inmetrics_po_edit_needs_help()
+{
+  $what_title = __('What is it?', 'inmetrics');
+  $why_title = __('Purpose', 'inmetrics');
+  $results_title = __('Results', 'inmetrics');
+  $term_title = __('Term', 'inmetrics');
+  $hello = __("Hello, %s.", "inmetrics");
+  $title = __("Follow the trail of solutions that you have chosen for Total Efficiency and start the transformation today!", "inmetrics");
   $contact_city = __('São Paulo - Brazil', 'inmetrics');
   $contact_phone = __('+55 11 3303.3200', 'inmetrics');
   $contact_email = __('contato@inmetrics.com.br', 'inmetrics');
-  $contact_notice = __('This information is confidential. All reproductions require explicit permission from In/Metrics.', 'inmetrics');
-
-  return <<<"HTML"
-  <table class="email-footer" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
-    <tr>
-      <td bgcolor="#000000"><img src="$main_url" width="600" height="139" usemap="#Map2"></td>
-    </tr>
-    <tr bgcolor="#666666">
-      <td align="center" valign="top" bgcolor="#323232">
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td rowspan="2" align="left" valign="top"><img src="$left_url" width="202" height="129"></td>
-            <td align="center">
-              <span style="font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; color: #FFF; text-align: center; font-size: 13px; line-height:20px;">
-              <strong><br>$contact_city</strong><br>$contact_phone<br>
-              <a href="mailto:$contact_email" style="color: #FFF; text-decoration:none;">$contact_email<br><br></a></span>
-            </td>
-            <td rowspan="2" align="right" valign="top"><img src="$right_url" width="200" height="129"></td>
-          </tr>
-          <tr>
-            <td><img src="$social_url" width="197" height="47" usemap="#Map"></td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p style="font-size: 11px; font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; text-align: center; color: #666;"><br>$contact_notice</p>
-      </td>
-    </tr>
-  </table>
-  <map name="Map">
-    <area shape="rect" coords="100,1,140,31" href="https://www.facebook.com/Inmetrics" target="_blank" alt="Facebook">
-    <area shape="rect" coords="18,2,54,32" href="http://www.linkedin.com/company/inmetrics" target="_blank" alt="Linkedin">
-    <area shape="rect" coords="146,2,176,30" href="https://twitter.com/inmetrics" target="_blank" alt="Twitter">
-    <area shape="rect" coords="60,2,94,32" href="https://www.yammer.com/inmetrics.com.br/" target="_blank" alt="Yammer">
-  </map>
-  <map name="Map2">
-    <area shape="rect" coords="214,77,399,129" href="mailto:$contact_email" target="_blank" alt="e-mail">
-  </map>
-HTML;
+  $contact_notice = __('This information is confidential. All reproductions require explicit permission from In/Metrics.', 'inmetrics');  
 }
 
 function inmetrics_plan_request_email_table($name, $selections) {
@@ -63,7 +20,7 @@ function inmetrics_plan_request_email_table($name, $selections) {
   global $sitepress;
   $lang = $sitepress->get_current_language();
 
-  $hello = sprintf(__("Hello, %s", "inmetrics"), $name);
+  $hello = sprintf(__("Hello, %s.", "inmetrics"), $name);
   $title = __("Follow the trail of solutions that you have chosen for Total Efficiency and start the transformation today!", "inmetrics");
   $logo_url = rel_url("images/email/logo.gif");
   $header_url = rel_url("images/email/header-$lang.gif");
@@ -192,6 +149,61 @@ function inmetrics_plan_request_email_descriptions($selections) {
   <table class="descricoes" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
   $service_rows
   </table>
+HTML;
+}
+
+function inmetrics_plan_request_email_footer() {
+  global $sitepress;
+  $lang = $sitepress->get_current_language();
+
+  $main_url = rel_url("images/email/footer-main-$lang.gif");
+  $left_url = rel_url("images/email/footer-left.gif");
+  $right_url = rel_url("images/email/footer-right.gif");
+  $social_url = rel_url("images/email/footer-social.gif");
+
+  $contact_city = __('São Paulo - Brazil', 'inmetrics');
+  $contact_phone = __('+55 11 3303.3200', 'inmetrics');
+  $contact_email = __('contato@inmetrics.com.br', 'inmetrics');
+  $contact_notice = __('This information is confidential. All reproductions require explicit permission from In/Metrics.', 'inmetrics');
+
+  return <<<"HTML"
+  <table class="email-footer" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td bgcolor="#000000"><img src="$main_url" width="600" height="139" usemap="#Map2"></td>
+    </tr>
+    <tr bgcolor="#666666">
+      <td align="center" valign="top" bgcolor="#323232">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td rowspan="2" align="left" valign="top"><img src="$left_url" width="202" height="129"></td>
+            <td align="center">
+              <span style="font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; color: #FFF; text-align: center; font-size: 13px; line-height:20px;">
+              <strong><br>$contact_city</strong><br>$contact_phone<br>
+              <a href="mailto:$contact_email" style="color: #FFF; text-decoration:none;">$contact_email<br><br></a></span>
+            </td>
+            <td rowspan="2" align="right" valign="top"><img src="$right_url" width="200" height="129"></td>
+          </tr>
+          <tr>
+            <td><img src="$social_url" width="197" height="47" usemap="#Map"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p style="font-size: 11px; font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; text-align: center; color: #666;"><br>$contact_notice</p>
+      </td>
+    </tr>
+  </table>
+  <map name="Map">
+    <area shape="rect" coords="100,1,140,31" href="https://www.facebook.com/Inmetrics" target="_blank" alt="Facebook">
+    <area shape="rect" coords="18,2,54,32" href="http://www.linkedin.com/company/inmetrics" target="_blank" alt="Linkedin">
+    <area shape="rect" coords="146,2,176,30" href="https://twitter.com/inmetrics" target="_blank" alt="Twitter">
+    <area shape="rect" coords="60,2,94,32" href="https://www.yammer.com/inmetrics.com.br/" target="_blank" alt="Yammer">
+  </map>
+  <map name="Map2">
+    <area shape="rect" coords="214,77,399,129" href="mailto:$contact_email" target="_blank" alt="e-mail">
+  </map>
 HTML;
 }
 

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: InMetrics\n"
-"POT-Creation-Date: 2014-04-22 20:30-0300\n"
-"PO-Revision-Date: 2014-04-22 20:30-0300\n"
+"POT-Creation-Date: 2014-04-24 16:06-0300\n"
+"PO-Revision-Date: 2014-04-24 16:06-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -16,23 +16,23 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: d:\\Pixadelica\\InMetrics\\theme\n"
 
-#: d:\Pixadelica\InMetrics\theme/content-home.php:82
+#: d:\Pixadelica\InMetrics\theme/content-home.php:85
 msgid "your name"
 msgstr "su nombre"
 
-#: d:\Pixadelica\InMetrics\theme/content-home.php:87
+#: d:\Pixadelica\InMetrics\theme/content-home.php:90
 msgid "your e-mail"
 msgstr "su e-mail"
 
-#: d:\Pixadelica\InMetrics\theme/content-home.php:90
+#: d:\Pixadelica\InMetrics\theme/content-home.php:93
 msgid "confirm your e-mail"
 msgstr "confirma su e-mail"
 
-#: d:\Pixadelica\InMetrics\theme/content-home.php:93
+#: d:\Pixadelica\InMetrics\theme/content-home.php:96
 msgid "your message"
 msgstr "su mesaje"
 
-#: d:\Pixadelica\InMetrics\theme/content-home.php:97
+#: d:\Pixadelica\InMetrics\theme/content-home.php:100
 msgid "Submit"
 msgstr "Enviar"
 
@@ -321,22 +321,26 @@ msgid "Service Description"
 msgstr "Descripción del Servicio"
 
 #: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:559
+#: d:\Pixadelica\InMetrics\theme/includes/email.php:6
 #: d:\Pixadelica\InMetrics\theme/includes/tables.php:25
 #: d:\Pixadelica\InMetrics\theme/includes/tables.php:162
 msgid "What is it?"
 msgstr "¿Qué es?"
 
 #: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:569
+#: d:\Pixadelica\InMetrics\theme/includes/email.php:7
 #: d:\Pixadelica\InMetrics\theme/includes/tables.php:30
 msgid "Purpose"
 msgstr "Propósito"
 
 #: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:579
+#: d:\Pixadelica\InMetrics\theme/includes/email.php:8
 #: d:\Pixadelica\InMetrics\theme/includes/tables.php:34
 msgid "Results"
 msgstr "Resultados"
 
 #: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:589
+#: d:\Pixadelica\InMetrics\theme/includes/email.php:9
 #: d:\Pixadelica\InMetrics\theme/includes/tables.php:38
 msgid "Term"
 msgstr "Plazo"
@@ -475,25 +479,44 @@ msgstr "* E-mail no es válido"
 msgid "* E-mail doesn't match"
 msgstr "* E-mail no coincide"
 
-#: d:\Pixadelica\InMetrics\theme/includes/email.php:15
+#: d:\Pixadelica\InMetrics\theme/includes/email.php:10
+#, php-format
+msgid "Hello, %s."
+msgstr "Hola, %s."
+
+#: d:\Pixadelica\InMetrics\theme/includes/email.php:11
+#: d:\Pixadelica\InMetrics\theme/includes/email.php:24
+msgid ""
+"Follow the trail of solutions that you have chosen for Total Efficiency and "
+"start the transformation today!"
+msgstr ""
+"¡Siga la senda de las soluciones que usted eligió para Eficiencia Total y "
+"comience hoy mismo la transformación!"
+
+#: d:\Pixadelica\InMetrics\theme/includes/email.php:12
 msgid "São Paulo - Brazil"
 msgstr "São Paulo - Brasil"
 
-#: d:\Pixadelica\InMetrics\theme/includes/email.php:16
+#: d:\Pixadelica\InMetrics\theme/includes/email.php:13
 msgid "+55 11 3303.3200"
 msgstr "+55 11 3303.3200"
 
-#: d:\Pixadelica\InMetrics\theme/includes/email.php:17
+#: d:\Pixadelica\InMetrics\theme/includes/email.php:14
 msgid "contato@inmetrics.com.br"
 msgstr "contato@inmetrics.com.br"
 
-#: d:\Pixadelica\InMetrics\theme/includes/email.php:18
+#: d:\Pixadelica\InMetrics\theme/includes/email.php:15
 msgid ""
 "This information is confidential. All reproductions require explicit "
 "permission from In/Metrics."
 msgstr ""
 "Este material es confidencial. Cualquier reproducción, total o parcial, debe "
 "contar con el permiso explícito de In/Metrics"
+
+#: d:\Pixadelica\InMetrics\theme/includes/email.php:23
+#, php-format
+msgid "Hello, %s"
+msgstr "Hola, %s"
 
 #: d:\Pixadelica\InMetrics\theme/includes/metaboxes.php:12
 #: d:\Pixadelica\InMetrics\theme/includes/metaboxes.php:88
@@ -554,13 +577,3 @@ msgstr "¿Preparado para la eficiencia que transforma?"
 #, php-format
 msgid "Efficiency plan sent to %s <%s>"
 msgstr "Plan de Eficiencia enviado para %s <%s>"
-
-#~ msgid "Hello, %s"
-#~ msgstr "Hola, %s"
-
-#~ msgid ""
-#~ "Follow the trail of solutions that you have chosen for Total Efficiency "
-#~ "and start the transformation today!"
-#~ msgstr ""
-#~ "¡Siga la senda de las soluciones que usted eligió para Eficiencia Total y "
-#~ "comience hoy mismo la transformación!"

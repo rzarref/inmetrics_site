@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: InMetrics\n"
-"POT-Creation-Date: 2014-04-22 20:27-0300\n"
-"PO-Revision-Date: 2014-04-22 20:30-0300\n"
+"POT-Creation-Date: 2014-04-24 16:06-0300\n"
+"PO-Revision-Date: 2014-04-24 16:06-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -17,23 +17,23 @@ msgstr ""
 "X-Poedit-SearchPath-0: D:\\Pixadelica\\InMetrics\\theme\n"
 "X-Poedit-SearchPath-1: D:\\Pixadelica\\InMetrics\\theme\\includes\n"
 
-#: D:\Pixadelica\InMetrics\theme/content-home.php:82
+#: D:\Pixadelica\InMetrics\theme/content-home.php:85
 msgid "your name"
 msgstr "seu nome"
 
-#: D:\Pixadelica\InMetrics\theme/content-home.php:87
+#: D:\Pixadelica\InMetrics\theme/content-home.php:90
 msgid "your e-mail"
 msgstr "seu e-mail"
 
-#: D:\Pixadelica\InMetrics\theme/content-home.php:90
+#: D:\Pixadelica\InMetrics\theme/content-home.php:93
 msgid "confirm your e-mail"
 msgstr "confirme seu e-mail"
 
-#: D:\Pixadelica\InMetrics\theme/content-home.php:93
+#: D:\Pixadelica\InMetrics\theme/content-home.php:96
 msgid "your message"
 msgstr "sua mensagem"
 
-#: D:\Pixadelica\InMetrics\theme/content-home.php:97
+#: D:\Pixadelica\InMetrics\theme/content-home.php:100
 msgid "Submit"
 msgstr "Enviar"
 
@@ -402,31 +402,39 @@ msgid "Service Description"
 msgstr "Descrição do Serviço"
 
 #: D:\Pixadelica\InMetrics\theme/includes/custom_fields.php:559
+#: D:\Pixadelica\InMetrics\theme/includes/email.php:6
 #: D:\Pixadelica\InMetrics\theme/includes/tables.php:25
 #: D:\Pixadelica\InMetrics\theme/includes/tables.php:162
 #: D:\Pixadelica\InMetrics\theme\includes/custom_fields.php:559
+#: D:\Pixadelica\InMetrics\theme\includes/email.php:6
 #: D:\Pixadelica\InMetrics\theme\includes/tables.php:25
 #: D:\Pixadelica\InMetrics\theme\includes/tables.php:162
 msgid "What is it?"
 msgstr "O que é?"
 
 #: D:\Pixadelica\InMetrics\theme/includes/custom_fields.php:569
+#: D:\Pixadelica\InMetrics\theme/includes/email.php:7
 #: D:\Pixadelica\InMetrics\theme/includes/tables.php:30
 #: D:\Pixadelica\InMetrics\theme\includes/custom_fields.php:569
+#: D:\Pixadelica\InMetrics\theme\includes/email.php:7
 #: D:\Pixadelica\InMetrics\theme\includes/tables.php:30
 msgid "Purpose"
 msgstr "Serve para"
 
 #: D:\Pixadelica\InMetrics\theme/includes/custom_fields.php:579
+#: D:\Pixadelica\InMetrics\theme/includes/email.php:8
 #: D:\Pixadelica\InMetrics\theme/includes/tables.php:34
 #: D:\Pixadelica\InMetrics\theme\includes/custom_fields.php:579
+#: D:\Pixadelica\InMetrics\theme\includes/email.php:8
 #: D:\Pixadelica\InMetrics\theme\includes/tables.php:34
 msgid "Results"
 msgstr "Resultados"
 
 #: D:\Pixadelica\InMetrics\theme/includes/custom_fields.php:589
+#: D:\Pixadelica\InMetrics\theme/includes/email.php:9
 #: D:\Pixadelica\InMetrics\theme/includes/tables.php:38
 #: D:\Pixadelica\InMetrics\theme\includes/custom_fields.php:589
+#: D:\Pixadelica\InMetrics\theme\includes/email.php:9
 #: D:\Pixadelica\InMetrics\theme\includes/tables.php:38
 msgid "Term"
 msgstr "Prazo"
@@ -600,29 +608,52 @@ msgstr "* E-mail é inválido"
 msgid "* E-mail doesn't match"
 msgstr "* E-mail não confere"
 
-#: D:\Pixadelica\InMetrics\theme/includes/email.php:15
-#: D:\Pixadelica\InMetrics\theme\includes/email.php:15
+#: D:\Pixadelica\InMetrics\theme/includes/email.php:10
+#: D:\Pixadelica\InMetrics\theme\includes/email.php:10
+#, php-format
+msgid "Hello, %s."
+msgstr "Olá, %s."
+
+#: D:\Pixadelica\InMetrics\theme/includes/email.php:11
+#: D:\Pixadelica\InMetrics\theme/includes/email.php:24
+#: D:\Pixadelica\InMetrics\theme\includes/email.php:11
+#: D:\Pixadelica\InMetrics\theme\includes/email.php:24
+msgid ""
+"Follow the trail of solutions that you have chosen for Total Efficiency and "
+"start the transformation today!"
+msgstr ""
+"Siga a trilha de soluções que você escolheu para Eficiência Total e comece a "
+"transformação hoje mesmo!"
+
+#: D:\Pixadelica\InMetrics\theme/includes/email.php:12
+#: D:\Pixadelica\InMetrics\theme\includes/email.php:12
 msgid "São Paulo - Brazil"
 msgstr "São Paulo - Brasil"
 
-#: D:\Pixadelica\InMetrics\theme/includes/email.php:16
-#: D:\Pixadelica\InMetrics\theme\includes/email.php:16
+#: D:\Pixadelica\InMetrics\theme/includes/email.php:13
+#: D:\Pixadelica\InMetrics\theme\includes/email.php:13
 msgid "+55 11 3303.3200"
 msgstr "+55 11 3303.3200"
 
-#: D:\Pixadelica\InMetrics\theme/includes/email.php:17
-#: D:\Pixadelica\InMetrics\theme\includes/email.php:17
+#: D:\Pixadelica\InMetrics\theme/includes/email.php:14
+#: D:\Pixadelica\InMetrics\theme\includes/email.php:14
 msgid "contato@inmetrics.com.br"
 msgstr "contato@inmetrics.com.br"
 
-#: D:\Pixadelica\InMetrics\theme/includes/email.php:18
-#: D:\Pixadelica\InMetrics\theme\includes/email.php:18
+#: D:\Pixadelica\InMetrics\theme/includes/email.php:15
+#: D:\Pixadelica\InMetrics\theme\includes/email.php:15
 msgid ""
 "This information is confidential. All reproductions require explicit "
 "permission from In/Metrics."
 msgstr ""
 "Este material é conﬁdencial. Toda reprodução, total ou parcial, deve ter a "
 "permissão explicita da In/Metrics."
+
+#: D:\Pixadelica\InMetrics\theme/includes/email.php:23
+#: D:\Pixadelica\InMetrics\theme\includes/email.php:23
+#, php-format
+msgid "Hello, %s"
+msgstr "Olá, %s"
 
 #: D:\Pixadelica\InMetrics\theme/includes/metaboxes.php:12
 #: D:\Pixadelica\InMetrics\theme/includes/metaboxes.php:88
@@ -694,13 +725,3 @@ msgstr "Preparado para a eficiência que transforma?"
 #, php-format
 msgid "Efficiency plan sent to %s <%s>"
 msgstr "Plano de eficiência enviado para %s <%s>"
-
-#~ msgid "Hello, %s"
-#~ msgstr "Olá, %s"
-
-#~ msgid ""
-#~ "Follow the trail of solutions that you have chosen for Total Efficiency "
-#~ "and start the transformation today!"
-#~ msgstr ""
-#~ "Siga a trilha de soluções que você escolheu para Eficiência Total e "
-#~ "comece a transformação hoje mesmo!"
