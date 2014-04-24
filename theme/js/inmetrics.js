@@ -1270,7 +1270,7 @@ var animations = function () {
   };
 
   var mySkroll = null;
-    var DesktopVersion = function (isInit) {
+  var DesktopVersion = function (isInit) {
     var w_height = $(window).height();
 
     //olhos
