@@ -1,3 +1,7 @@
+<?php $langcode = inmetrics_get_current_language_code(); ?>
+
+<div id="home-popup" class="desktop mfp-hide" data-lang="<?php echo $langcode ?>"></div>
+
 <section id="apresenta" class="borders desktop">
   <div class="mid pR">
     <h2 class="fL rpc"><?php t_img('header_image'); ?></h2>
@@ -8,7 +12,6 @@
   </div>
 </section>
 
-<?php $langcode = inmetrics_get_current_language_code(); ?>
 <?php $strategic = inmetrics_get_efficiency_by_shortcode_slug('strategic'); ?>
 <section id="strategic" class="pR desktop">
   <div class="mid pR">

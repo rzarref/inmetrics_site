@@ -7,6 +7,8 @@
       removeCurtain();
     }
 
+    openPopup();
+
     $("[data-toggle=slide]").on({ click: slideToggle });
     $(".descriptions a").magnificPopup({ type: 'inline' });
     $(".selections a").on({
@@ -16,6 +18,18 @@
     });
     $('.contact-form form').validate(contactFormValidations());
   };
+
+  var openPopup = function () {
+    var popup = $('#home-popup');
+    if (popup.length > 0) {
+      popup.magnificPopup({
+        items: {
+          src: window.config.base + 'images/popup-' + popup.data("lang") + '.jpg',
+          type: 'image'
+        }
+      }).magnificPopup('open');
+    }
+  }
 
   var slideToggle = function () {
     var target = $($(this).attr("href"));
