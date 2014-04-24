@@ -95,6 +95,8 @@
     <Content Include="images\bordas\borda_top_g.png" />
     <Content Include="images\efficiencies.png" />
     <Content Include="images\email\footer-left.gif" />
+    <Content Include="images\email\footer-main-en.gif" />
+    <Content Include="images\email\footer-main-es.gif" />
     <Content Include="images\email\footer-main-pt-br.gif" />
     <Content Include="images\email\footer-right.gif" />
     <Content Include="images\email\footer-social.gif" />
@@ -132,6 +134,9 @@
     <Content Include="images\mobile-divider.png" />
     <Content Include="images\mobile-menu.png" />
     <Content Include="images\olho.png" />
+    <Content Include="images\popup-en.jpg" />
+    <Content Include="images\popup-es.jpg" />
+    <Content Include="images\popup-pt.jpg" />
     <Content Include="images\projects.png" />
     <Content Include="images\project_types.png" />
     <Content Include="images\services.png" />
