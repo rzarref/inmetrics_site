@@ -97,6 +97,8 @@
               </li>
               <li>
                 <input type="hidden" id="selections-input" name="plan_request[selections]" />
+                <input type="hidden" name="plan_request[language_code]"
+                       value="<?php global $sitepress; echo $sitepress->get_current_language(); ?>" />
                 <input type="submit" value="<?php esc_attr_e('Submit', 'inmetrics'); ?>" />
                 <div class="spinner"></div>
               </li>

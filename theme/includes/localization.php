@@ -16,6 +16,18 @@ function inmetrics_home_url() {
     return home_url();
 }
 
+function inmetrics_force_locale($locale) {
+  global $sitepress;
+  if(defined('FORCE_LANGUAGE')) {
+    $sitepress->switch_lang(FORCE_LANGUAGE);
+    return FORCE_LANGUAGE;
+  }
+  else {
+    return $locale;
+  }
+}
+add_filter('locale', 'inmetrics_force_locale');
+
 function inmetrics_get_current_language_code()
 {
   global $sitepress;
@@ -50,7 +62,7 @@ function inmetrics_language_switcher($display_field = 'native_name')
 
 // Remove Multilingual Content Setup box
 function disable_icl_metabox() {
-  global $post;  
+  global $post;
   remove_meta_box('icl_div_config', $post->post_type, 'normal');
 }
 add_action('admin_head', 'disable_icl_metabox', 99);

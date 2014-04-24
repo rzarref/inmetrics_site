@@ -12,7 +12,7 @@ function inmetrics_po_edit_needs_help()
   $contact_city = __('São Paulo - Brazil', 'inmetrics');
   $contact_phone = __('+55 11 3303.3200', 'inmetrics');
   $contact_email = __('contato@inmetrics.com.br', 'inmetrics');
-  $contact_notice = __('This information is confidential. All reproductions require explicit permission from In/Metrics.', 'inmetrics');  
+  $contact_notice = __('This information is confidential. All reproductions require explicit permission from In/Metrics.', 'inmetrics');
 }
 
 function inmetrics_plan_request_email_table($name, $selections) {
@@ -60,14 +60,14 @@ function inmetrics_plan_request_email_table($name, $selections) {
     $color = get_field('table_background_color', $efficiency->ID);
 
     foreach($services as $ser_index => $service) {
-      $service_rows .= "<tr>";
+      $service_rows .= "<tr>\n";
       if($ser_index == 0 && $eff_index != 0) {
         $img = img_tag('email_title_image', $efficiency->ID);
         $rowspan = $efficiency->total_projects;
-        $service_rows .= "<td valign='bottom' bgcolor='$title_color' rowspan='$rowspan'>$img</td>";
+        $service_rows .= "<td valign='bottom' bgcolor='$title_color' rowspan='$rowspan'>$img</td>\n";
       }
       $img = img_tag('email_header_image', $service->ID);
-      $service_rows .= "<td width='100%' align='right' bgcolor='$color'>$img</td>";
+      $service_rows .= "<td width='100%' align='right' bgcolor='$color'>$img</td>\n";
       $selections = $selected_projects[$service->ID];
       if(!isset($selections)) $selections = array();
       foreach($projects as $project) {
@@ -76,7 +76,7 @@ function inmetrics_plan_request_email_table($name, $selections) {
         $service_rows .=
            "<td align=\"center\" valign=\"middle\" bgcolor=\"$bg_color\">" .
            "<span style=\"font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; " .
-           "font-size: 40px; color: $circle_color; line-height: 17px; text-align: center;\">&#8226</span></td>";
+           "font-size: 40px; color: $circle_color; line-height: 17px; text-align: center;\">&#8226</span></td>\n";
       }
       $service_rows .= "</tr>\n";
     }

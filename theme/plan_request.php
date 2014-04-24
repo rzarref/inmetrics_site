@@ -3,6 +3,11 @@
 if(!isset($_POST['plan_request']))
   exit();
 
+$plan_request = $_POST['plan_request'];
+
+define("ICL_LANGUAGE_CODE", $plan_request['language_code']);
+define("FORCE_LANGUAGE", $plan_request['language_code']);
+
 require_once('../../../wp-load.php');
 // require_once('d:\Pixadelica\Inmetrics\public\wp-load.php');
 
@@ -20,7 +25,6 @@ if(!isset($name) || trim($name) === '' ||
    !isset($message) || trim($message) === '')
 {
   header('inmetrics_plan_request: failure');
-  echo get_field('contact_form_failure_message', $front_page_id);
   exit();
 }
 $post_id = wp_insert_post(array(
