@@ -38,7 +38,6 @@ body:after, html:after {
   clear: both;
 }
 
-ol, ul { list-style:none; }
 blockquote, q { quotes:none; }
 hr { display:none; }
 
