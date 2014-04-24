@@ -40,45 +40,42 @@
       "data-0": setPrefixCSS("transform: translate(70px, 530px); opacity: 1;"),
       "data-1200": setPrefixCSS("transform: translate(70px, 140px); opacity: 1;"),
       "data-1300": setPrefixCSS("transform: translate(70px, 140px); opacity: 0;"),
-      "data-1450": setPrefixCSS("transform: translate(120px, 230px); opacity: 0;"),
-      "data-2100": setPrefixCSS("transform: translate(140px, 230px); opacity: 0;"),
-      "data-2250": setPrefixCSS("transform: translate(140px, 230px); opacity: 1;"),
-      "data-2490": setPrefixCSS("transform: translate(140px, 230px); opacity: 1;"),
-      "data-2530": setPrefixCSS("transform: translate(140px, 230px); opacity: 0;"),
-      "data-2580": setPrefixCSS("transform: translate(70px, 230px); opacity: 0;"),
-      "data-2900": setPrefixCSS("transform: translate(70px, 230px); opacity: 0;"),
-      "data-3000": setPrefixCSS("transform: translate(70px, 230px); opacity: 1;"),
-      "data-3180": setPrefixCSS("transform: translate(70px, 230px); opacity: 1;"),
-      "data-3200": setPrefixCSS("transform: translate(70px, 230px); opacity: 0;"),
-      "data-3990": setPrefixCSS("transform: translate(140px, 230px); opacity: 0;"),
-      "data-4020": setPrefixCSS("transform: translate(140px, 230px); opacity: 1;"),
-      "data-4120": setPrefixCSS("transform: translate(140px, 230px); opacity: 1;"),
-      "data-4140": setPrefixCSS("transform: translate(140px, 230px); opacity: 0;"),
-      "data-5240": setPrefixCSS("transform: translate(60px, 230px); opacity: 0;"),
-      "data-5290": setPrefixCSS("transform: translate(60px, 230px); opacity: 1;"),
-      "data-5920": setPrefixCSS("transform: translate(60px, 230px); opacity: 1;"),
-      "data-5970": setPrefixCSS("transform: translate(60px, 230px); opacity: 0;"),
-      "data-7090": setPrefixCSS("transform: translate(140px, 230px); opacity: 0;"),
-      "data-7120": setPrefixCSS("transform: translate(140px, 230px); opacity: 1;"),
-      "data-7270": setPrefixCSS("transform: translate(140px, 230px); opacity: 1;"),
-      "data-7300": setPrefixCSS("transform: translate(140px, 230px); opacity: 0;"),
-      "data-7800": setPrefixCSS("transform: translate(70px, 230px); opacity: 0;"),
-      "data-7830": setPrefixCSS("transform: translate(70px, 230px); opacity: 1;"),
-      "data-7990": setPrefixCSS("transform: translate(70px, 230px); opacity: 1;"),
-      "data-8010": setPrefixCSS("transform: translate(70px, 230px); opacity: 0;"),
-      "data-9950": setPrefixCSS("transform: translate(140px, 230px); opacity: 0;"),
-      "data-9990": setPrefixCSS("transform: translate(140px, 230px); opacity: 1;"),
-      "data-10180": setPrefixCSS("transform: translate(140px, 230px); opacity: 1;"),
-      "data-10210": setPrefixCSS("transform: translate(140px, 230px); opacity: 0;"),
-      "data-11900": setPrefixCSS("transform: translate(70px, 230px); opacity: 0;"),
-      "data-11940": setPrefixCSS("transform: translate(70px, 230px); opacity: 1;"),
-      "data-12400": setPrefixCSS("transform: translate(70px, 230px); opacity: 1;"),
-      "data-12440": setPrefixCSS("transform: translate(70px, 230px); opacity: 0;"),
-      "data-13530": setPrefixCSS("transform: translate(140px, 230px); opacity: 0;"),
-      "data-13560": setPrefixCSS("transform: translate(140px, 230px); opacity: 1;"),
-      "data-13680": setPrefixCSS("transform: translate(140px, 230px); opacity: 1;"),
-      "data-13700": setPrefixCSS("transform: translate(140px, 230px); opacity: 0;"),
-      "data-13720": setPrefixCSS("transform: translate(620px, 100px); opacity: 0;"),
+      "data-1320": setPrefixCSS("transform: translate(140px, 660px); opacity: 0;"),
+      "data-1420": setPrefixCSS("transform: translate(140px, 660px); opacity: 1;"),
+      "data-2680": setPrefixCSS("transform: translate(140px, 140px); opacity: 1;"),
+      "data-2730": setPrefixCSS("transform: translate(140px, 140px); opacity: 0;"),
+      "data-3400": setPrefixCSS("transform: translate(70px, 140px); opacity: 0;"),
+      "data-3450": setPrefixCSS("transform: translate(70px, 140px); opacity: 1;"),
+      "data-3600": setPrefixCSS("transform: translate(70px, 140px); opacity: 1;"),
+      "data-3650": setPrefixCSS("transform: translate(70px, 140px); opacity: 0;"),
+      "data-3670": setPrefixCSS("transform: translate(140px, 630px); opacity: 0;"),
+      "data-3720": setPrefixCSS("transform: translate(140px, 630px); opacity: 1;"),
+      "data-4490": setPrefixCSS("transform: translate(140px, 140px); opacity: 1;"),
+      "data-4540": setPrefixCSS("transform: translate(140px, 140px); opacity: 0;"),
+      "data-5200": setPrefixCSS("transform: translate(50px, 230px); opacity: 0;"),
+      "data-5250": setPrefixCSS("transform: translate(50px, 230px); opacity: 1;"),
+      "data-6200": setPrefixCSS("transform: translate(50px, 230px); opacity: 1;"),
+      "data-6250": setPrefixCSS("transform: translate(50px, 230px); opacity: 0;"),
+      "data-6450": setPrefixCSS("transform: translate(140px, 640px); opacity: 0;"),
+      "data-6500": setPrefixCSS("transform: translate(140px, 640px); opacity: 1;"),
+      "data-7750": setPrefixCSS("transform: translate(140px, 140px); opacity: 1;"),
+      "data-7800": setPrefixCSS("transform: translate(140px, 140px); opacity: 0;"),
+      "data-8300": setPrefixCSS("transform: translate(70px, 230px); opacity: 0;"),
+      "data-8350": setPrefixCSS("transform: translate(70px, 230px); opacity: 1;"),
+      "data-8480": setPrefixCSS("transform: translate(70px, 230px); opacity: 1;"),
+      "data-8530": setPrefixCSS("transform: translate(70px, 230px); opacity: 0;"),
+      "data-9200": setPrefixCSS("transform: translate(140px, 690px); opacity: 0;"),
+      "data-9250": setPrefixCSS("transform: translate(140px, 690px); opacity: 1;"),
+      "data-10900": setPrefixCSS("transform: translate(140px, 140px); opacity: 1;"),
+      "data-10950": setPrefixCSS("transform: translate(140px, 140px); opacity: 0;"),
+      "data-12400": setPrefixCSS("transform: translate(70px, 140px); opacity: 0;"),
+      "data-12450": setPrefixCSS("transform: translate(70px, 140px); opacity: 1;"),
+      "data-13000": setPrefixCSS("transform: translate(70px, 140px); opacity: 1;"),
+      "data-13050": setPrefixCSS("transform: translate(70px, 140px); opacity: 0;"),
+      "data-13300": setPrefixCSS("transform: translate(140px, 650px); opacity: 0;"),
+      "data-13350": setPrefixCSS("transform: translate(140px, 650px); opacity: 1;"),
+      "data-14250": setPrefixCSS("transform: translate(140px, 140px); opacity: 1;"),
+      "data-14300": setPrefixCSS("transform: translate(140px, 140px); opacity: 0;"),
       "data-250-end": setPrefixCSS("transform: translate(620px, "+ (w_height- 630) +"px); opacity: 0;"),
       "data-0-end": setPrefixCSS("transform: translate(620px, "+ (w_height- 630) +"px); opacity: 1;")
     });
@@ -130,131 +127,130 @@
 
     //iniciando gestao
     $('#management').attr({
-      "data-2100": setPrefixCSS("transform: translate(0px, 0px);"),
-      "data-3250": setPrefixCSS("transform: translate(0px, -"+ w_height +"px);"),
-      "data-5300": setPrefixCSS("transform: translate(0px, -"+ (w_height + 1130) +"px);")
+      "data-2400": setPrefixCSS("transform: translate(0px, 0px);"),
+      "data-3550": setPrefixCSS("transform: translate(0px, -"+ w_height +"px);"),
+      "data-5600": setPrefixCSS("transform: translate(0px, -"+ (w_height + 1130) +"px);")
     });
     $("#management h2").attr({
-      "data-2700": setPrefixCSS("transform: translate(0px, 0px);"),
-      "data-4400": setPrefixCSS("transform: translate(0px, -170px);")
+      "data-3000": setPrefixCSS("transform: translate(0px, 0px);"),
+      "data-4700": setPrefixCSS("transform: translate(0px, -170px);")
     });
     $('#management .img-cena').attr({
-      "data-2800": setPrefixCSS("transform: translate(0px, 150px);"),
-      "data-4500": setPrefixCSS("transform: translate(0px, -200px);")
+      "data-3100": setPrefixCSS("transform: translate(0px, 150px);"),
+      "data-4800": setPrefixCSS("transform: translate(0px, -200px);")
     });
     $('#management .table').attr({
-      "data-3200": setPrefixCSS("transform: translate(0px, 120px);"),
-      "data-4800": setPrefixCSS("transform: translate(0px, -100px);")
+      "data-3500": setPrefixCSS("transform: translate(0px, 50px);"),
+      "data-5100": setPrefixCSS("transform: translate(0px, -100px);")
     });
 
     //inicianado operacional
     $('#operational').attr({
-      "data-3000": setPrefixCSS("transform: translate(0px, 0px);"),
-      "data-3200": setPrefixCSS("transform: translate(0px, -"+ (w_height - 50) +"px);"),
-      "data-6000": setPrefixCSS("transform: translate(0px, -"+ (w_height - 50) +"px);"),
-      "data-8900": setPrefixCSS("transform: translate(0px, -"+ (w_height + 1204) +"px);")
+      "data-3300": setPrefixCSS("transform: translate(0px, 0px);"),
+      "data-3500": setPrefixCSS("transform: translate(0px, -"+ (w_height - 50) +"px);"),
+      "data-6300": setPrefixCSS("transform: translate(0px, -"+ (w_height - 50) +"px);"),
+      "data-9200": setPrefixCSS("transform: translate(0px, -"+ (w_height + 1204) +"px);")
     });
     $('#operational h2').attr({
-      "data-4500": setPrefixCSS("transform: translate(0px, -200px);"),
-      "data-5300": setPrefixCSS("transform: translate(0px, 60px);"),
-      "data-6500": setPrefixCSS("transform: translate(0px, -210px);")
+      "data-4800": setPrefixCSS("transform: translate(0px, -200px);"),
+      "data-5600": setPrefixCSS("transform: translate(0px, 60px);"),
+      "data-6800": setPrefixCSS("transform: translate(0px, -210px);")
     });
     $('#operational span.fil-1').attr({
-      "data-4300": setPrefixCSS("transform: translate(0px, -490px);"),
-      "data-4800": setPrefixCSS("transform: translate(0px, 70px);"),
-      "data-5300": setPrefixCSS("transform: translate(0px, 70px);"),
-      "data-6500": setPrefixCSS("transform: translate(0px, -230px);"),
+      "data-4600": setPrefixCSS("transform: translate(0px, -490px);"),
+      "data-5100": setPrefixCSS("transform: translate(0px, 70px);"),
+      "data-5600": setPrefixCSS("transform: translate(0px, 70px);"),
+      "data-6800": setPrefixCSS("transform: translate(0px, -230px);"),
     });
     $('#operational img.fil-2').attr({
-      "data-4400": setPrefixCSS("transform: translate(0px, -490px);"),
-      "data-5000": setPrefixCSS("transform: translate(0px, 70px);"),
+      "data-4700": setPrefixCSS("transform: translate(0px, -490px);"),
       "data-5300": setPrefixCSS("transform: translate(0px, 70px);"),
-      "data-6500": setPrefixCSS("transform: translate(0px, -230px);")
+      "data-5600": setPrefixCSS("transform: translate(0px, 70px);"),
+      "data-6800": setPrefixCSS("transform: translate(0px, -230px);")
     });
     $('#operational img.fil-3').attr({
-      "data-4500": setPrefixCSS("transform: translate(0px, -490px);"),
-      "data-5300": setPrefixCSS("transform: translate(0px, 70px);"),
-      "data-6500": setPrefixCSS("transform: translate(0px, -230px);")
+      "data-4800": setPrefixCSS("transform: translate(0px, -490px);"),
+      "data-5600": setPrefixCSS("transform: translate(0px, 70px);"),
+      "data-6800": setPrefixCSS("transform: translate(0px, -230px);")
     });
     $('#operational .table').attr({
-      "data-4700": setPrefixCSS("transform: translate(0px, 300px);"),
-      "data-6500": setPrefixCSS("transform: translate(0px, -50px);")
+      "data-5000": setPrefixCSS("transform: translate(0px, 300px);"),
+      "data-6800": setPrefixCSS("transform: translate(0px, -50px);")
     });
 
     //iniciando funcional
     $('#functional').attr({
-      "data-7100": setPrefixCSS("transform: translate(0px, 0px);"),
-      "data-8100": setPrefixCSS("transform: translate(0px, -"+ (w_height - 20) +"px);"),
-      "data-12400": setPrefixCSS("transform: translate(0px, -"+ (w_height + 1210) +"px);")
+      "data-7600": setPrefixCSS("transform: translate(0px, 0px);"),
+      "data-8600": setPrefixCSS("transform: translate(0px, -"+ (w_height - 20) +"px);"),
+      "data-12900": setPrefixCSS("transform: translate(0px, -"+ (w_height + 1210) +"px);")
     });
     $('#functional h2').attr({
-      "data-7500": setPrefixCSS("transform: translate(0px, 100px);"),
-      "data-8100": setPrefixCSS("transform: translate(0px, 0px);"),
-      "data-8200": setPrefixCSS("transform: translate(0px, 0px);"),
-      "data-9600": setPrefixCSS("transform: translate(0px, -200px);")
+      "data-8000": setPrefixCSS("transform: translate(0px, 100px);"),
+      "data-8600": setPrefixCSS("transform: translate(0px, 0px);"),
+      "data-8700": setPrefixCSS("transform: translate(0px, 0px);"),
+      "data-10100": setPrefixCSS("transform: translate(0px, -200px);")
     });
     $('#functional .img-cena').attr({
-      "data-7500": setPrefixCSS("transform: translate(0px, 80px);"),
-      "data-8200": setPrefixCSS("transform: translate(0px, 0px);"),
-      "data-9000": setPrefixCSS("transform: translate(0px, -70px);")
+      "data-8000": setPrefixCSS("transform: translate(0px, 80px);"),
+      "data-8700": setPrefixCSS("transform: translate(0px, 0px);"),
+      "data-9500": setPrefixCSS("transform: translate(0px, -70px);")
     });
     $('#functional .img-peao-cabeca').attr({
-      "data-7500": setPrefixCSS("transform: translate(0px, -35px);"),
-      "data-8150": setPrefixCSS("transform: translate(0px, 67px);")
+      "data-8000": setPrefixCSS("transform: translate(0px, -35px);"),
+      "data-8650": setPrefixCSS("transform: translate(0px, 67px);")
     });
     $('#functional .img-peao-base').attr({
-      "data-7500": setPrefixCSS("transform: translate(2px, 72px);"),
-      "data-8150": setPrefixCSS("transform: translate(2px, -41px);")
+      "data-8000": setPrefixCSS("transform: translate(2px, 72px);"),
+      "data-8650": setPrefixCSS("transform: translate(2px, -41px);")
     });
     $('#functional .img-nuvens').attr({
-      "data-8000": setPrefixCSS("transform: translate(0px, 80px);") + " opacity: 0;",
-      "data-8900": setPrefixCSS("transform: translate(0px, 10px);") + " opacity: 1;",
-      "data-11000": setPrefixCSS("transform: translate(0px, -220px);") + " opacity: 1;"
+      "data-8500": setPrefixCSS("transform: translate(0px, 80px);") + " opacity: 0;",
+      "data-10400": setPrefixCSS("transform: translate(0px, 10px);") + " opacity: 1;",
+      "data-11500": setPrefixCSS("transform: translate(0px, -220px);") + " opacity: 1;"
     });
     $('#functional .table').attr({
-      "data-8700": setPrefixCSS("transform: translate(0px, 120px);"),
-      "data-10700": setPrefixCSS("transform: translate(0px, -50px);")
+      "data-9200": setPrefixCSS("transform: translate(0px, 120px);"),
+      "data-11200": setPrefixCSS("transform: translate(0px, -50px);")
     });
 
     //iniciando qualidade
     $('#quality').attr({
-      "data-7500": setPrefixCSS("transform: translate(0px, 0px);"),
-      "data-10500": setPrefixCSS("transform: translate(0px, -490px);"),
-      "data-12300": setPrefixCSS("transform: translate(0px, -"+ (w_height - 100) +"px);"),
-      "data-14500": setPrefixCSS("transform: translate(0px, -"+ (w_height + 1040) +"px);")
+      "data-8000": setPrefixCSS("transform: translate(0px, 0px);"),
+      "data-11000": setPrefixCSS("transform: translate(0px, -490px);"),
+      "data-12800": setPrefixCSS("transform: translate(0px, -"+ (w_height - 100) +"px);"),
+      "data-15000": setPrefixCSS("transform: translate(0px, -"+ (w_height + 1040) +"px);")
     });
     $('#quality h2').attr({
-      "data-10500": setPrefixCSS("transform: translate(0px, -300px);"),
-      "data-12300": setPrefixCSS("transform: translate(0px, 50px);"),
-      "data-13400": setPrefixCSS("transform: translate(0px, -70px);")
+      "data-11000": setPrefixCSS("transform: translate(0px, -300px);"),
+      "data-12800": setPrefixCSS("transform: translate(0px, 50px);"),
+      "data-13900": setPrefixCSS("transform: translate(0px, -70px);")
     });
     $('#quality .img-coroa').attr({
-      "data-11300": setPrefixCSS("transform: translate(0px, -300px);"),
-      "data-12000": setPrefixCSS("transform: translate(0px, 35px);")
+      "data-11800": setPrefixCSS("transform: translate(0px, -300px);"),
+      "data-12500": setPrefixCSS("transform: translate(0px, 35px);")
     });
     $('#quality .img-raios').attr({
-      "data-11980": "opacity: 0",
-      "data-12020": "opacity: 1"
+      "data-12480": "opacity: 0",
+      "data-12520": "opacity: 1"
     });
     $('#quality .img-projeto').attr({
-      "data-11000": "opacity: 0; width: 100px; right: 102px;",
-      "data-12000": "opacity: 1; width: 320px; right: 22px;"
+      "data-11500": "opacity: 0; width: 100px; right: 102px;",
+      "data-12500": "opacity: 1; width: 320px; right: 22px;"
     });
     $('#quality .img-nuvens').attr({
-      "data-12150": setPrefixCSS("transform: translate(0px, 50px);" + " opacity: 0;"),
-      "data-12200": setPrefixCSS("transform: translate(0px, 60px);" + " opacity: 1;"),
-      "data-13400": setPrefixCSS("transform: translate(0px, -80px);" + " opacity: 1;")
+      "data-12650": setPrefixCSS("transform: translate(0px, 50px);" + " opacity: 0;"),
+      "data-12700": setPrefixCSS("transform: translate(0px, 60px);" + " opacity: 1;"),
+      "data-13900": setPrefixCSS("transform: translate(0px, -80px);" + " opacity: 1;")
     });
 
     $('#quality .table').attr({
-      "data-12150": setPrefixCSS("transform: translate(0px, 150px);"),
-      "data-14000": setPrefixCSS("transform: translate(0px, 0px);")
+      "data-12650": setPrefixCSS("transform: translate(0px, 150px);"),
+      "data-14500": setPrefixCSS("transform: translate(0px, 0px);")
     });
 
     //iniciando contato
     $('#contato').attr({
-      "data-2600-end": setPrefixCSS("transform: translate(0px, 0px);"),
-      "data-750-end": setPrefixCSS("transform: translate(0px, -651px);"),
+      "data-1800-end": setPrefixCSS("transform: translate(0px, 0px);"),
       "data-0-end": setPrefixCSS("transform: translate(0px, -740px);")
     });
 
