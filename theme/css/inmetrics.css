@@ -188,6 +188,12 @@ p {
     display: none !important;
   }
 }
+.mfp-bg {
+  z-index: 10001 !important;
+}
+.mfp-wrap {
+  z-index: 10002 !important;
+}
 /*# sourceMappingURL=layout.css.map */
 header {
   background: black;
@@ -762,9 +768,6 @@ header .lang .items a + a {
   right: 0;
 }
 /*===============================*/
-.mfp-wrap {
-  z-index: 9999 !important;
-}
 .service-description {
   border-radius: 15px;
   font-family: 'Droid Sans', Arial, sans-serif;

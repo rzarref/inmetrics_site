@@ -4,10 +4,8 @@
     if ($("body").hasClass("animated")) {
       //Adicionei a validação dentro da função, estou controlando o resize quando menor que 768px removo o parallax.
       animations.init(isMobile());
-      removeCurtain();
+      removeCurtain(openPopup);
     }
-
-    openPopup();
 
     $("[data-toggle=slide]").on({ click: slideToggle });
     $(".descriptions a").magnificPopup({ type: 'inline' });
@@ -127,10 +125,11 @@
     };
   };
 
-  var removeCurtain = function () {
+  var removeCurtain = function (callback) {
     $.get(window.config.base + 'images/animados/olho_aladoanima.png', function () {
       setTimeout(function () {
         $('body').removeClass('loading-on');
+        callback();
       }, 1200);
     });
   };
