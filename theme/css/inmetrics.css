@@ -901,6 +901,9 @@ header .lang .items a + a {
   font-size: 13px;
   line-height: 20px;
 }
+.contact-form address strong {
+  font-weight: 700;
+}
 .contact-form address + address {
   margin-top: 20px;
 }
