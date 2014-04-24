@@ -1,4 +1,7 @@
-﻿@media screen and (min-width: 769px) {
+﻿.in-inspire {
+  display: none;
+}
+@media screen and (min-width: 769px) {
   @-webkit-keyframes flying {
     0% {
       background-position: 0px 0px;
@@ -163,7 +166,7 @@
     opacity: 1;
     visibility: visible;
   }
-  .in-inspire {
+  body.animated .in-inspire {
     display: block;
     width: 160px;
     height: 104px;

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: InMetrics\n"
-"POT-Creation-Date: 2014-04-16 17:34-0300\n"
-"PO-Revision-Date: 2014-04-16 19:15-0300\n"
+"POT-Creation-Date: 2014-04-22 20:30-0300\n"
+"PO-Revision-Date: 2014-04-22 20:30-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -13,25 +13,26 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: __;_e;esc_attr_e\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: d:\\Pixadelica\\InMetrics\\theme\n"
 
-#: d:\Pixadelica\InMetrics\theme/content-home.php:81
+#: d:\Pixadelica\InMetrics\theme/content-home.php:82
 msgid "your name"
 msgstr "su nombre"
 
-#: d:\Pixadelica\InMetrics\theme/content-home.php:86
+#: d:\Pixadelica\InMetrics\theme/content-home.php:87
 msgid "your e-mail"
 msgstr "su e-mail"
 
-#: d:\Pixadelica\InMetrics\theme/content-home.php:89
+#: d:\Pixadelica\InMetrics\theme/content-home.php:90
 msgid "confirm your e-mail"
 msgstr "confirma su e-mail"
 
-#: d:\Pixadelica\InMetrics\theme/content-home.php:92
+#: d:\Pixadelica\InMetrics\theme/content-home.php:93
 msgid "your message"
 msgstr "su mesaje"
 
-#: d:\Pixadelica\InMetrics\theme/content-home.php:96
+#: d:\Pixadelica\InMetrics\theme/content-home.php:97
 msgid "Submit"
 msgstr "Enviar"
 
@@ -447,6 +448,21 @@ msgstr "E-mail"
 msgid "%s ago"
 msgstr "Hace %s"
 
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:773
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:774
+msgid "E-mail Options"
+msgstr "Opciones de E-mail"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:788
+msgid "Forward Addresses"
+msgstr "Reenvio de e-mails"
+
+#: d:\Pixadelica\InMetrics\theme/includes/custom_fields.php:792
+msgid "Forward a copy of all the e-mails to the following addresses:"
+msgstr ""
+"Reenviar una copia de todas las solicitudes de planes a los siguientes e-"
+"mails:"
+
 #: d:\Pixadelica\InMetrics\theme/includes/dynamic_js.php:6
 msgid "* Field is required"
 msgstr "* Campo obligarotio"
@@ -459,36 +475,19 @@ msgstr "* E-mail no es válido"
 msgid "* E-mail doesn't match"
 msgstr "* E-mail no coincide"
 
-#: d:\Pixadelica\InMetrics\theme/includes/email.php:9
-#, php-format
-msgid "Hello, %s"
-msgstr "Hola, %s"
-
-#: d:\Pixadelica\InMetrics\theme/includes/email.php:10
-msgid ""
-"Follow the trail of solutions that you have chosen for Total Efficiency and "
-"start the transformation today!"
-msgstr ""
-"¡Siga la senda de las soluciones que usted eligió para Eficiencia Total y "
-"comience hoy mismo la transformación!"
-
-#: D:\Pixadelica\InMetrics\theme/includes/email.php:150
-#: D:\Pixadelica\InMetrics\theme\includes/email.php:150
+#: d:\Pixadelica\InMetrics\theme/includes/email.php:15
 msgid "São Paulo - Brazil"
 msgstr "São Paulo - Brasil"
 
-#: D:\Pixadelica\InMetrics\theme/includes/email.php:151
-#: D:\Pixadelica\InMetrics\theme\includes/email.php:151
+#: d:\Pixadelica\InMetrics\theme/includes/email.php:16
 msgid "+55 11 3303.3200"
 msgstr "+55 11 3303.3200"
 
-#: D:\Pixadelica\InMetrics\theme/includes/email.php:152
-#: D:\Pixadelica\InMetrics\theme\includes/email.php:152
+#: d:\Pixadelica\InMetrics\theme/includes/email.php:17
 msgid "contato@inmetrics.com.br"
 msgstr "contato@inmetrics.com.br"
 
-#: D:\Pixadelica\InMetrics\theme/includes/email.php:153
-#: D:\Pixadelica\InMetrics\theme\includes/email.php:153
+#: d:\Pixadelica\InMetrics\theme/includes/email.php:18
 msgid ""
 "This information is confidential. All reproductions require explicit "
 "permission from In/Metrics."
@@ -550,3 +549,18 @@ msgstr "In/metrics 2014 &copy; Todos los derechos reservados"
 #: d:\Pixadelica\InMetrics\theme/plan_request.php:43
 msgid "Prepared for the efficiency that transforms?"
 msgstr "¿Preparado para la eficiencia que transforma?"
+
+#: d:\Pixadelica\InMetrics\theme/plan_request.php:47
+#, php-format
+msgid "Efficiency plan sent to %s <%s>"
+msgstr "Plan de Eficiencia enviado para %s <%s>"
+
+#~ msgid "Hello, %s"
+#~ msgstr "Hola, %s"
+
+#~ msgid ""
+#~ "Follow the trail of solutions that you have chosen for Total Efficiency "
+#~ "and start the transformation today!"
+#~ msgstr ""
+#~ "¡Siga la senda de las soluciones que usted eligió para Eficiencia Total y "
+#~ "comience hoy mismo la transformación!"

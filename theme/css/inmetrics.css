@@ -1360,6 +1360,9 @@ img.mfp-img {
   right: 0;
   padding-top: 0; }
 
+.in-inspire {
+  display: none;
+}
 @media screen and (min-width: 769px) {
   @-webkit-keyframes flying {
     0% {
@@ -1525,7 +1528,7 @@ img.mfp-img {
     opacity: 1;
     visibility: visible;
   }
-  .in-inspire {
+  body.animated .in-inspire {
     display: block;
     width: 160px;
     height: 104px;

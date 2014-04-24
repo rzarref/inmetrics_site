@@ -4,7 +4,7 @@ if(!isset($_POST['plan_request']))
   exit();
 
 require_once('../../../wp-load.php');
-//require_once('d:\Pixadelica\Inmetrics\public\wp-load.php');
+// require_once('d:\Pixadelica\Inmetrics\public\wp-load.php');
 
 $plan_request = $_POST['plan_request'];
 $name = $plan_request['name'];
@@ -42,8 +42,12 @@ $body = inmetrics_plan_request_email_body($email_table, $email_descriptions, $em
 $to = "$name <$email>";
 $subject = __("Prepared for the efficiency that transforms?", "inmetrics");
 $headers = "Content-type: text/html\r\n";
-           // "Bcc: Potiguar Faga <potiguar@potiguar.net>\r\n";
 wp_mail($to, $subject, $body, $headers);
+
+$forward_subject = sprintf(__('Efficiency plan sent to %s <%s>'), $name, $email);
+$forward_emails = get_field('email_forward_addresses', 'options');
+foreach(explode(',', $forward_emails) as $forward_to)
+  wp_mail(trim($forward_to), $forward_subject, $body, $headers);
 
 header('inmetrics_plan_request: success');
 $message = get_field('contact_form_success_message', $front_page_id);
