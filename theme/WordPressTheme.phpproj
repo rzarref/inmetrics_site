@@ -109,7 +109,9 @@
     <Content Include="images\ilustracoes\0-grupo.png" />
     <Content Include="images\ilustracoes\1cena.gif" />
     <Content Include="images\ilustracoes\1frase.png" />
-    <Content Include="images\ilustracoes\1nuvens.png" />
+    <Content Include="images\ilustracoes\1nuvens-en.png" />
+    <Content Include="images\ilustracoes\1nuvens-es.png" />
+    <Content Include="images\ilustracoes\1nuvens-pt.png" />
     <Content Include="images\ilustracoes\1olhos.png" />
     <Content Include="images\ilustracoes\1projeto.png" />
     <Content Include="images\ilustracoes\2cena.gif" />
